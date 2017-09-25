@@ -1,0 +1,13 @@
+---
+layout: default
+---
+    <ul>
+        {% for experience in site.posts %}
+        <li>
+            <a href="{{experience.link}}">{{experience.title}}</a>
+            <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
+            <p>{{experience.excerpt}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+

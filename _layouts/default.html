@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Aria Pahlavan</title>
-    <link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
-</head>
+{% include head.html %}
 <body>
-<header>
-    <h1>Aria Pahlavan</h1>
-    {% include nav.html navclass='nav-header' %}
-</header>
 
-    {{content}}
 
-<footer>
-    <p>Aria Pahlavan</p>
-    <p>© 2017</p>
-</footer>
+{{content}}
+
+{% include header.html %}
+{% include footer.html %}
 
 </body>
 </html>
