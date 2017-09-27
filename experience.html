@@ -4,13 +4,16 @@ layout: default
 <ul>
     <!--for experience in site.posts limit:2-->
 
-    {% for experience in site.posts  %}
+    {% for experience in site.posts %}
     <li>
-        <a href="{{experience.link}}">{{experience.title}}</a>
-        <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
-        <p>{{experience.excerpt}}</p>
-        <a href="{{site.baseurl}}{{experience.url}}"><button>read more</button></a>
-
+        <div>
+            <a href="{{experience.link}}">{{experience.title}}</a>
+            <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
+            <p>{{experience.excerpt}}</p>
+            <a href="{{site.baseurl}}{{experience.url}}">
+                <button>read more</button>
+            </a>
+        </div>
     </li>
     {% endfor %}
 </ul>

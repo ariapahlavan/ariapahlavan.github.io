@@ -32,8 +32,17 @@ footer {
     text-align: center;
 }
 
-
-.theme-light {
-    color:#000 !important;
-    background-color:#f5f7f8 !important
+.experiences {
+    background: #8ea2a4;
+    margin: 10px;
 }
+
+.read-more {
+    margin: 5px;
+}
+
+.headi{
+    text-align: center;
+}
+
+.theme-light {color:#000 !important; background-color:#dfe5e8 !important}
