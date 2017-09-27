@@ -31,3 +31,9 @@ footer {
     padding: 2em;
     text-align: center;
 }
+
+
+.theme-light {
+    color:#000 !important;
+    background-color:#f5f7f8 !important
+}
