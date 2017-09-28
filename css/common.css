@@ -47,8 +47,11 @@ html {
 .experience {
     background: #009688;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     text-align: center;
+    width: 500px;
+    height: 250px;
+    border: 20px;
 }
 
 .theme-light           { color:#000 !important; background-color:#dfe5e8 !important}
