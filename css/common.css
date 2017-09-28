@@ -25,16 +25,16 @@ html {
     font-size: 1.25rem;
 }
 
-footer {
+.footer-h3 {
     font-weight: 300;
-    font-size: 0.75em;
-    padding: 2em;
+    font-size: 14px;
     text-align: center;
 }
 
-.experiences {
-    background: #8ea2a4;
-    margin: 10px;
+.footer-h2 {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
 }
 
 .read-more {
@@ -44,5 +44,18 @@ footer {
 .headi{
     text-align: center;
 }
+.experience {
+    background: #009688;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
 
-.theme-light {color:#000 !important; background-color:#dfe5e8 !important}
+.theme-light           { color:#000 !important; background-color:#dfe5e8 !important}
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }

@@ -6,9 +6,9 @@ layout: default
 <h1 class="headi">Welcome to my page!</h1>
 
 {% for experience in site.posts %}
-<div class="experiences">
+<div class="experience">
     <a href="{{experience.link}}">{{experience.title}}</a>
-    <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
+    <p> {{experience.company}} &bullet; {{experience.start_date}} &ndash; {{experience.end_date}}</p>
     <p>{{experience.excerpt}}</p>
     <a href="{{site.baseurl}}{{experience.url}}">
         <button class="read-more">read more</button>

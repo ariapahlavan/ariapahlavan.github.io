@@ -1,20 +1,19 @@
 ---
 layout: default
 ---
-<ul>
-    <!--for experience in site.posts limit:2-->
+<!--for experience in site.posts limit:2-->
 
-    {% for experience in site.posts %}
-    <li>
-        <div>
-            <a href="{{experience.link}}">{{experience.title}}</a>
-            <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
-            <p>{{experience.excerpt}}</p>
-            <a href="{{site.baseurl}}{{experience.url}}">
-                <button>read more</button>
-            </a>
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+<h1 class="headi">Welcome to my page!</h1>
+
+{% for experience in site.posts %}
+<div class="experiences">
+    <a href="{{experience.link}}">{{experience.title}}</a>
+    <p> {{experience.company}} • {{experience.start_date}} &ndash; {{experience.end_date}}</p>
+    <p>{{experience.excerpt}}</p>
+    <a href="{{site.baseurl}}{{experience.url}}">
+        <button class="read-more">read more</button>
+    </a>
+</div>
+<!--<div class="clear"> <br> </div>-->
+{% endfor %}
 
