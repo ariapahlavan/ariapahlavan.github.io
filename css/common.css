@@ -1,7 +1,7 @@
 html {
-    margin: 0;
-    padding: 0;
-    text-shadow: 0.0135em 0.0135em 0px #160315;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    text-shadow: 0.0135em 0.0135em 0 #160315;
 
     font: lighter 100%/1.4 'Roboto', sans-serif;
 }
@@ -30,8 +30,8 @@ html {
     margin-left: 100px;
     border-radius: 3px;
     text-align: center;
-    width: 500px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     border: 20px;
 }
 
@@ -51,6 +51,20 @@ html {
     color: #E8F067;
 }
 
-.default-primary-color { background: #E8E7E3; }
+div.excerpt {
+    text-align: left;
+    font-size: 11pt;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.default-primary-color { background: #D1D0CC; }
 .primary-text-color    { color: white; }
 .secondary-text-color  { color: #A84343; }
