@@ -1,8 +1,5 @@
 html {
-    /*margin: 0;*/
-    /*padding: 0;*/
     text-shadow: 0.0135em 0.0135em 0 #160315;
-
     font: lighter 100%/1.4 'Roboto', sans-serif;
 }
 
@@ -19,20 +16,20 @@ html {
 }
 
 .read-more {
-    margin: 5px;
+    margin: 0;
 }
 
 .headi{
     text-align: center;
 }
+
 .experience {
     background: #A84343;
-    margin-left: 100px;
+    margin: 0 auto;
     border-radius: 3px;
     text-align: center;
     width: 350px;
     height: 200px;
-    border: 20px;
 }
 
 .company {
@@ -61,8 +58,10 @@ div.excerpt {
 p {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+
+    margin: 10px;
 }
 
 .default-primary-color { background: #D1D0CC; }
