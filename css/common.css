@@ -6,26 +6,6 @@ html {
     font: lighter 100%/1.4 'Roboto', sans-serif;
 }
 
-.current {
-    background-color: #3d9cff;
-    color: #fff;
-}
-
-.nav {
-    margin: 0;
-    padding: 0;
-
-    list-style-type: none;
-}
-
-.nav > li {
-    display: inline-block;
-}
-
-.nav-header {
-    font-size: 1.25rem;
-}
-
 .footer-h3 {
     font-weight: 300;
     font-size: 15px;
@@ -47,7 +27,7 @@ html {
 }
 .experience {
     background: #A84343;
-    margin: 10px;
+    margin-left: 100px;
     border-radius: 3px;
     text-align: center;
     width: 500px;
@@ -55,6 +35,22 @@ html {
     border: 20px;
 }
 
-.default-primary-color { background: #F4EFD9; }
-.primary-text-color    { color: #FFF8D6; }
+.company {
+    font-size: large;
+    color: white;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: medium;
+    color: silver;
+}
+
+.title {
+    font-size: x-large;
+    color: #E8F067;
+}
+
+.default-primary-color { background: #E8E7E3; }
+.primary-text-color    { color: white; }
 .secondary-text-color  { color: #A84343; }

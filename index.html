@@ -7,8 +7,9 @@ layout: default
 
 {% for experience in site.posts %}
 <div class="experience">
-    <a href="{{experience.link}}" class="primary-text-color">{{experience.title}}</a>
-    <p> {{experience.company}} &bullet; {{experience.start_date}} &ndash; {{experience.end_date}}</p>
+    <p class="title">{{experience.title}}</p>
+    <p> <span class="company">{{experience.company}}</span>
+        <span class="date">{{experience.start_date}} &ndash; {{experience.end_date}}</span></p>
     <p>{{experience.excerpt}}</p>
     <a href="{{site.baseurl}}{{experience.url}}">
         <button class="read-more">read more</button>
