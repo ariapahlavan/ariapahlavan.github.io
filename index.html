@@ -3,11 +3,11 @@ layout: default
 ---
 <!--for experience in site.posts limit:2-->
 
-<h1 class="headi">Welcome to my page!</h1>
+<h1 class="headi secondary-text-color">Welcome to my page!</h1>
 
 {% for experience in site.posts %}
 <div class="experience">
-    <a href="{{experience.link}}">{{experience.title}}</a>
+    <a href="{{experience.link}}" class="primary-text-color">{{experience.title}}</a>
     <p> {{experience.company}} &bullet; {{experience.start_date}} &ndash; {{experience.end_date}}</p>
     <p>{{experience.excerpt}}</p>
     <a href="{{site.baseurl}}{{experience.url}}">
