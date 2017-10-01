@@ -1,7 +1,7 @@
 ---
 layout: experience
 title: Electrical Engineering Intern
-company: Luminant Power
+company: Luminant
 start_date: May 2016
 end_date: Aug 2016
 date:   2016-05-25 06:00:00 -0600

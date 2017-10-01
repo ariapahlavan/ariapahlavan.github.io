@@ -9,13 +9,16 @@ layout: default
 <div class="experience">
     <p class="title">{{experience.title}}</p>
     <div class="company-date">
-        <p> <span class="company">{{experience.company}}</span>
+        <p><span class="company">{{experience.company}}</span>
             <span class="date">{{experience.start_date}} &ndash; {{experience.end_date}}</span></p>
     </div>
     <div class="excerpt">{{experience.excerpt}}</div>
-    <a href="{{site.baseurl}}{{experience.url}}">
-        <button class="read-more">read more</button>
-    </a>
+
+    <div id="read-more">
+        <a href="{{site.baseurl}}{{experience.url}}">
+            <button>read more</button>
+        </a>
+    </div>
 </div>
 {% endfor %}
 
