@@ -3,7 +3,7 @@ layout: default
 ---
 <!--for experience in site.posts limit:2-->
 
-<h1 class="headi secondary-text-color">Welcome to my page!</h1>
+<h1 class="heading secondary-text-color">Welcome to my page!</h1>
 
 {% for experience in site.posts %}
 <div class="experience">
@@ -12,7 +12,7 @@ layout: default
         <p> <span class="company">{{experience.company}}</span>
             <span class="date">{{experience.start_date}} &ndash; {{experience.end_date}}</span></p>
     </div>
-    <div class="excerpt"><p>{{experience.excerpt}}</p></div>
+    <div class="excerpt">{{experience.excerpt}}</div>
     <a href="{{site.baseurl}}{{experience.url}}">
         <button class="read-more">read more</button>
     </a>
