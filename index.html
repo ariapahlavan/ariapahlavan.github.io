@@ -5,14 +5,14 @@ layout: default
 
 <h1 class="heading secondary-text-color">Welcome to my page!</h1>
 
-{% for experience in site.posts %}
+{% for experience in site.categories.experiences %}
 <div class="experience">
     <p class="title">{{experience.title}}</p>
     <div class="company-date">
         <p><span class="company">{{experience.company}}</span>
             <span class="date">{{experience.start_date}} &ndash; {{experience.end_date}}</span></p>
     </div>
-    <div class="excerpt">{{experience.excerpt}}</div>
+    <div class="excerpt-short">{{ experience.excerpt}}</div>
 
     <div id="read-more">
         <a href="{{site.baseurl}}{{experience.url}}">

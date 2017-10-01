@@ -2,3 +2,21 @@ title: Aria Pahlavan
 #markdown: redcarpet
 baseurl: ""
 exclude: ['README.md']
+
+# Build settings
+markdown: kramdown
+gems: [jekyll-assets, octopress-autoprefixer]
+sass:
+  style: compressed
+
+permalink: pretty
+collections:
+  skills:
+    layout: skill
+    output: true
+
+defaults:
+- scope:
+    type: skills
+  values:
+    layout: skill

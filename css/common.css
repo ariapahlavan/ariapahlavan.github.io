@@ -11,7 +11,7 @@ body {
     margin:50px 0 0 0 ;
     padding:0;
     font-weight: 300;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -19,12 +19,23 @@ body {
     margin:0;
     padding:0;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
 }
 
 .heading{
     text-align: center;
+}
+
+.experience-full {
+    margin: 0 auto 20px;
+
+    background: #184032;
+    border-radius: 3px;
+    text-align: left;
+    width: 500px;
+    height: 300px;
+    box-shadow: 1px 1px .2em #111c12;
 }
 
 .experience {
@@ -70,9 +81,22 @@ body {
     color: silver;
 }
 
-div.excerpt {
+div.excerpt-long {
     padding: 0;
     margin: 15px 15px 5px;
+
+    text-align: left;
+    font-size: 11pt;
+}
+
+div.excerpt-short {
+    padding: 0;
+    margin: 15px 15px 5px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 
     text-align: left;
     font-size: 11pt;
@@ -84,15 +108,12 @@ div.excerpt {
 }
 
 p {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+
 
     padding: 0;
     margin: 0;
 }
 
-.default-primary-color { background: #202020; }
-.primary-text-color    { color: white; }
-.secondary-text-color  { color: #FC6D5D; }
+.default-primary-color { background: #202020;   }
+.primary-text-color    { color: white;          }
+.secondary-text-color  { color: #FC6D5D;        }
