@@ -28,7 +28,7 @@ body {
 }
 
 .experience-full {
-    margin: 0 auto 20px;
+    margin: 50px auto;
 
     background: #184032;
     border-radius: 3px;
@@ -114,6 +114,8 @@ p {
     margin: 0;
 }
 
-.default-primary-color { background: #202020;   }
+.default-primary-color { background: #082D20;    }
+/*.default-primary-color { background: #021D14;    }*/
+/*.default-primary-color { background: #011B12;    }*/
 .primary-text-color    { color: white;          }
 .secondary-text-color  { color: #FC6D5D;        }
