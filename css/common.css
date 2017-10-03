@@ -9,7 +9,7 @@
 
 html {
     text-shadow: 0.0135em 0.0135em 0 var(--text-shadow);
-    font: lighter 100%/1.4 'Roboto', sans-serif;
+    font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
 }
 
 body {  }
@@ -29,10 +29,18 @@ body {  }
 }
 
 #header a{
+    text-decoration: none;
     color: var(--secondary-text-color);
 }
 
 #header a:visited {
+    color: var(--secondary-text-color);
+}
+
+#header a:hover {
+    /*text-decoration: underline;*/
+    font-weight: bold;
+    font-size: 105%;
     color: var(--secondary-text-color);
 }
 
@@ -130,6 +138,9 @@ div.excerpt-short {
 #read-more {
     margin-top: 10px;
     text-align: center;
+}
+
+div #read-more a button:hover{
 }
 
 p {
