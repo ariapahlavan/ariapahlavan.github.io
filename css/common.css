@@ -1,10 +1,39 @@
+:root {
+    --secondary-text-color: #FC6D5D;
+    --green-text-color: #5FD1A2;
+    --box-shadow: #111c12;
+    --box-background: #184032;
+    --text-shadow: #160315;
+    --default-primary-color: #082D20;
+}
+
 html {
-    text-shadow: 0.0135em 0.0135em 0 #160315;
+    text-shadow: 0.0135em 0.0135em 0 var(--text-shadow);
     font: lighter 100%/1.4 'Roboto', sans-serif;
 }
 
-body {
+body {  }
 
+.heading{
+    margin-bottom: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+#header {
+    margin: 0 0 40px;
+    padding: 0;
+
+    text-align: center;
+}
+
+#header a{
+    color: var(--secondary-text-color);
+}
+
+#header a:visited {
+    color: var(--secondary-text-color);
 }
 
 .footer-h2 {
@@ -23,30 +52,26 @@ body {
     text-align: center;
 }
 
-.heading{
-    text-align: center;
-}
-
 .experience-full {
     margin: 50px auto;
 
-    background: #184032;
+    background: var(--box-background);
     border-radius: 3px;
     text-align: left;
     width: 500px;
     height: 300px;
-    box-shadow: 1px 1px .2em #111c12;
+    box-shadow: 1px 1px .2em var(--box-shadow);
 }
 
 .experience {
     margin: 0 auto 20px;
 
-    background: #184032;
+    background: var(--box-background);
     border-radius: 3px;
     text-align: left;
     width: 350px;
     height: 210px;
-    box-shadow: 1px 1px .2em #111c12;
+    box-shadow: 1px 1px .2em var(--box-shadow);
 }
 
 .title {
@@ -54,14 +79,14 @@ body {
     margin: 0;
 
     font-size: x-large;
-    color: #5FD1A2;
+    color: var(--green-text-color);
 }
 
 .company-date {
     padding: 0 0 2px;
     margin: 0 15px;
 
-    border-bottom: 1px solid #5FD1A2;
+    border-bottom: 1px solid var(--green-text-color);
 }
 
 .company {
@@ -114,8 +139,8 @@ p {
     margin: 0;
 }
 
-.default-primary-color { background: #082D20;    }
+.default-primary-color { background: var(--default-primary-color); }
 /*.default-primary-color { background: #021D14;    }*/
 /*.default-primary-color { background: #011B12;    }*/
-.primary-text-color    { color: white;          }
-.secondary-text-color  { color: #FC6D5D;        }
+.primary-text-color    { color: white; }
+.secondary-text-color  { color: var(--secondary-text-color); }
