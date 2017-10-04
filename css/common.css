@@ -38,10 +38,13 @@ body {  }
 }
 
 #header a:hover {
-    /*text-decoration: underline;*/
     font-weight: bold;
     font-size: 105%;
     color: var(--secondary-text-color);
+}
+
+.bullet {
+    font-weight: normal;
 }
 
 .footer-h2 {
@@ -144,8 +147,6 @@ div #read-more a button:hover{
 }
 
 p {
-
-
     padding: 0;
     margin: 0;
 }
