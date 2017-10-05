@@ -3,8 +3,8 @@ layout: default
 ---
 <!--for experience in site.posts limit:2-->
 
+<div id="experience_section">
 <h2>Experience</h2>
-
 {% for experience in site.categories.experiences %}
 <div class="experience">
     <p class="title">{{experience.title}}</p>
@@ -21,14 +21,16 @@ layout: default
     </div>
 </div>
 {% endfor %}
+</div>
 
+<div id="project_section">
 <h2>Projects</h2>
 {% for proj in site.categories.projects %}
 <div class="experience">
     <p class="title">{{proj.title}}</p>
     <div class="company-date">
-        <p><span class="company">{{proj.language}}</span>
-            <span class="date">{{proj.date}}</span></p>
+        <p><span class="company">{{proj.company}}</span>
+            <span class="date">{{proj.approx_date}}</span></p>
     </div>
     <div class="excerpt-short">{{ proj.excerpt}}</div>
 
@@ -39,4 +41,5 @@ layout: default
     </div>
 </div>
 {% endfor %}
+</div>
 

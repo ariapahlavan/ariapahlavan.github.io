@@ -1,9 +1,9 @@
 ---
-layout: experience
+layout: project
 title: Mastermind
-language: Java8
-date: May 2016
-link: https://github.com/AriaPahlavan/SPRING2016_PROJECTS/tree/master/BonusProject_Mastermind
+company: Academic
+approx_date: May 2016
+link: https://github.com/AriaPahlavan/SPRING2016_PROJECTS/tree/master/mastermind
 category: projects
 ---
 This was a bonus project, and I really enjoyed developing this java applet game and playing it. 
