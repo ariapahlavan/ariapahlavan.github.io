@@ -3,6 +3,8 @@ layout: default
 ---
 <!--for experience in site.posts limit:2-->
 
+<h2>Experience</h2>
+
 {% for experience in site.categories.experiences %}
 <div class="experience">
     <p class="title">{{experience.title}}</p>
@@ -14,6 +16,24 @@ layout: default
 
     <div id="read-more">
         <a href="{{site.baseurl}}{{experience.url}}">
+            <button>read more</button>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+<h2>Projects</h2>
+{% for proj in site.categories.projects %}
+<div class="experience">
+    <p class="title">{{proj.title}}</p>
+    <div class="company-date">
+        <p><span class="company">{{proj.language}}</span>
+            <span class="date">{{proj.date}}</span></p>
+    </div>
+    <div class="excerpt-short">{{ proj.excerpt}}</div>
+
+    <div id="read-more">
+        <a href="{{site.baseurl}}{{proj.url}}">
             <button>read more</button>
         </a>
     </div>
