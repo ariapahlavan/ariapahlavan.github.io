@@ -190,6 +190,7 @@ p {
     font-size: 20px;
     text-shadow:1px 1px 1px #000000;
 }
+
 .default-primary-color { background: var(--default-primary-color); }
 /*.default-primary-color { background: #021D14;    }*/
 /*.default-primary-color { background: #011B12;    }*/
