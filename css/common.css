@@ -79,7 +79,9 @@ h2 {
 }
 
 .experience {
-    margin: 0 auto 20px;
+    margin: 0 15px 20px 15px;
+
+    float: left;
 
     background: var(--box-background);
     border-radius: 3px;
@@ -152,19 +154,25 @@ div #read-more a button:hover{
 
 #experience_section {
     margin: 0 auto 50px;
-    width: 400px;
+
+    justify-content: center;
+    width: 760px;
     border-top: 2px solid var(--green-text-color);
 }
 
 #project_section {
     margin: 0 auto;
-    width: 400px;
+    width: 760px;
     border-top: 2px solid var(--green-text-color);
 }
 
 p {
     padding: 0;
     margin: 0;
+}
+
+.clear {
+    clear: both;
 }
 
 .default-primary-color { background: var(--default-primary-color); }
