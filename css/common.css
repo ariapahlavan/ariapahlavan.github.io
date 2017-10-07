@@ -1,10 +1,10 @@
 :root {
-    --secondary-text-color: #FC6D5D;
-    --green-text-color: #5FD1A2;
+    --secondary-text-color: #5FD1A2;
+    --green-text-color: #FC6D5D;
     --box-shadow: #111c12;
-    --box-background: #184032;
+    --box-background: #0F3952;
     --text-shadow: #160315;
-    --default-primary-color: #082D20;
+    --default-primary-color: #032336;/*#082D20;*/
 }
 
 html {
@@ -35,16 +35,17 @@ h2 {
 #header a{
     margin: 0 10px 0 10px;
     text-decoration: none;
-    color: var(--secondary-text-color);
+    color: #A0A0A0; /*var(--secondary-text-color);*/
 }
 
 #header a:visited {
-    color: var(--secondary-text-color);
+    /*color: var(--secondary-text-color);*/
+    color: #A0A0A0; /*var(--secondary-text-color);*/
 }
 
 #header a :hover {
-    font-weight: bold;
-    font-size: 130%;
+    /*font-weight: bold;*/
+    /*font-size: 130%;*/
     color: var(--secondary-text-color);
 }
 
@@ -111,7 +112,6 @@ h2 {
 
     font-size: large;
     color: white;
-    text-transform: uppercase;
 }
 
 .date {
@@ -153,7 +153,8 @@ div #read-more a button:hover{
 
 #experience_section {
     margin: 0 auto;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    /*padding-top: 20px;*/
 
     display: flex;
     flex-wrap: wrap;
@@ -161,12 +162,12 @@ div #read-more a button:hover{
 
     justify-content: center;
     width: 760px;
-    border-top: 2px solid var(--green-text-color);
+    /*border-top: 2px solid var(--green-text-color);*/
 }
 
 #project_section {
     margin: 0 auto;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +175,7 @@ div #read-more a button:hover{
     justify-content: center;
 
     width: 760px;
-    border-top: 2px solid var(--green-text-color);
+    /*border-top: 2px solid var(--green-text-color);*/
 }
 
 p {
@@ -187,8 +188,7 @@ p {
 }
 
 .contacts {
-    font-size: 20px;
-    text-shadow:1px 1px 1px #000000;
+    font-size: 25px;
 }
 
 .default-primary-color { background: var(--default-primary-color); }
