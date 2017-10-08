@@ -1,10 +1,14 @@
 :root {
     --secondary-text-color: #5FD1A2;
     --green-text-color: #FC6D5D;
-    --box-shadow: #111c12;
-    --box-background: #0F3952;
+    --card-shadow: #111c12;
+    --card-background: rgb(10,46,74);
+    /*--box-background: #0F3952;*/
+    /*--excerpt-text: rgb(247,230,207);*/
+    --excerpt-text: rgb(255,234,209);
     --text-shadow: #160315;
-    --default-primary-color: #032336;/*#082D20;*/
+    --default-primary-color: rgb(7,36,59);
+    /*--default-primary-color: #032336;*/
 }
 
 html {
@@ -14,7 +18,7 @@ html {
 
 body {  }
 
-h2 {
+h2, h3, h4 {
     text-align: center;
 }
 
@@ -35,17 +39,14 @@ h2 {
 #header a{
     margin: 0 10px 0 10px;
     text-decoration: none;
-    color: #A0A0A0; /*var(--secondary-text-color);*/
+    color: #A0A0A0;
 }
 
 #header a:visited {
-    /*color: var(--secondary-text-color);*/
-    color: #A0A0A0; /*var(--secondary-text-color);*/
+    color: #A0A0A0;
 }
 
 #header a :hover {
-    /*font-weight: bold;*/
-    /*font-size: 130%;*/
     color: var(--secondary-text-color);
 }
 
@@ -69,26 +70,26 @@ h2 {
     text-align: center;
 }
 
-.experience-full {
+.large-card {
     margin: 50px auto;
 
-    background: var(--box-background);
+    background: var(--card-background);
     border-radius: 3px;
     text-align: left;
-    width: 500px;
-    height: 300px;
-    box-shadow: 1px 1px .2em var(--box-shadow);
+    width: 550px;
+    height: 350px;
+    box-shadow: 1px 1px .2em var(--card-shadow);
 }
 
-.experience {
+.mid-card {
     margin: 0 15px 20px 15px;
 
-    background: var(--box-background);
+    background: var(--card-background);
     border-radius: 3px;
     text-align: left;
     width: 350px;
-    height: 220px;
-    box-shadow: 1px 1px .2em var(--box-shadow);
+    height: 250px;
+    box-shadow: 1px 1px .2em var(--card-shadow);
 }
 
 .title {
@@ -111,7 +112,7 @@ h2 {
     margin:0;
 
     font-size: large;
-    color: white;
+    color: var(--excerpt-text);
 }
 
 .date {
@@ -126,6 +127,8 @@ div.excerpt-long {
     padding: 0;
     margin: 15px 15px 5px;
 
+    color: var(--excerpt-text);
+
     text-align: left;
     font-size: 11pt;
 }
@@ -139,13 +142,27 @@ div.excerpt-short {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 
+    color: var(--excerpt-text);
     text-align: left;
     font-size: 11pt;
 }
 
-#read-more {
+.read-more, .back {
     margin-top: 10px;
+
+    width:inherit;
+    height: 60px;
     text-align: center;
+}
+
+.detail{
+    width:inherit;
+    height: 290px;
+}
+
+.reg-card {
+    width:inherit;
+    height: 190px;
 }
 
 div #read-more a button:hover{
@@ -154,7 +171,6 @@ div #read-more a button:hover{
 #experience_section {
     margin: 0 auto;
     padding-bottom: 30px;
-    /*padding-top: 20px;*/
 
     display: flex;
     flex-wrap: wrap;
@@ -162,12 +178,10 @@ div #read-more a button:hover{
 
     justify-content: center;
     width: 760px;
-    /*border-top: 2px solid var(--green-text-color);*/
 }
 
 #project_section {
     margin: 0 auto;
-    /*padding-top: 20px;*/
 
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +189,6 @@ div #read-more a button:hover{
     justify-content: center;
 
     width: 760px;
-    /*border-top: 2px solid var(--green-text-color);*/
 }
 
 p {
@@ -191,8 +204,24 @@ p {
     font-size: 25px;
 }
 
+.PageNavigation {
+    font-size: 14px;
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+
+.PageNavigation a {
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 1em 0;
+}
+
+.PageNavigation .next {
+    text-align: right;
+}
+
 .default-primary-color { background: var(--default-primary-color); }
-/*.default-primary-color { background: #021D14;    }*/
-/*.default-primary-color { background: #011B12;    }*/
 .primary-text-color    { color: white; }
 .secondary-text-color  { color: var(--secondary-text-color); }
