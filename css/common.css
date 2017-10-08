@@ -4,8 +4,8 @@
     --card-shadow: #111c12;
     --card-background: rgb(10,46,74);
     /*--box-background: #0F3952;*/
-    /*--excerpt-text: rgb(247,230,207);*/
-    --excerpt-text: rgb(255,234,209);
+    /*--excerpt-text: rgb(255,234,209);*/
+    --excerpt-text: white;
     --text-shadow: #160315;
     --default-primary-color: rgb(7,36,59);
     /*--default-primary-color: #032336;*/
@@ -18,40 +18,58 @@ html {
 
 body {  }
 
+#heading {
+    margin: 0 auto;
+
+    width: 800px;
+    height: inherit;
+}
+
 h2, h3, h4 {
     text-align: center;
 }
 
-.heading{
+.top-title{
     margin-bottom: 0;
     padding: 0;
 
     text-align: center;
 }
 
-#header {
+.contact-icon {
+    font-size: 25px;
+}
+
+#contacts {
     margin: 0 0 40px;
     padding: 0;
 
     text-align: center;
 }
 
-#header a{
+#contacts a{
     margin: 0 10px 0 10px;
     text-decoration: none;
     color: #A0A0A0;
 }
 
-#header a:visited {
+#contacts a:visited {
     color: #A0A0A0;
 }
 
-#header a :hover {
+#contacts a :hover {
     color: var(--secondary-text-color);
 }
 
 .bullet {
     font-weight: normal;
+}
+
+footer {
+    margin: 0 auto;
+
+    width: 800px;
+    height: inherit;
 }
 
 .footer-h2 {
@@ -198,10 +216,6 @@ p {
 
 .clear {
     clear: both;
-}
-
-.contacts {
-    font-size: 25px;
 }
 
 .PageNavigation {
