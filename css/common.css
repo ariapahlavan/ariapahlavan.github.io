@@ -65,13 +65,6 @@ h2, h3, h4 {
     font-weight: normal;
 }
 
-/*footer {*/
-    /*margin: 0 auto;*/
-
-    /*width: 400px;*/
-    /*height: inherit;*/
-/*}*/
-
 .footer-h2 {
     margin:50px 0 0 0 ;
     padding:0;
@@ -94,7 +87,7 @@ h2, h3, h4 {
     background: var(--card-background);
     border-radius: 3px;
     text-align: left;
-    width: 550px;
+    width: 700px;
     height: 350px;
     box-shadow: 1px 1px .2em var(--card-shadow);
 }

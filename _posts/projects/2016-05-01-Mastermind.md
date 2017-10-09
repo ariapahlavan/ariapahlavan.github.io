@@ -8,4 +8,5 @@ category: projects
 ---
 This was a bonus project, and I really enjoyed developing this java applet game and playing it. 
 
-One of the more challenging part of making the GUI was to implement the pop-up animations all from scratch. 
+One of the more challenging parts of making the GUI was implementing the pop-up 
+animations all from scratch. 
