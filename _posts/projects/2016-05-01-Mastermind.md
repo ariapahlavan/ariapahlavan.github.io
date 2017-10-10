@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: experience
 title: Mastermind
 company: Academic
-approx_date: May 2016
+duration: May 2016
 link: https://github.com/AriaPahlavan/SPRING2016_PROJECTS/tree/master/mastermind
 category: projects
 ---

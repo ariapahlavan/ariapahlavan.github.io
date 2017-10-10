@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: experience
 title: Blip Compiler
 company: Academic
-approx_date: Nov 2015
+duration: Nov 2015
 link: https://github.com/AriaPahlavan/FALL2015_PROJECTS/tree/master/Blip%20Compiler%20Project
 category: projects
 ---

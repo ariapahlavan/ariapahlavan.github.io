@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: experience
 title: C++ Stream
 company: Personal
-approx_date: Nov 2016
+duration: Aug 2017
 link: private
 category: projects
 ---
