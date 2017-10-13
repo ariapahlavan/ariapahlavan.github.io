@@ -11,6 +11,10 @@
     /*--default-primary-color: #032336;*/
 }
 
+.dark-blue-text {
+    color: var(--default-primary-color) !important;
+}
+
 html {
     text-shadow: 0.0135em 0.0135em 0 var(--text-shadow);
     font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
@@ -52,17 +56,17 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 }
 
 #contacts {
-    margin: 0 0 40px;
+    /*margin: 0 0 40px;*/
 }
 
 #contacts a{
     margin: 0 10px;
     text-decoration: none;
-    color: #A0A0A0;
+    color: var(--default-primary-color);
 }
 
 #contacts a:visited {
-    color: #A0A0A0;
+    color: var(--default-primary-color);
 }
 
 #contacts a :hover {
@@ -195,6 +199,11 @@ div.short {
 
 .PageNavigation .next {
     text-align: right;
+}
+
+.nav-wrapper{
+    padding-left: 20px;
+    background-color: #DE6064 !important;
 }
 
 .default-primary-color { background: var(--default-primary-color); }
