@@ -4,6 +4,7 @@ layout: default
 <!--for experience in site.posts limit:2-->
 
 <h4>Professional Experience</h4>
+
 <div id="experience_section" class="my-section">
     {% for experience in site.categories.experiences | sort 'date' | reversed %}
         <div class="my-card medium hoverable">
@@ -13,7 +14,7 @@ layout: default
                     <p><span class="company">{{ experience.company }}</span>
                         <span class="date">{{ experience.duration }}</span></p>
                 </div>
-                <div class="excerpt short">{{ experience.excerpt }}</div>
+                <div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
             </div>
 
             <div class="read-more">
@@ -37,7 +38,7 @@ layout: default
                     <p><span class="company">{{ proj.company }}</span>
                         <span class="date">{{ proj.duration }}</span></p>
                 </div>
-                <div class="excerpt short">{{ proj.excerpt }}</div>
+                <div class="excerpt short">{{ proj.excerpt | markdownify }}</div>
             </div>
 
             <div class="read-more">
@@ -51,3 +52,53 @@ layout: default
 
 <div class="clear"></div>
 
+<div class="divider teal lighten-1"></div>
+
+<h4>Skills</h4>
+<div class="container row">
+
+    {% for proj in site.categories.projects | sort 'date' limit:4 %}
+        <div class="col s12 m6 ">
+            <div class="card-a medium-a hoverable ">
+                <div class="mid-detail-area">
+                    <p class="title">{{ proj.title }}</p>
+                    <div class="company-date">
+                        <p><span class="company">{{ proj.company }}</span>
+                            <span class="date">{{ proj.duration }}</span></p>
+                    </div>
+                    <div class="excerpt short">{{ proj.excerpt }}</div>
+                </div>
+
+                <div class="read-more">
+                    <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ proj.url }}">
+                        read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+
+    {% assign proj-rev = site.categories.projects | sort 'date' | reversed  %}
+    {% for proj in proj-rev limit:1 %}
+        <div class="col s12 m6 push-m3 ">
+            <div class="card-panel card-a hoverable">
+                <div class="mid-detail-area">
+                    <p class="title">{{ proj.title }}</p>
+                    <div class="company-date">
+                        <p><span class="company">{{ proj.company }}</span>
+                            <span class="date">{{ proj.duration }}</span></p>
+                    </div>
+                    <div class="excerpt short">{{ proj.excerpt }}</div>
+                </div>
+
+                <div class="read-more">
+                    <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ proj.url }}">
+                        read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

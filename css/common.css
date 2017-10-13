@@ -16,7 +16,8 @@ html {
     font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
 }
 
-#heading, #experience_section, #project_section {
+#heading, #experience_section,
+#project_section {
     margin: 0 auto;
 }
 
@@ -196,6 +197,33 @@ div.short {
 .PageNavigation .next {
     text-align: right;
 }
+
+
+.medium-a {
+    /*width: 350px;*/
+    /*height: 250px;*/
+}
+
+.section-a {
+    /*display: flex !important;*/
+    /*flex-wrap: wrap !important;*/
+    /*flex-direction: row !important;*/
+    /*justify-content: center !important;*/
+    /*width: 760px;*/
+
+}
+
+.card-a {
+    margin: 15px 0 !important;
+    background: var(--card-background) !important;
+    /*border-radius: 3px;*/
+    /*box-shadow: 1px 1px .2em var(--card-shadow);*/
+    text-align: left !important;
+}
+
+
+
+
 
 .default-primary-color { background: var(--default-primary-color); }
 .primary-text-color    { color: white; }

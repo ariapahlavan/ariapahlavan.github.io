@@ -1,6 +1,5 @@
 # Personal Portfolio
-
-This is my personal website project:
+This is my personal website project.\
 Head over to <https://ariapahlavan.com> to check it out.
 
 ## Development Tools
