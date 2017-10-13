@@ -15,6 +15,10 @@
     color: var(--default-primary-color) !important;
 }
 
+.orange-color {
+    background-color: var(--green-text-color) !important;
+}
+
 html {
     text-shadow: 0.0135em 0.0135em 0 var(--text-shadow);
     font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
