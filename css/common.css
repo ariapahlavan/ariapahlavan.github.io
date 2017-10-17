@@ -1,26 +1,26 @@
-:root {
-    --secondary-text-color: #5FD1A2;
-    --green-text-color: #FC6D5D;
-    --card-shadow: #111c12;
-    --card-background: rgb(10,46,74);
-    /*--card-background: #0F3952;*/
-    /*--excerpt-text: rgb(255,234,209);*/
-    --excerpt-text: white;
-    --text-shadow: #160315;
-    --default-primary-color: rgb(7,36,59);
-    /*--default-primary-color: #032336;*/
-}
+.default-primary-color { background: rgb(7,36,59); }
 
-.dark-blue-text {
-    color: var(--default-primary-color) !important;
-}
+.primary-text-color    { color: white; }
 
-.orange-color {
-    background-color: var(--green-text-color) !important;
-}
+.secondary-text-color  { color: #5FD1A2; }
+
+.text-shadow {  color: #160315;  }
+
+.card-bg {  background-color: rgb(10,46,74);  }
+
+.card-shadow {  background-color: #111c12;  }
+
+.dark-blue-text {  color: rgb(7,36,59) !important;  }
+
+.orange-color {  background-color: #DE6064 !important;  }
+
+.green-accent {  background-color: #5FD1A2;  }
+
+.green-accent-text {  color: #5FD1A2;  }
+
 
 html {
-    text-shadow: 0.0135em 0.0135em 0 var(--text-shadow);
+    text-shadow: 0.0135em 0.0135em 0 #160315;
     font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
 }
 
@@ -66,15 +66,14 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 #contacts a{
     margin: 0 10px;
     text-decoration: none;
-    color: var(--default-primary-color);
 }
 
-#contacts a:visited {
-    color: var(--default-primary-color);
+#contacts a:visited, #contacts a {
+    color: rgb(7,36,59);
 }
 
 #contacts a :hover {
-    color: var(--secondary-text-color);
+    color: #5FD1A2;
 }
 
 .bullet {
@@ -95,9 +94,9 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 }
 
 .my-card {
-    background: var(--card-background);
+    background-color: rgb(10,46,74);
     border-radius: 3px;
-    box-shadow: 1px 1px .2em var(--card-shadow);
+    box-shadow: 1px 1px .2em #111c12;
 }
 
 .large {
@@ -118,21 +117,21 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     padding: 15px 0 0 15px;
 
     font-size: x-large;
-    color: var(--green-text-color);
+    color: #FC6D5D;
 }
 
 .company-date {
     padding: 0 0 2px;
     margin: 0 15px;
 
-    border-bottom: 1px solid var(--green-text-color);
+    border-bottom: 1px solid #FC6D5D;
 }
 
 .company {
     padding: 0 5px 0 0;
 
     font-size: large;
-    color: var(--excerpt-text);
+    color: white;
 }
 
 .date {
@@ -143,8 +142,7 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 div.excerpt {
     margin: 15px 15px 5px;
     font-size: 11pt;
-    color: var(--excerpt-text);
-
+    color: white;
 }
 
 div.short {
@@ -209,7 +207,3 @@ div.short {
     padding-left: 20px;
     background-color: #DE6064 !important;
 }
-
-.default-primary-color { background: var(--default-primary-color); }
-.primary-text-color    { color: white; }
-.secondary-text-color  { color: var(--secondary-text-color); }
