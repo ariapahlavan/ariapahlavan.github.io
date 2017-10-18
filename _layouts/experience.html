@@ -2,18 +2,40 @@
 layout: default
 ---
 
-
-<div class="my-card large hoverable">
-    <div class="large-detail-area">
-        <p class="title">{{ page.title }}</p>
-        <div class="company-date">
-            <p><span class="company">{{ page.company }}</span>
-                <span class="date">{{ page.duration }}</span>
-            </p>
+<div class="hide-on-med-and-down">
+    <div class="my-card large hoverable">
+        <div class="large-detail-area">
+            <p class="title">{{ page.title }}</p>
+            <div class="company-date">
+                <p><span class="company">{{ page.company }}</span>
+                    <span class="date">{{ page.duration }}</span>
+                </p>
+            </div>
+            <div class="excerpt">{{ content }}</div>
         </div>
-        <div class="excerpt">{{ content }}</div>
-    </div>
 
-    {% include backBtn.html %}
-    {% include pageNav.html %}
+        {% include backBtn.html %}
+        {% include pageNav.html %}
+    </div>
+</div>
+
+<div class="hide-on-large-only">
+    <div class="row">
+        <div class="col s12">
+            <div class="card-a hoverable">
+                <div class="large-detail-area-a">
+                    <p class="title">{{ page.title }}</p>
+                    <div class="company-date">
+                        <p><span class="company">{{ page.company }}</span>
+                            <span class="date">{{ page.duration }}</span>
+                        </p>
+                    </div>
+                    <div class="excerpt">{{ content }}</div>
+                </div>
+
+                {% include backBtn.html %}
+                {% include pageNav.html %}
+            </div>
+        </div>
+    </div>
 </div>
