@@ -152,11 +152,8 @@ div.excerpt {
 }
 
 div.short {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-
+    overflow: hidden !important;
+    height: 65px;
     font-size: 11pt;
 }
 
