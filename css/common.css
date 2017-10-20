@@ -15,12 +15,23 @@ html {
     font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
-body {
+/*body {*/
     /*background: url("../images/My-image.jpg") no-repeat center center fixed;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
+/*}*/
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    color: rgba(0,0,0,0.71);
+    -webkit-font-smoothing: antialiased;
 }
 
 .parallax-container {
