@@ -16,12 +16,17 @@ html {
 }
 
 body {
-    background: url("../images/My-image.jpg") no-repeat center center fixed;
+    /*background: url("../images/My-image.jpg") no-repeat center center fixed;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
-    background-size: cover;
+    /*background-size: cover;*/
 }
+
+.parallax-container {
+    height: 700px !important;
+}
+
 
 #heading, #experience_section, #project_section {
     margin: 0 auto;
