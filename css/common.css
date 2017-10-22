@@ -35,9 +35,12 @@ p {
 }
 
 .parallax-container {
-    height: 700px !important;
+    height: 1000px !important;
 }
 
+.parallax-container img{
+    height: 2000px !important;
+}
 
 #heading, #experience_section, #project_section {
     margin: 0 auto;
