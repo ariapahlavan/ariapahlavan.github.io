@@ -5,103 +5,55 @@ layout: default
 
 <h4>Professional Experience</h4>
 
-<div class="hide-on-med-and-down">
-    <div id="experience_section" class="my-section">
-        {% for experience in site.categories.experiences | sort 'date' | reversed %}
-            <div class="my-card medium hoverable">
-                <div class="mid-detail-area">
-                    <p class="title">{{ experience.title }}</p>
-                    <div class="company-date">
-                        <p><span class="company">{{ experience.company }}</span>
-                            <span class="date">{{ experience.duration }}</span></p>
-                    </div>
-                    <div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
-                </div>
 
-                <div class="read-more">
-                    <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ experience.url }}">
-                        read more
-                    </a>
+<div class="row">
+    {% for experience in site.categories.experiences | sort 'date' | reversed %}
+    <div class="col s12 m8 push-m2">
+        <div class="card-a medium-a hoverable">
+            <div class="mid-detail-area">
+                <p class="title">{{ experience.title }}</p>
+                <div class="company-date">
+                    <p><span class="company">{{ experience.company }}</span>
+                        <span class="date">{{ experience.duration }}</span></p>
                 </div>
+                <div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
             </div>
-        {% endfor %}
-    </div>
-</div>
 
-<div class="hide-on-large-only">
-    <div class="row">
-        {% for experience in site.categories.experiences | sort 'date' | reversed %}
-            <div class="col s12 m8 push-m2">
-                <div class="card-a medium-a hoverable">
-                    <div class="mid-detail-area">
-                        <p class="title">{{ experience.title }}</p>
-                        <div class="company-date">
-                            <p><span class="company">{{ experience.company }}</span>
-                                <span class="date">{{ experience.duration }}</span></p>
-                        </div>
-                        <div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
-                    </div>
-
-                    <div class="read-more">
-                        <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ experience.url }}">
-                            read more
-                        </a>
-                    </div>
-                </div>
+            <div class="read-more">
+                <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ experience.url }}">
+                    read more
+                </a>
             </div>
-        {% endfor %}
+        </div>
     </div>
+    {% endfor %}
 </div>
 
 <div class="clear"></div>
 
 <h4>Projects</h4>
-<div class="hide-on-med-and-down">
-    <div id="project_section" class="my-section">
-        {% for proj in site.categories.projects | sort 'date' | reversed %}
-            <div class="my-card medium hoverable">
-                <div class="mid-detail-area">
-                    <p class="title">{{ proj.title }}</p>
-                    <div class="company-date">
-                        <p><span class="company">{{ proj.company }}</span>
-                            <span class="date">{{ proj.duration }}</span></p>
-                    </div>
-                    <div class="excerpt short">{{ proj.excerpt | markdownify }}</div>
-                </div>
 
-                <div class="read-more">
-                    <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ proj.url }}">
-                        read more
-                    </a>
+<div class="row">
+    {% for proj in site.categories.projects | sort 'date' %}
+    <div class="col s12 m8 push-m2">
+        <div class="card-a medium-a hoverable ">
+            <div class="mid-detail-area">
+                <p class="title">{{ proj.title }}</p>
+                <div class="company-date">
+                    <p><span class="company">{{ proj.company }}</span>
+                        <span class="date">{{ proj.duration }}</span></p>
                 </div>
+                <div class="excerpt short">{{ proj.excerpt }}</div>
             </div>
-        {% endfor %}
-    </div>
-</div>
 
-<div class="hide-on-large-only">
-    <div class="row">
-        {% for proj in site.categories.projects | sort 'date' %}
-            <div class="col s12 m8 push-m2">
-                <div class="card-a medium-a hoverable ">
-                    <div class="mid-detail-area">
-                        <p class="title">{{ proj.title }}</p>
-                        <div class="company-date">
-                            <p><span class="company">{{ proj.company }}</span>
-                                <span class="date">{{ proj.duration }}</span></p>
-                        </div>
-                        <div class="excerpt short">{{ proj.excerpt }}</div>
-                    </div>
-
-                    <div class="read-more">
-                        <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ proj.url }}">
-                            read more
-                        </a>
-                    </div>
-                </div>
+            <div class="read-more">
+                <a class="waves-effect waves-light btn teal" href="{{ site.baseurl }}{{ proj.url }}">
+                    read more
+                </a>
             </div>
-        {% endfor %}
+        </div>
     </div>
+    {% endfor %}
 </div>
 
 <div class="clear"></div>
