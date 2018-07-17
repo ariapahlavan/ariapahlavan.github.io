@@ -7,5 +7,8 @@ link: https://github.com/AriaPahlavan/FALL2015_PROJECTS/tree/master/Blip%20Compi
 category: projects
 ---
 <p>
-In this project I wrote a compiler for a small programming language called Bling. This language supports arithmetic calculations, conditional statements, loops, functions, as well as recursion. This is an academic project, and I wrote this program in C++.
+In this project, I wrote a compiler in C++ for a small and made-up
+programming language, called Blip. This language supports arithmetic
+calculations, conditional statements, loops, functions, as well as
+recursion.
 </p>

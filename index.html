@@ -64,3 +64,34 @@ layout: default
 </div>
 
 <div class="clear"></div>
+
+
+<br>
+<br>
+<h4>Skills</h4>
+<br>
+
+<div class="row">
+	{% for proj in site.categories.projects | sort 'date' %}
+	<div class="col s12 m8 push-m2">
+		<div class="card-style card-a hoverable ">
+			<div class="mid-detail-area">
+				<p class="title">{{ proj.title }}</p>
+				<div class="company-date">
+					<p><span class="company">{{ proj.company }}</span>
+						<span class="date">{{ proj.duration }}</span></p>
+				</div>
+				<div class="excerpt short">{{ proj.excerpt | markdownify }}</div>
+			</div>
+
+			<div class="read-more">
+				<a class="waves-effect waves-light btn black" href="{{ site.baseurl }}{{ proj.url }}">
+					read more
+				</a>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="clear"></div>
