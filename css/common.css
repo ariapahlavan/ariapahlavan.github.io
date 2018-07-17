@@ -39,7 +39,7 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     text-align: center;
 }
 
-.my-card, div.excerpt{
+.card-style, div.excerpt{
     text-align: left;
 }
 
@@ -94,34 +94,28 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     font-size: 14px;
 }
 
-.my-card {
+.card-style {
     background-color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 1px 1px 5px gray;
 }
 
 .card-a {
     margin: 15px 0 !important;
-    background: white !important;
-    text-align: left !important;
-
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px gray;
-
 }
 
 .large {
     margin: 50px auto;
 
     width: 700px;
-    height: 350px;
+    height: auto;
 }
 
 .medium {
     margin: 0 15px 20px 15px;
 
     width: 350px;
-    height: 250px;
+    height: auto;
 }
 
 .title {
@@ -170,10 +164,6 @@ div.short {
 }
 
 .large-detail-area{
-    height: 290px;
-}
-
-.large-detail-area-a{
     margin-bottom: 50px;
 }
 
