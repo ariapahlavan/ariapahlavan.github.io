@@ -1,6 +1,6 @@
 ---
 layout: experience
-title: Electrical Engineering Intern
+title: Electrical Engineer Intern
 company: Luminant
 duration: May 2016 ― Aug 2016
 date:   2016-05-25 06:00:00 -0600
