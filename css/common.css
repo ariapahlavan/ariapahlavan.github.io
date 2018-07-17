@@ -1,22 +1,23 @@
-.default-primary-color { background: rgb(7,36,59); }
+.default-primary-color { background: white; }
 
-.primary-text-color    { color: white; }
+.primary-text-color    { color: black; }
 
-.secondary-text-color  { color: #5FD1A2; }
+.secondary-text-color  { color: paleturquoise; }
+/* green: #5FD1A2 */
 
 .text-shadow {  color: #160315;  }
 
-.card-bg {  background-color: rgb(10,46,74);  }
+.card-bg {  background-color: white;  }
 
 .card-shadow {  background-color: #111c12;  }
 
-.dark-blue-text {  color: rgb(7,36,59) !important;  }
+.dark-blue-text {  color: white !important;  }
 
-.orange-color {  background-color: #DE6064 !important;  }
+.orange-color {  background-color: black !important;  }
 
-.green-accent {  background-color: #5FD1A2;  }
+.green-accent {  background-color: paleturquoise;  }
 
-.green-accent-text {  color: #5FD1A2;  }
+.green-accent-text {  color: paleturquoise;  }
 
 
 html {
@@ -69,11 +70,11 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 }
 
 #contacts a:visited, #contacts a {
-    color: rgb(7,36,59);
+    color: white;
 }
 
 #contacts a :hover {
-    color: #5FD1A2;
+    color: paleturquoise;
 }
 
 .bullet {
@@ -94,15 +95,19 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 }
 
 .my-card {
-    background-color: rgb(10,46,74);
+    background-color: white;
     border-radius: 3px;
-    box-shadow: 1px 1px .2em #111c12;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .card-a {
     margin: 15px 0 !important;
-    background: rgb(10,46,74) !important;
+    background: white !important;
     text-align: left !important;
+
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+
 }
 
 .large {
@@ -123,32 +128,32 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     padding: 15px 0 0 15px;
 
     font-size: x-large;
-    color: #FC6D5D;
+    color: black;
 }
 
 .company-date {
     padding: 0 0 2px;
     margin: 0 15px;
 
-    border-bottom: 1px solid #FC6D5D;
+    border-bottom: 1px solid black;
 }
 
 .company {
     padding: 0 5px 0 0;
 
     font-size: large;
-    color: white;
+    color: dimgrey;
 }
 
 .date {
     font-size: medium;
-    color: silver;
+    color: dimgrey;
 }
 
 div.excerpt {
     margin: 15px 15px 5px;
     font-size: 11pt;
-    color: white;
+    color: black;
 }
 
 div.short {
@@ -212,5 +217,5 @@ div.short {
 
 .nav-wrapper{
     padding-left: 20px;
-    background-color: #DE6064 !important;
+    background-color: black !important;
 }
