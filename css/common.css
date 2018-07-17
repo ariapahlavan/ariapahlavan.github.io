@@ -3,7 +3,6 @@
 .primary-text-color    { color: black; }
 
 .secondary-text-color  { color: paleturquoise; }
-/* green: #5FD1A2 */
 
 .text-shadow {  color: #160315;  }
 
@@ -137,11 +136,15 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
 
     font-size: large;
     color: dimgrey;
+
+    text-transform: uppercase;
 }
 
 .date {
     font-size: medium;
     color: dimgrey;
+
+    font-style: italic;
 }
 
 div.excerpt {

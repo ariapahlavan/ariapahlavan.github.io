@@ -1,10 +1,17 @@
 <div class="large-detail-area">
-  <p class="title">{{ page.title }}</p>
-  <div class="company-date">
-    <p><span class="company">{{ page.company }}</span>
-      <span class="date">{{ page.duration }}</span>
-    </p>
-  </div>
-  <div class="excerpt">{{ content }}</div>
+	<p class="title">
+		{{ page.title }}
+		<a href="{{page.link}}" style="color: black; font-size: 0.75em;">
+			<i class="fas fa-external-link-alt"></i>
+		</a>
+	</p>
+	<div class="company-date">
+		<p><span class="company">{{ page.company }}</span>
+			<span class="date">{{ page.duration }}</span>
+		</p>
+	</div>
+	<div class="excerpt">
+		{{ content }}
+	</div>
 </div>
 {% include backBtn.html %}

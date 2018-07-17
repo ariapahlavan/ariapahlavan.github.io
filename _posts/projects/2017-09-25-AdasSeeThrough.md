@@ -1,6 +1,6 @@
 ---
 layout: experience
-title: ADAS See-Through Display
+title: See-Through ADAS
 company: Academic
 duration: Sep 2017 - Present
 link: https://github.com/AriaPahlavan/
