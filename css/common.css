@@ -22,7 +22,7 @@
 
 html {
     text-shadow: 0.0135em 0.0135em 0 #160315;
-    font: lighter 100%/1.5  "Helvetica","Yantramanav",Helvetica,Arial,"Lucida Grande",sans-serif;;
+    font: lighter 100%/1.5 "Courier New", Courier, monospace !important;
 }
 
 #heading, #experience_section, #project_section {
@@ -162,6 +162,7 @@ div.short {
     width: inherit;
     height: 60px;
 }
+
 
 .large-detail-area{
     margin-bottom: 50px;
