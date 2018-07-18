@@ -99,6 +99,10 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     box-shadow: 1px 1px 5px gray;
 }
 
+.card-style:hover {
+    background-color: #fbf3ea;
+}
+
 .card-a {
     margin: 15px 0 !important;
 }
