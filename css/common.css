@@ -1,13 +1,9 @@
 .default-primary-color {
-    background: white;
+    background: #F1F1F1;
 }
 
 .primary-text-color {
     color: black;
-}
-
-.nav-text-color {
-    color: white !important;
 }
 
 html {
@@ -34,6 +30,17 @@ h2, h3, h4,
 .read-more,
 .back {
     text-align: center;
+}
+
+.nav-title-style {
+    color: white !important;
+    font-size: 2rem !important;
+}
+
+.nav-small {
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
 }
 
 .card-style,
@@ -97,7 +104,7 @@ p,
 
 .card-style {
     background-color: white;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     box-shadow: 1px 1px 5px gray;
 }
 
@@ -260,6 +267,7 @@ div.excerpt {
     background-color: black !important;
 }
 
+.nav-small:hover,
 .brand-logo:hover,
 #contacts a:hover,
 .fab:hover,

@@ -1,14 +1,21 @@
 <div class="navbar-fixed">
 	<nav>
 		<div class="nav-wrapper">
-			<a href="{{ base.url }}/"
-			   style="font-size: 125%;"
-			   class="brand-logo nav-text-color">
-				{{ site.title }}
-			</a>
-			<div id="contacts" class="nav-text-color">
+			<div class="hide-on-large-only">
+				<a href="{{ base.url }}/"
+				   class="nav-small nav-title-style">
+					{{ site.title }}
+				</a>
+			</div>
 
-				<ul class="right hide-on-med-and-down">
+			<div id="contacts" class="default-primary-color hide-on-med-and-down">
+				<a href="{{ base.url }}/"
+				   class="brand-logo nav-title-style"
+				   style="left: 20px;">
+					{{ site.title }}
+				</a>
+
+				<ul class="right">
 					<li>
 						<a title="LinkedIn" class="contact-icon" target="_blank"
 						   href="https://www.linkedin.com/in/ariapahlavan/">
