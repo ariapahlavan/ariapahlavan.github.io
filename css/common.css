@@ -1,30 +1,23 @@
-.default-primary-color { background: white; }
+.default-primary-color {
+    background: white;
+}
 
-.primary-text-color    { color: black; }
+.primary-text-color {
+    color: black;
+}
 
-.secondary-text-color  { color: paleturquoise; }
-
-.text-shadow {  color: #160315;  }
-
-.card-bg {  background-color: white;  }
-
-.card-shadow {  background-color: #111c12;  }
-
-.dark-blue-text {  color: white !important;  }
-
-.orange-color {  background-color: black !important;  }
-
-.green-accent {  background-color: paleturquoise;  }
-
-.green-accent-text {  color: paleturquoise;  }
-
+.nav-text-color {
+    color: white !important;
+}
 
 html {
     text-shadow: 0.0135em 0.0135em 0 #160315;
     font: lighter 100%/1.5 "Courier New", Courier, monospace !important;
 }
 
-#heading, #experience_section, #project_section {
+#heading,
+#experience_section,
+#project_section {
     margin: 0 auto;
 }
 
@@ -33,25 +26,40 @@ html {
     height: inherit;
 }
 
-h2, h3, h4, .top-title, #contacts, .footer-h2,
-.footer-h3, .read-more, .back {
+h2, h3, h4,
+.top-title,
+#contacts,
+.footer-h2,
+.footer-h3,
+.read-more,
+.back {
     text-align: center;
 }
 
-.card-style, div.excerpt{
+.card-style,
+div.excerpt {
     text-align: left;
 }
 
-.top-title, .footer-h2, .footer-h3, #contacts,
-.date, div.excerpt, p {
+.top-title,
+.footer-h2,
+.footer-h3,
+#contacts,
+.date,
+div.excerpt,
+p {
     padding: 0;
 }
 
-.title, .date, p, .footer-h3, .company {
+p,
+.title,
+.date,
+.footer-h3,
+.company {
     margin: 0;
 }
 
-.top-title{
+.top-title {
     margin-bottom: 0;
 }
 
@@ -59,33 +67,27 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     font-size: 25px;
 }
 
-#contacts {
-    /*margin: 0 0 40px;*/
-}
-
-#contacts a{
-    margin: 0 10px;
+#contacts a {
+    margin-right: 10px;
     text-decoration: none;
 }
 
-#contacts a:visited, #contacts a {
+#contacts a,
+#contacts a:visited {
     color: white;
-}
-
-#contacts a :hover {
-    color: paleturquoise;
 }
 
 .bullet {
     font-weight: normal;
 }
 
-.footer-h2, .footer-h3 {
+.footer-h2,
+.footer-h3 {
     font-weight: 300;
 }
 
 .footer-h2 {
-    margin:50px 0 0 0 ;
+    margin: 50px 0 0 0;
     font-size: 18px;
 }
 
@@ -197,8 +199,9 @@ div.excerpt {
     color: black;
 }
 
-div.short {
-    overflow: hidden !important;
+.short {
+    overflow: hidden;
+
     height: 65px;
     font-size: 11pt;
 }
@@ -210,8 +213,7 @@ div.short {
     height: 60px;
 }
 
-
-.large-detail-area{
+.large-detail-area {
     margin-bottom: 50px;
 }
 
@@ -253,7 +255,16 @@ div.short {
     text-align: right;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     padding-left: 20px;
     background-color: black !important;
+}
+
+.brand-logo:hover,
+#contacts a:hover,
+.fab:hover,
+.far:hover,
+.fas:hover,
+.btn:hover {
+    color: paleturquoise;
 }
