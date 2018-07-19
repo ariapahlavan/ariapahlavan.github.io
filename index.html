@@ -64,3 +64,27 @@ layout: default
 </div>
 
 <div class="clear"></div>
+
+
+<br>
+<br>
+<h4>Skills</h4>
+<br>
+
+<div class="skills">
+	{% assign skills = site.skills | sort: 'date' %}
+	{% for skill in skills  %}
+
+	<div class="skill">
+		<div class="card-style skill-content hoverable ">
+			{% include logos/{{ skill.logo }} %}
+			<p class="skill-text">{{ skill.title }}</p>
+			<p><span class="date">{{ skill.duration }}</span></p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+
+<div class="clear"></div>
+

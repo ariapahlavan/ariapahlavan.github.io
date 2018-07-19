@@ -121,6 +121,46 @@ h2, h3, h4, .top-title, #contacts, .footer-h2,
     height: auto;
 }
 
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.skill {
+    margin: 0 15px 20px 15px;
+
+    max-width: 10em;
+}
+
+.skill-content {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.skill-text {
+    margin: 15px 15px 0 15px;
+
+    font-size: large;
+    color: black;
+}
+
+svg {
+    align-self: center;
+    max-height: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60%;
+}
+
 .title {
     padding: 15px 0 0 15px;
 
