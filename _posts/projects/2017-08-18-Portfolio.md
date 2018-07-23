@@ -14,7 +14,7 @@ professional, academic, and personal experience.
 <br>
 
 <p>
-I designed the UI by employing Material Design Lite APIs and added a
-bit of CSS magic to match my taste. I polished the UI components by
-utilizing Material Design techniques.
+I reduced the "DOMContentLoaded" time by 68% (8.24 seconds) through loading
+third party scripts asynchronously, as well as using SVG vector images for
+icons rather than png format.
 </p>
