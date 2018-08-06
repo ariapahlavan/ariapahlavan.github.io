@@ -11,6 +11,16 @@ html {
     font: lighter 100%/1.5 "Courier New", Courier, monospace !important;
 }
 
+.tab-link {
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 110% !important;
+}
+
+.indicator {
+  background-color: black !important;
+}
+
 #heading,
 #experience_section,
 #project_section {
