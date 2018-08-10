@@ -116,12 +116,13 @@ p,
     border-radius: 15px;
 
     box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.3);
-    transition: box-shadow 0.5s ease-out;
+    transition: box-shadow 0.5s ease-out, background-color 0.5s ease-out;
 }
 
 .card-style:hover {
-    box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.75);
-    transition: box-shadow 0.5s ease-out;
+  background-color: #fcf4e8;
+  box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.75);
+  transition: box-shadow 0.5s ease-out, background-color 0.5s ease-out;
 }
 
 .card-a {
