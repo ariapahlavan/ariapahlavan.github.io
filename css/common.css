@@ -1,5 +1,6 @@
 .default-primary-color {
-    background: #F1F1F1;
+  /* background: #F1F1F1; */
+    background: white;
 }
 
 .primary-text-color {
@@ -17,17 +18,16 @@ html {
   font-size: 110% !important;
 }
 
+#main-tabs {
+  box-shadow: 0 1px 3px grey
+}
+
 .indicator {
   background-color: black !important;
 }
 
-#heading,
-#experience_section,
-#project_section {
-    margin: 0 auto;
-}
-
 #heading {
+    margin: 0 auto;
     width: 400px;
     height: inherit;
 }
@@ -53,7 +53,6 @@ h2, h3, h4,
     margin-left: -20px;
 }
 
-.card-style,
 div.excerpt {
     text-align: left;
 }
@@ -114,45 +113,64 @@ p,
 
 .card-style {
     background-color: white;
-    /*border-radius: 5px;*/
-    box-shadow: 1px 1px 5px gray;
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.3);
+    transition: box-shadow 0.5s ease-out;
 }
 
 .card-style:hover {
-    background-color: #fbf3ea;
+    box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.75);
+    transition: box-shadow 0.5s ease-out;
 }
 
 .card-a {
     margin: 15px 0 !important;
 }
 
-.large {
-    margin: 50px auto;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    width: 700px;
-    height: auto;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.medium {
-    margin: 0 15px 20px 15px;
+@media only screen and (min-width: 1001px) {
+  .flex-card {
+    margin: 15px;
+    max-width: 45%;
+  }
+}
 
-    width: 350px;
-    height: auto;
+@media only screen and (max-width: 1000px) {
+  .flex-card {
+    margin: 15px 100px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-card {
+    margin: 15px;
+    max-width: 100%;
+  }
 }
 
 .skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
+    margin: 0 auto;
     width: 100%;
-
-    justify-content: space-around;
 }
 
 .skill {
     margin: 0 15px 20px 15px;
-
     max-width: 10em;
 }
 
@@ -178,6 +196,27 @@ svg {
     margin-top: auto;
     margin-bottom: auto;
     width: 60%;
+}
+
+.large {
+    margin: 50px auto;
+
+    width: 700px;
+    height: auto;
+}
+
+.medium {
+    margin: 0 15px 20px 15px;
+
+    width: 350px;
+    height: auto;
+}
+
+.short {
+    overflow: hidden;
+
+    height: 65px;
+    font-size: 11pt;
 }
 
 .title {
@@ -211,16 +250,9 @@ svg {
 }
 
 div.excerpt {
-    margin: 15px 15px 5px;
+    margin: 15px 15px 20px;
     font-size: 11pt;
     color: black;
-}
-
-.short {
-    overflow: hidden;
-
-    height: 65px;
-    font-size: 11pt;
 }
 
 .read-more, .back {
@@ -235,19 +267,15 @@ div.excerpt {
 }
 
 .mid-detail-area {
-    height: 190px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.my-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 760px;
-}
-
-#experience_section {
-    padding-bottom: 30px;
+.screenshot img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
 }
 
 .clear {

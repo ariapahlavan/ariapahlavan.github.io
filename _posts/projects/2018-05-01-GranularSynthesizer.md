@@ -4,6 +4,8 @@ title: Granular Synthesizer
 company: Academic
 duration: May 2018
 link: https://github.com/AriaPahlavan/ee445l/tree/master/lab11
+screenshot: /assets/granularsunth.png
+width: 100%
 category: projects
 ---
 <p>

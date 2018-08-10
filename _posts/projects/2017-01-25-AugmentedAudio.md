@@ -4,6 +4,8 @@ title: Augmented Audio
 company: Academic
 duration: Jan 2017 - Nov 2017
 link: https://github.com/AriaPahlavan/ariapahlavan.github.io
+screenshot: /assets/augmentedaudio.png
+width: 100%
 category: projects
 ---
 <p>

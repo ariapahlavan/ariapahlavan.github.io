@@ -4,6 +4,8 @@ title: See-Through ADAS
 company: Academic
 duration: Sep 2017 - Present
 link: https://github.com/AriaPahlavan/
+screenshot: /assets/seethruadas.png
+width: 100%
 category: projects
 ---
 <p>

@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<ul id="main-tabs" class="tabs tabs-fixed-width">
+<ul id="main-tabs" class="tabs grey lighten-3 tabs-fixed-width">
   <li class="tab col s3">
-		<a class="tab-link" href="#experience-tab" class="active">
+		<a class="tab-link" href="#experience-tab">
 			Experience
 		</a>
 	</li>
@@ -26,25 +26,23 @@ layout: default
 	<h4>Professional Experience</h4>
 	<br>
 
-	<div class="row">
+	<div class="flex-container">
 		{% for experience in site.categories.experiences | sort 'date' | reversed %}
-		<div class="col s12 m8 push-m2">
-			<div class="card-style card-a hoverable">
-				<div class="mid-detail-area">
-					<p class="title">{{ experience.title }}</p>
-					<div class="company-date">
-						<p><span class="company">{{ experience.company }}</span>
-							<span class="date">{{ experience.duration }}</span></p>
-					</div>
-					<div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
+		<div class="flex-card card-style">
+			<div class="mid-detail-area">
+				<p class="title">{{ experience.title }}</p>
+				<div class="company-date">
+					<p><span class="company">{{ experience.company }}</span>
+						<span class="date">{{ experience.duration }}</span></p>
 				</div>
+				<div class="excerpt short">{{ experience.excerpt | markdownify }}</div>
+			</div>
 
-				<div class="read-more">
-					<a class="waves-effect waves-light btn black"
-					   href="{{ site.baseurl }}{{ experience.url }}">
-						read more
-					</a>
-				</div>
+			<div class="read-more">
+				<a class="waves-effect waves-light btn black"
+				   href="{{ site.baseurl }}{{ experience.url }}">
+					read more
+				</a>
 			</div>
 		</div>
 		{% endfor %}
@@ -58,24 +56,37 @@ layout: default
 	<h4>Projects</h4>
 	<br>
 
-	<div class="row">
+	<div class='flex-container'>
 		{% for proj in site.categories.projects | sort 'date' %}
-		<div class="col s12 m8 push-m2">
-			<div class="card-style card-a hoverable ">
-				<div class="mid-detail-area">
-					<p class="title">{{ proj.title }}</p>
-					<div class="company-date">
-						<p><span class="company">{{ proj.company }}</span>
-							<span class="date">{{ proj.duration }}</span></p>
-					</div>
-					<div class="excerpt short">{{ proj.excerpt | markdownify }}</div>
+		<div class="flex-card card-style">
+			<div class="mid-detail-area">
+				<p class="title">{{ proj.title }}</p>
+				<div class="company-date">
+					<p><span class="company">{{ proj.company }}</span>
+						<span class="date">{{ proj.duration }}</span></p>
 				</div>
+			</div>
+      <div class="excerpt short">{{ proj.excerpt | markdownify }}</div>
+      {% if proj.screenshot %}
+        <div class="screenshot">
+          <div class="hide-on-med-and-down">
+            <img src="{{ proj.screenshot| absolute_url }}"
+                 style="width: {{proj.width}}; height: auto;"
+                 alt="Screenshot"/>
+          </div>
+          <div class="hide-on-large-only">
+            <img src="{{ proj.screenshot| absolute_url }}"
+                 style="width: 100%; height: auto;"
+                 alt="Screenshot"/>
+          </div>
+        </div>
+      {% endif %}
 
-				<div class="read-more">
-					<a class="waves-effect waves-light btn black" href="{{ site.baseurl }}{{ proj.url }}">
-						read more
-					</a>
-				</div>
+			<div class="read-more">
+				<a class="waves-effect waves-light btn black"
+           href="{{ site.baseurl }}{{ proj.url }}">
+					read more
+				</a>
 			</div>
 		</div>
 		{% endfor %}
@@ -90,12 +101,12 @@ layout: default
 	<h4>Skills</h4>
 	<br>
 
-	<div class="skills">
+	<div class="flex-container">
 		{% assign skills = site.skills | sort: 'date' %}
 		{% for skill in skills  %}
 
 		<div class="skill">
-			<div class="card-style skill-content hoverable ">
+			<div class="card-style skill-content ">
 				{% include logos/{{ skill.logo }} %}
 				<p class="skill-text">{{ skill.title }}</p>
 				<p><span class="date">{{ skill.duration }}</span></p>
