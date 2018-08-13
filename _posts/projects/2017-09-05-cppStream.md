@@ -3,7 +3,7 @@ layout: experience
 title: C++ Stream
 company: Personal
 duration: Aug 2017
-link: private
+link: https://github.com/AriaPahlavan
 category: projects
 ---
 <p>
