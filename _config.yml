@@ -16,7 +16,11 @@ collections:
     output: true
 
 defaults:
-- scope:
-    type: skills
-  values:
-    layout: skill
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+  - scope:
+      type: skills
+    values:
+      layout: skill
