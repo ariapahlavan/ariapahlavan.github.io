@@ -10,7 +10,7 @@ category: experiences
 <p>
 My summer project at Luminant Power was to develop a technical
 specification for an electrical transformer. To do so, I broke down the
-project into three step: collaboration, research and development.
+project into three steps: collaboration, research and development.
 </p>
 
 <br>
