@@ -370,9 +370,9 @@ div.excerpt {
 
   .grid-container {
     grid-template-areas:
-      'ignore_item title_item title_item title_item title_item title_item'
-      'profile_item desc_item  desc_item  desc_item  desc_item desc_item'
-      'ignore_item2 li_item gh_item so_item em_item cv_item';
+      'ignore_item  title_item title_item title_item title_item'
+      'profile_item desc_item  desc_item  desc_item  desc_item'
+      'li_item      gh_item    so_item    em_item    cv_item';
 
   }
 }
