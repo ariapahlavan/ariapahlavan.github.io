@@ -12,18 +12,18 @@ html {
 }
 
 .tab-link {
-  color: black !important;
-  font-weight: bold !important;
-  font-size: 110% !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 110% !important;
 }
 
 #main-tabs {
-  box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.5);
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.5);
 
 }
 
 .indicator {
-  background-color: black !important;
+    background-color: black !important;
 }
 
 #heading {
@@ -116,15 +116,20 @@ p,
     background-color: white;
     border-radius: 15px;
 
-    box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.4);
-    transition: box-shadow 0.25s ease-out, background-color 0.5s ease-out;
+    -webkit-box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.4);
+    -moz-box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.4);
+    box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.4);
+
+    transition: all 0.25s ease-out, background-color 0.5s ease-out;
 }
 
 .card-style:hover {
-  /* background-color: #fcf4e8; */
-  background-color: white;
-  box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.2);
-  transition: box-shadow 0.25s ease-out, background-color 0.5s ease-out;
+    /* background-color: #fcf4e8; */
+    background-color: white;
+    -webkit-box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.2);
+    -moz-box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.2);
+    box-shadow: 0 7px 20px 1px rgba(128, 128, 128, 0.2);
+    transition: all 0.25s ease-out, background-color 0.5s ease-out;
 }
 
 .card-a {
@@ -132,34 +137,34 @@ p,
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  margin: 0 auto;
-  width: 100%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1001px) {
-  .flex-card {
-    margin: 15px;
-    max-width: 45%;
-  }
+    .flex-card {
+        margin: 15px;
+        max-width: 45%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-  .flex-card {
-    margin: 15px 100px;
-    max-width: 100%;
-  }
+    .flex-card {
+        margin: 15px 100px;
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-  .flex-card {
-    margin: 15px;
-    max-width: 100%;
-  }
+    .flex-card {
+        margin: 15px;
+        max-width: 100%;
+    }
 }
 
 .skills {
@@ -275,10 +280,10 @@ div.excerpt {
 }
 
 .screenshot img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0);
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
 }
 
 .clear {
@@ -319,91 +324,101 @@ div.excerpt {
     color: paleturquoise;
 }
 
-.profile_item {grid-area: profile_item;}
-.title_item {grid-area: title_item;}
-.desc_item {grid-area: desc_item;}
-.li_item {grid-area: li_item;}
-.gh_item {grid-area: gh_item;}
-.so_item {grid-area: so_item;}
-.em_item {grid-area: em_item;}
-.cv_item {grid-area: cv_item;}
+.profile_item {
+    grid-area: profile_item;
+}
 
+.title_item {
+    grid-area: title_item;
+}
+
+.desc_item {
+    grid-area: desc_item;
+}
+
+.li_item {
+    grid-area: li_item;
+}
+
+.gh_item {
+    grid-area: gh_item;
+}
+
+.so_item {
+    grid-area: so_item;
+}
+
+.em_item {
+    grid-area: em_item;
+}
+
+.cv_item {
+    grid-area: cv_item;
+}
 
 #my-profile {
-  padding: 0 !important;
-  border-radius: 50%;
-  max-width: 300px;
-  min-width: 100px;
-  width: 100%;
-  height: auto;
+    padding: 0 !important;
+    border-radius: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    height: auto;
 }
 
 .grid-container {
-  display: grid;
-  background-color: black;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    background-color: black;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #desc-div {
-  text-align: left;
+    text-align: left;
 }
 
 #desc-div mark {
-  background-color: paleturquoise;
+    background-color: paleturquoise;
 }
 
 .grid-container > div {
-  background-color: black;
-  text-align: center;
-  color: white;
-  padding: 20px 0;
-  font-size: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 25px;
 }
 
 @media only screen and (min-width: 1001px) {
-  #desc-div{
-    font-size: 130%;
-    padding: 20px 50px 20px 100px;
-  }
+    #desc-div {
+        font-size: 130%;
+        padding: 20px 50px 20px 100px;
+    }
 
-  .grid-container {
-    grid-template-areas:
-      'ignore_item  title_item title_item title_item title_item'
-      'profile_item desc_item  desc_item  desc_item  desc_item'
-      'li_item      gh_item    so_item    em_item    cv_item';
+    .grid-container {
+        grid-template-areas: 'ignore_item  title_item title_item title_item title_item' 'profile_item desc_item  desc_item  desc_item  desc_item' 'li_item      gh_item    so_item    em_item    cv_item';
 
-  }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-  #desc-div{
-    font-size: 110%;
-    padding: 20px 20px 20px 50px;
-  }
+    #desc-div {
+        font-size: 110%;
+        padding: 20px 20px 20px 50px;
+    }
 
-  .grid-container {
-    grid-template-areas:
-    'ignore_item ignore_item title_item title_item title_item'
-    'profile_item profile_item desc_item  desc_item  desc_item'
-    'profile_item profile_item desc_item  desc_item  desc_item'
-    'li_item gh_item so_item em_item cv_item';
-  }
+    .grid-container {
+        grid-template-areas: 'ignore_item ignore_item title_item title_item title_item' 'profile_item profile_item desc_item  desc_item  desc_item' 'profile_item profile_item desc_item  desc_item  desc_item' 'li_item gh_item so_item em_item cv_item';
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  #desc-div{
-    font-size: 100%;
-    padding: 20px 10px;
-  }
+    #desc-div {
+        font-size: 100%;
+        padding: 20px 10px;
+    }
 
-  .grid-container {
-    grid-template-areas:
-      '_ profile_item profile_item profile_item __'
-      'title_item title_item title_item title_item title_item'
-      'desc_item  desc_item   desc_item desc_item desc_item'
-      /* 'desc_item  desc_item  desc_item desc_item desc_item' */
-      'li_item gh_item so_item em_item cv_item';
-  }
+    .grid-container {
+        grid-template-areas: '_ profile_item profile_item profile_item __' 'title_item title_item title_item title_item title_item' 'desc_item  desc_item   desc_item desc_item desc_item' /* 'desc_item  desc_item  desc_item desc_item desc_item' */ 'li_item gh_item so_item em_item cv_item';
+    }
 }
