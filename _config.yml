@@ -24,3 +24,5 @@ defaults:
       type: skills
     values:
       layout: skill
+
+theme: jekyll-theme-minimal
