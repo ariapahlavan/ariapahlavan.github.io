@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build:watch": "ng build --prod --watch",
     "lite-server": "lite-server --baseDir=dist/gh-pages",
-    "build:prod": "ng build --prod --output-path docs --base-href /site/",
+    "build:prod": "ng build --prod --output-path docs --base-href /",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
