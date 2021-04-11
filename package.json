@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build:watch": "ng build --watch --base-href /site",
     "lite-server": "lite-server --baseDir=dist/gh-pages",
-    "build:prod": "ng build --prod --output-path docs/site --base-href /site/",
-    "postbuild:prod": "cp docs/site/index.html docs/site/404.html",
+    "ci": "ng build --prod --output-path docs/site --base-href /site/",
+    "postci": "cp docs/site/index.html docs/site/404.html && touch docs/site/.nojekyll",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
