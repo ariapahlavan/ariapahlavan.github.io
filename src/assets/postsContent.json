@@ -2,16 +2,16 @@
   {
     "id": "post1",
     "type": "markdown",
-    "url": "/assets/post1.md"
+    "url": "/post1.md"
   },
   {
     "id": "post2",
     "type": "markdown",
-    "url": "/assets/post2.md"
+    "url": "/post2.md"
   },
   {
     "id": "post3",
     "type": "markdown",
-    "url": "/assets/post3.md"
+    "url": "/post3.md"
   }
 ]

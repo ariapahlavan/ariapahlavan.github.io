@@ -9,7 +9,11 @@ import { environment as env } from '../../environments/environment';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
-  cms$ = this.http.get<Content[]>(env.contentUrl);
+  cms$ = this.http.get<Content[]>(this.contentUrl);
+
+  get contentUrl(): string {
+    return `${env.assetsPath}${env.contentPath}`;
+  }
 
   constructor(private http: HttpClient) { }
 
@@ -29,6 +33,6 @@ export class PostsComponent implements OnInit {
   }
 
   urlOf(post: Content) {
-    return (post as MarkdownContent).url;
+    return `${env.assetsPath}${(post as MarkdownContent).url}`;
   }
 }

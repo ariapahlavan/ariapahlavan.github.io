@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  contentUrl: '/assets/postsContent.json'
+  assetsPath: '/assets',
+  contentPath: '/postsContent.json'
 };
 
 /*
