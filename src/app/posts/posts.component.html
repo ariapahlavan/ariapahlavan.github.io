@@ -1,1 +1,3 @@
-<p>Yo yo yo</p>
+<ng-container *ngFor="let post of cms$ | async; trackBy: trackPosts">
+  <div class="box" markdown [src]="urlOf(post)" (load)="onload($event)" (error)="onerror($event)"></div>
+</ng-container>
