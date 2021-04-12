@@ -1,6 +1,7 @@
-import {environment as env} from './environment';
+import { environment as base } from './environment-base';
+
 export const environment = {
-  ...env,
+  ...base,
   production: true,
   assetsPath: '/site/assets'
 };
