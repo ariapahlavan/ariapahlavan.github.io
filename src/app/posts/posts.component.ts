@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Content, MarkdownContent } from './constants/posts-content.interface';
+import { environment as env } from '../../environments/environment';
 
 @Component({
   selector: 'app-posts',
@@ -8,7 +9,7 @@ import { Content, MarkdownContent } from './constants/posts-content.interface';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
-  cms$ = this.http.get<Content[]>('/assets/postsContent.json');
+  cms$ = this.http.get<Content[]>(env.contentUrl);
 
   constructor(private http: HttpClient) { }
 
