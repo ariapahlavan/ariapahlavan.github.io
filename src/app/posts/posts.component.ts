@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Content, MarkdownContent } from './constants/posts-content.interface';
+import { Content } from './constants/posts-content.interface';
 import { environment as env } from '../../environments/environment';
+import { CardContent, Link } from './constants/content.interface';
 
 @Component({
   selector: 'app-posts',
@@ -10,9 +11,13 @@ import { environment as env } from '../../environments/environment';
 })
 export class PostsComponent implements OnInit {
   cms$ = this.http.get<Content[]>(this.contentUrl);
+  experienceCms$ = this.http.get<CardContent[]>(this.experienceUrl);
 
   get contentUrl(): string {
     return `${env.assetsPath}${env.contentPath}`;
+  }
+  get experienceUrl(): string {
+    return `${env.assetsPath}${env.experiencePath}`;
   }
 
   constructor(private http: HttpClient) { }
@@ -32,7 +37,20 @@ export class PostsComponent implements OnInit {
     console.log('on error:', event);
   }
 
-  urlOf(post: Content) {
-    return `${env.assetsPath}${(post as MarkdownContent).url}`;
+  hasLink(links: Link[]) {
+    return links && links.length > 0;
   }
+
+  urlOf(links: Link) {
+    return links.url;
+  }
+
+  textOf(links: Link) {
+    return links.text;
+  }
+
+  clickHandler(s: string) {
+    console.log('clicked:', s);
+  }
+
 }

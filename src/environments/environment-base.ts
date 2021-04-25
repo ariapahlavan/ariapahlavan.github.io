@@ -1,4 +1,5 @@
 export const environment = {
   assetsPath: '/assets',
-  contentPath: '/postsContent.json'
+  contentPath: '/postsContent.json',
+  experiencePath: '/experience.json'
 };

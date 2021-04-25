@@ -1,0 +1,35 @@
+[
+  {
+    "id": "job-1",
+    "type": "card",
+    "title": "Software Engineer Intern",
+    "subTitle": "Intel",
+    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/jobs/intel_sw_intern.md"
+      }
+    ],
+    "images": [],
+    "thumbnails": []
+  },
+  {
+    "id": "job-2",
+    "type": "card",
+    "title": "Electrical Engineer Intern",
+    "subTitle": "Luminant",
+    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/jobs/luminant_ee_intern.md"
+      }
+    ],
+    "images": [],
+    "thumbnails": [{
+      "url": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+      "text": ""
+    }]
+  }
+]
