@@ -1,0 +1,32 @@
+import { Component, Input, OnInit } from '@angular/core';
+import { CardContent, Link } from '../../../posts/constants/content.interface';
+
+@Component({
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
+})
+export class CardComponent implements OnInit {
+  @Input() content: CardContent;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  hasLink(links: Link[]) {
+    return links && links.length > 0;
+  }
+
+  urlOf(links: Link) {
+    return links.url;
+  }
+
+  textOf(links: Link) {
+    return links.text;
+  }
+
+  clickHandler(s: string) {
+    console.log('clicked:', s);
+  }
+}

@@ -1,27 +1,4 @@
-<ng-container *ngFor="let experience of experienceCms$ | async">
-  <mat-card class="mat-typography example-card">
-    <mat-card-header *ngIf="experience.title">
-      <img *ngIf="hasLink(experience.thumbnails)" mat-card-avatar [src]="urlOf(experience.thumbnails[0])"
-           [alt]="textOf(experience.thumbnails[0])">
-      <mat-card-title>{{experience.title}}</mat-card-title>
-      <mat-card-subtitle *ngIf="experience.subTitle">
-        {{experience.subTitle}}
-      </mat-card-subtitle>
-    </mat-card-header>
-    <img *ngIf="hasLink(experience.images)" mat-card-image [src]="urlOf(experience.images[0])"
-         [alt]="textOf(experience.images[0])">
-    <mat-card-content *ngIf="experience.description">
-      <p>
-        {{experience.description}}
-      </p>
-    </mat-card-content>
-    <mat-card-actions *ngIf="hasLink(experience.actions)">
-      <button *ngFor="let cta of experience.actions" mat-button color="primary" (click)="clickHandler(urlOf(cta))">
-        {{textOf(cta)}}
-      </button>
-    </mat-card-actions>
-  </mat-card>
-</ng-container>
+<app-card-grid [cardsContent]="experienceCms$ | async"></app-card-grid>
 
 
 <!--<ng-container *ngFor="let post of cms$ | async; trackBy: trackPosts">-->

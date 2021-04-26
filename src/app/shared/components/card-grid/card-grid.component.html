@@ -1,0 +1,5 @@
+<div fxLayout="row wrap" fxLayoutAlign="center">
+  <ng-container *ngFor="let content of cardsContent">
+    <app-card [content]="content" fxFlex.xs="100%" fxFlex="50%" [fxFlex.lg]="(100/3) + '%'" fxFlex.xl="25%" fxLayoutAlign="space-around"></app-card>
+  </ng-container>
+</div>
