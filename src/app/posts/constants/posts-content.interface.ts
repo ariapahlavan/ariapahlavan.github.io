@@ -4,7 +4,7 @@ export interface Content {
 }
 
 
-export interface MarkdownContent extends Content {
+export interface MarkdownContentLegacy extends Content {
   url: string;
 }
 

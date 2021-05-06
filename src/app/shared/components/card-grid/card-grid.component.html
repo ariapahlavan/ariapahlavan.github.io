@@ -1,5 +1,10 @@
-<div fxLayout="row wrap" fxLayoutAlign="center">
-  <ng-container *ngFor="let content of cardsContent">
-    <app-card [content]="content" fxFlex.xs="100%" fxFlex="50%" [fxFlex.lg]="(100/3) + '%'" fxFlex.xl="25%" fxLayoutAlign="space-around"></app-card>
-  </ng-container>
+<div class="listing-wrapper">
+  <div class="cards-grid">
+    <ng-container *ngFor="let content of cardsContent">
+      <div class="self-center">
+        <app-card [content]="content"></app-card>
+      </div>
+    </ng-container>
+  </div>
 </div>
+

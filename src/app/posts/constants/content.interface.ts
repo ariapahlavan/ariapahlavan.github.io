@@ -1,6 +1,6 @@
 export enum ContentType {
-  CARD,
-  MARKDOWN
+  CARD = 'card',
+  MARKDOWN = 'markdown'
 }
 
 export interface Content {
@@ -8,14 +8,24 @@ export interface Content {
   type: ContentType;
 }
 
-export interface CardContent extends Content {
-  type: ContentType.CARD;
+export interface DescriptiveContent extends Content{
   title?: string;
   subTitle?: string;
+}
+
+export interface CardContent extends DescriptiveContent {
+  type: ContentType.CARD;
   description?: string;
   actions?: Action[];
   images?: Image[];
   thumbnails?: Image[];
+}
+
+export interface MarkdownContent extends DescriptiveContent {
+  type: ContentType.MARKDOWN;
+  startDate?: string;
+  endDate?: string;
+  url: string;
 }
 
 export class Link {

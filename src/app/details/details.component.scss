@@ -1,0 +1,16 @@
+.content {
+  display: grid;
+  grid-template-columns: [start]  1fr [middle] 1fr [end];
+}
+
+.full-row {
+  grid-column: start / end;
+}
+
+.left-cell {
+  grid-column: start / middle;
+}
+
+.right-cell {
+  grid-column: middle / end;
+}

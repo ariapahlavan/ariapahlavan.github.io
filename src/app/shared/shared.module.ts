@@ -9,7 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 import { CardComponent } from './components/card/card.component';
 import { CardGridComponent } from './components/card-grid/card-grid.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 const COMPONENTS = [
 ];
@@ -19,8 +18,7 @@ const MAT_MODULES = [
   MatButtonModule,
   MatIconModule,
   MatCardModule,
-  MatGridListModule,
-  FlexLayoutModule
+  MatGridListModule
 ];
 
 @NgModule({

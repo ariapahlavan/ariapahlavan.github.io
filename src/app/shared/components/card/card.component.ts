@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CardContent, Link } from '../../../posts/constants/content.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -9,7 +10,7 @@ import { CardContent, Link } from '../../../posts/constants/content.interface';
 export class CardComponent implements OnInit {
   @Input() content: CardContent;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +27,7 @@ export class CardComponent implements OnInit {
     return links.text;
   }
 
-  clickHandler(s: string) {
-    console.log('clicked:', s);
+  clickHandler(path: string) {
+    return this.router.navigateByUrl(path);
   }
 }

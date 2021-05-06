@@ -1,12 +1,3 @@
-# Software Engineer Intern
-
----
-
-## Intel
-May 2017 ― Dec 2017
-
----
-
 I worked in a SAFe Scrum team, where I was able to accomplish many "user
 stories", during this internship. I helped with development of a
 framework architecture for a test generator tool built in C++ and LLVM.

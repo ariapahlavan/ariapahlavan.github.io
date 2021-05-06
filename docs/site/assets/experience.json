@@ -8,7 +8,7 @@
     "actions": [
       {
         "text": "see more",
-        "url": "/jobs/intel_sw_intern.md"
+        "url": "/details?filepath=/jobs/intel_sw_intern.json"
       }
     ],
     "images": [],
@@ -23,13 +23,63 @@
     "actions": [
       {
         "text": "see more",
-        "url": "/jobs/luminant_ee_intern.md"
+        "url": "/details?filepath=/jobs/luminant_ee_intern.json"
+      }
+    ],
+    "thumbnails": [
+      {
+        "url": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "job-1",
+    "type": "card",
+    "title": "Software Engineer Intern",
+    "subTitle": "Intel",
+    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/intel_sw_intern.json"
       }
     ],
     "images": [],
-    "thumbnails": [{
-      "url": "https://material.angular.io/assets/img/examples/shiba1.jpg",
-      "text": ""
-    }]
+    "thumbnails": []
+  },
+  {
+    "id": "job-1",
+    "type": "card",
+    "title": "Software Engineer Intern",
+    "subTitle": "Intel",
+    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/intel_sw_intern.json"
+      }
+    ],
+    "images": [],
+    "thumbnails": []
+  },
+  {
+    "id": "job-2",
+    "type": "card",
+    "title": "Electrical Engineer Intern",
+    "subTitle": "Luminant",
+    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/luminant_ee_intern.json"
+      }
+    ],
+    "thumbnails": [
+      {
+        "url": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+        "text": ""
+      }
+    ]
   }
 ]

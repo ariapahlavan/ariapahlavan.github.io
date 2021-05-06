@@ -1,12 +1,3 @@
-# Electrical Engineer Intern
-
----
-
-## Luminant
-May 2016 ― Aug 2016
-
----
-
 My summer project at Luminant Power was to develop a technical
 specification for an electrical transformer. To do so, I broke down the
 project into three steps: collaboration, research and development.

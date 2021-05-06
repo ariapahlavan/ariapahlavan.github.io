@@ -1,4 +1,5 @@
 @import '~@angular/material/theming';
+@import "src/styles/spacing";
 
 @include mat-core();
 
@@ -18,9 +19,9 @@ $light-theme: mat-light-theme((
 }
 
 $dark-primary: mat-palette($mat-blue-grey, A200, A100, A400);
-$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
-$dark-warn:    mat-palette($mat-deep-orange);
-$dark-theme:   mat-dark-theme((
+$dark-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-warn: mat-palette($mat-deep-orange);
+$dark-theme: mat-dark-theme((
   color: (
     primary: $dark-primary,
     accent: $dark-accent,
@@ -34,5 +35,65 @@ $dark-theme:   mat-dark-theme((
 
 @include angular-material-theme($dark-theme);
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+$bp-mobile: 300px;
+@media (min-width: $bp-mobile) {
+  .wrapper {
+    padding: 20px 40px;
+  }
+  .listing-wrapper {
+    padding: 20px 15px;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+$bp-tablet: 768px;
+@media (min-width: $bp-tablet) {
+  .wrapper {
+    padding: 20px 100px;
+  }
+  .listing-wrapper {
+    padding: 20px 50px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+$bp-laptop: 1024px;
+@media (min-width: $bp-laptop) {
+  .wrapper {
+    padding: 20px 200px;
+  }
+  .cards-grid {
+    //grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+$bp-desktop: 1440px;
+@media (min-width: $bp-desktop) {
+  .wrapper {
+    padding: 20px 200px;
+  }
+  .listing-wrapper {
+    padding: 20px 100px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+//   text-overflow: ellipsis;
+//  white-space: nowrap;
+//  overflow: hidden;
