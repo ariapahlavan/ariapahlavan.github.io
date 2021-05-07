@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Content } from './constants/posts-content.interface';
 import { environment as env } from '../../environments/environment';
 import { CardContent, Link } from './constants/content.interface';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-posts',
@@ -11,16 +13,18 @@ import { CardContent, Link } from './constants/content.interface';
 })
 export class PostsComponent implements OnInit {
   cms$ = this.http.get<Content[]>(this.contentUrl);
-  experienceCms$ = this.http.get<CardContent[]>(this.experienceUrl);
+  experienceCms$: Observable<CardContent[]>;
 
   get contentUrl(): string {
     return `${env.assetsPath}${env.contentPath}`;
   }
-  get experienceUrl(): string {
-    return `${env.assetsPath}${env.experiencePath}`;
-  }
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private router: ActivatedRoute
+  ) {
+    this.experienceCms$ = this.http.get<CardContent[]>(`${env.assetsPath}${router.snapshot.data.path}`);
+  }
 
   ngOnInit(): void {
   }

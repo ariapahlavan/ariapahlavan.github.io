@@ -8,7 +8,7 @@ export interface Content {
   type: ContentType;
 }
 
-export interface DescriptiveContent extends Content{
+export interface DescriptiveContent extends Content {
   title?: string;
   subTitle?: string;
 }

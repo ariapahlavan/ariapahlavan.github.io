@@ -1,0 +1,39 @@
+[
+  {
+    "id": "project-1",
+    "type": "card",
+    "title": "Pastiche",
+    "subTitle": "Academic",
+    "description": "As part of our academic project, we built an android and deployed its backed service in AWS",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/projects/pastiche.json"
+      }
+    ],
+    "images": [{
+      "text": "pastiche",
+      "url": "/assets/projects/images/pastiche.png"
+    }],
+    "thumbnails": []
+  },
+  {
+    "id": "job-2",
+    "type": "card",
+    "title": "Electrical Engineer Intern",
+    "subTitle": "Luminant",
+    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/luminant_ee_intern.json"
+      }
+    ],
+    "thumbnails": [
+      {
+        "url": "https://material.angular.io/assets/img/examples/shiba1.jpg",
+        "text": ""
+      }
+    ]
+  }
+]
