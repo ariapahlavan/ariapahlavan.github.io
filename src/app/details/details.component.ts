@@ -56,6 +56,10 @@ export class DetailsComponent implements OnInit {
     return links.text;
   }
 
+  date(content: Content) {
+    return content['startDate'] + (content['endDate'] ? ' – ' + content['endDate'] : '');
+  }
+
   templateFor(content: Content, param: TemplateRef<any>[]) {
     switch (content.type) {
       case ContentType.MARKDOWN: return param[0];

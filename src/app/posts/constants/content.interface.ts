@@ -3,6 +3,12 @@ export enum ContentType {
   MARKDOWN = 'markdown'
 }
 
+export enum UrlType {
+  RELATIVE= 'RELATIVE',
+  ASSETS= 'ASSETS',
+  EXTERNAL = 'EXTERNAL'
+}
+
 export interface Content {
   id: string;
   type: ContentType;
@@ -31,6 +37,7 @@ export interface MarkdownContent extends DescriptiveContent {
 export class Link {
   text: string;
   url: string;
+  type: UrlType = UrlType.ASSETS;
 }
 
 export class Action extends Link {

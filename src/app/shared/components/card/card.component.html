@@ -1,21 +1,21 @@
-<mat-card class="mat-typography example-card">
+<mat-card class="mat-typography card">
+  <img *ngIf="hasLink(content.images)" mat-card-image [src]="assetUrlOf(content.images[0])"
+       [alt]="textOf(content.images[0])" class="card-img">
   <mat-card-header *ngIf="content.title">
-    <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="urlOf(content.thumbnails[0])"
+    <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="assetUrlOf(content.thumbnails[0])"
          [alt]="textOf(content.thumbnails[0])">
     <mat-card-title>{{content.title}}</mat-card-title>
     <mat-card-subtitle *ngIf="content.subTitle">
       {{content.subTitle}}
     </mat-card-subtitle>
   </mat-card-header>
-  <img *ngIf="hasLink(content.images)" mat-card-image [src]="urlOf(content.images[0])"
-       [alt]="textOf(content.images[0])">
   <mat-card-content *ngIf="content.description">
-    <p>
+    <p class="ellipsis">
       {{content.description}}
     </p>
   </mat-card-content>
   <mat-card-actions *ngIf="hasLink(content.actions)">
-    <button *ngFor="let cta of content.actions" mat-button color="primary" (click)="clickHandler(urlOf(cta))">
+    <button *ngFor="let cta of content.actions" mat-button color="primary" (click)="clickHandler(cta)">
       {{textOf(cta)}}
     </button>
   </mat-card-actions>
