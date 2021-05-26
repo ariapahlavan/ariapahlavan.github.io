@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CardContent, Image, Link, UrlType } from '../../../posts/constants/content.interface';
 import { Router } from '@angular/router';
 import { environment as env } from '../../../../environments/environment';
@@ -6,7 +6,8 @@ import { environment as env } from '../../../../environments/environment';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: ['./card.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent implements OnInit {
   @Input() content: CardContent;

@@ -1,0 +1,10 @@
+<div class="grid">
+  <div class="middle"><br></div>
+  <form class="middle">
+    <input #inputRef type="text" (input)="updateCriteria(inputRef.value)" placeholder="Search heroes">
+  </form>
+  <div class="middle"><br></div>
+  <div class="middle" [@filterAnimation]="heroTotal">
+    <div class="hero" *ngFor="let hero of heroes">{{hero}}</div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left {
+  grid-column: 1 / 2;
+}
+
+.right {
+  grid-column: 3 / 4;
+}
+
+.middle {
+  grid-column: 2 / 3;
+}
+
+.hero {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+}
+

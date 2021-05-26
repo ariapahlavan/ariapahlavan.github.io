@@ -1,0 +1,6 @@
+<button (click)="toggle()">{{ isOpen ? 'close' : 'open' }}</button>
+
+<div class="grid">
+  <img class="middle" @shrinkOut *ngIf="isOpen"
+       src="https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg" alt="">
+</div>

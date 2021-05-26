@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'details',
     loadChildren: () => import('./details/details.module').then(m => m.DetailsModule)
-  }
+  },
+  { path: 'test', loadChildren: () => import('./testing/testing.module').then(m => m.TestingModule) }
 ];
 
 @NgModule({

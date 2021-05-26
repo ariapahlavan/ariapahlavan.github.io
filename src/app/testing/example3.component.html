@@ -1,0 +1,7 @@
+<button (click)="toggle()">{{ isOpen ? 'close' : 'open' }}</button>
+
+<div class="grid">
+  <div class="middle" [@multiColorChange]="isOpen ? 'active' : 'inactive'">
+    <p>The box is inserted</p>
+  </div>
+</div>

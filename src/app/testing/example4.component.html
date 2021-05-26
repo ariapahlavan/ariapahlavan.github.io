@@ -1,0 +1,7 @@
+<button (click)="toggle()">{{ isOpen ? 'close' : 'open' }}</button>
+
+<div class="grid">
+  <div class="middle" [@pulse]="isOpen ? 'open' : 'close'">
+    <p>The is some placeholder text.</p>
+  </div>
+</div>

@@ -1,15 +1,17 @@
 <div class="wrapper mat-typography">
-  <div class="content">
-    <ng-container *ngFor="let content of cms$ | async">
-      <ng-container *ngIf="isMarkdown(content)">
-        <div class="full-row mat-display-1 mb3">{{content['title']}}</div>
-        <h1 class="left-cell self-align-center mb0">{{content['subTitle']}}</h1>
-        <h5 class="right-cell self-align-center self-justify-end mb0">{{date(content)}}</h5>
-        <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
-        <ng-container *ngTemplateOutlet="templateFor(content, [markdown]); context: {$implicit: content}"></ng-container>
+  <ng-container *ngIf="cms$ | async as cms">
+    <div [@pageAnimations]="cms?.length" class="content">
+      <ng-container *ngFor="let content of cms">
+        <ng-container *ngIf="isMarkdown(content)">
+          <div class="full-row mat-display-1 mb3">{{content['title']}}</div>
+          <h1 class="left-cell self-align-center mb0">{{content['subTitle']}}</h1>
+          <h5 class="right-cell self-align-center self-justify-end mb0">{{date(content)}}</h5>
+          <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
+          <ng-container *ngTemplateOutlet="templateFor(content, [markdown]); context: {$implicit: content}"></ng-container>
+        </ng-container>
       </ng-container>
-    </ng-container>
-  </div>
+    </div>
+  </ng-container>
 </div>
 
 <ng-template #markdown let-content>

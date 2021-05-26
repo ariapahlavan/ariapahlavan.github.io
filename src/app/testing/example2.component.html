@@ -1,0 +1,18 @@
+<button (click)="toggle()">{{ isOpen ? 'close' : 'open' }}</button>
+<div class="grid">
+  <div class="middle" @flyInOut *ngIf="isOpen">
+    <p>The box is inserted</p>
+  </div>
+  <div class="left" @flyInOut *ngIf="isOpen">
+    <p>The box is inserted</p>
+  </div>
+  <div class="middle" @flyInOut *ngIf="isOpen">
+    <p>The box is inserted</p>
+  </div>
+  <div class="middle" @flyInOut *ngIf="isOpen">
+    <p>The box is inserted</p>
+  </div>
+  <div class="right" @flyInOut *ngIf="isOpen">
+    <p>The box is inserted</p>
+  </div>
+</div>

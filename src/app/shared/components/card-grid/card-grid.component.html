@@ -1,10 +1,7 @@
 <div class="listing-wrapper">
-  <div class="cards-grid">
-    <ng-container *ngFor="let content of cardsContent">
-      <div>
-        <app-card [content]="content"></app-card>
-      </div>
-    </ng-container>
+  <div class="cards-grid" [@pageAnimations]="cardsContent?.length || 0">
+    <div *ngFor="let content of cardsContent">
+      <app-card [content]="content"></app-card>
+    </div>
   </div>
 </div>
-

@@ -1,42 +1,48 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../environments/environment';
 import { Content, ContentType, Link, MarkdownContent } from '../posts/constants/content.interface';
 import { Observable } from 'rxjs';
+import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.scss']
+  styleUrls: ['./details.component.scss'],
+  animations: [
+    SMOOTH_ENTRANCE_2({
+      elements: '.full-row, .left-cell, .right-cell'
+    })
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DetailsComponent implements OnInit {
+  // @HostBinding('@pageAnimations')
+  // public animatePage = 0;
+
   contentPath: string;
   cms$: Observable<[]>;
 
   get contentUrl(): string {
-    console.log('content url:', `${env.assetsPath}${this.contentPath}`);
     return `${env.assetsPath}${this.contentPath}`;
   }
 
   constructor(private http: HttpClient) {
     this.contentPath = window.location.search.replace('?filepath=', '');
     this.cms$ = this.http.get<[]>(this.contentUrl);
-    this.cms$.subscribe(x => console.log(x));
   }
 
   ngOnInit(): void {
   }
 
   onload(event) {
-    // console.log('on load:', event);
   }
 
   onerror(event) {
-    console.log('on error:', event);
+    console.error('on error:', event);
   }
 
   isMarkdown(content: Content) {
-    console.log(`is [${content.type}] markdown:`, content.type === ContentType.MARKDOWN);
     return content.type === ContentType.MARKDOWN;
   }
 
