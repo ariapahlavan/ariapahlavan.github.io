@@ -1,0 +1,28 @@
+.content {
+  display: grid;
+  grid-template-columns: [start] 1fr [left-gap]  1fr [middle] 1fr [right-gap]  1fr [end];
+}
+
+.full-row {
+  grid-column: left-gap / right-gap;
+}
+
+.left {
+  grid-column: start / left-gap;
+}
+
+.middle-left {
+  grid-column: left-gap / middle;
+}
+
+.middle {
+  grid-column: left-gap / right-gap;
+}
+
+.middle-right {
+  grid-column: middle / right-gap;
+}
+
+.right {
+  grid-column: right-gap / end;
+}

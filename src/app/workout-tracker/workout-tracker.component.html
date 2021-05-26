@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="content items-align-center items-justify-center">
+    <h1 class="full-row">Tracker</h1>
+
+    <h2 class="middle-left">Title</h2>
+    <h2 class="middle-right">Count</h2>
+
+    <ng-container *ngIf="counts$ | async as counts">
+      <div class="middle-left">Push ups</div>
+      <div class="middle-right">{{counts.pushUp}}</div>
+
+      <div class="middle-left">Sit ups</div>
+      <div class="middle-right">{{counts.sitUp}}</div>
+
+      <div class="middle-left">Pull ups</div>
+      <div class="middle-right">{{counts.pullUp}}</div>
+    </ng-container>
+
+    <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
+
+    <div class="left">
+      <button mat-icon-button aria-label="Activate to toggle light or dark theme" (click)="prevDay()">
+        <mat-icon>remove</mat-icon>
+      </button>
+    </div>
+
+    <div class="middle">{{daysSubject.asObservable() | async}}</div>
+
+
+    <div class="right">
+      <button mat-icon-button aria-label="Activate to toggle light or dark theme" (click)="nextDay()">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
