@@ -2,21 +2,21 @@
   <div class="content items-align-center items-justify-center">
     <h1 class="full-row">Tracker</h1>
 
-    <h2 class="middle-left">Title</h2>
-    <h2 class="middle-right">Count</h2>
+    <h2 class="left-mid-cell self-justify-start">Title</h2>
+    <h2 class="right-mid-cell self-justify-start">Count</h2>
 
     <ng-container *ngIf="counts$ | async as counts">
-      <div class="middle-left">Push ups</div>
-      <div class="middle-right">{{counts.pushUp}}</div>
+      <div class="left-mid-cell self-justify-start">Push ups</div>
+      <div class="right-mid-cell">{{counts.pushUp}}</div>
 
-      <div class="middle-left">Sit ups</div>
-      <div class="middle-right">{{counts.sitUp}}</div>
+      <div class="left-mid-cell self-justify-start">Sit ups</div>
+      <div class="right-mid-cell">{{counts.sitUp}}</div>
 
-      <div class="middle-left">Pull ups</div>
-      <div class="middle-right">{{counts.pullUp}}</div>
+      <div class="left-mid-cell self-justify-start">Pull ups</div>
+      <div class="right-mid-cell">{{counts.pullUp}}</div>
     </ng-container>
 
-    <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
+    <markdown class="full-row">---</markdown>
 
     <div class="left">
       <button mat-icon-button aria-label="Activate to toggle light or dark theme" (click)="prevDay()">

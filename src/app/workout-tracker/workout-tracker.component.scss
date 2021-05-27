@@ -1,17 +1,22 @@
 .content {
   display: grid;
   grid-template-columns: [start] 1fr [left-gap]  1fr [middle] 1fr [right-gap]  1fr [end];
+  grid-gap: 15px;
 }
 
 .full-row {
-  grid-column: left-gap / right-gap;
+  grid-column: start / end;
 }
 
 .left-half {
+  grid-column: start / middle;
+}
+
+.left-cell {
   grid-column: start / left-gap;
 }
 
-.left-half {
+.left-mid-cell {
   grid-column: left-gap / middle;
 }
 
@@ -20,9 +25,14 @@
 }
 
 .right-half {
+  grid-column: middle / end;
+}
+
+.right-cell {
+  grid-column: right-gap / end;
+}
+
+.right-mid-cell {
   grid-column: middle / right-gap;
 }
 
-.right-half {
-  grid-column: right-gap / end;
-}
