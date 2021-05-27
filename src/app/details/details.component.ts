@@ -11,15 +11,12 @@ import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
   styleUrls: ['./details.component.scss'],
   animations: [
     SMOOTH_ENTRANCE_2({
-      elements: '.full-row, .left-cell, .right-cell, .left-half, .right-half, .left-mid-cell, .right-mid-cell, .middle'
+      elements: '.full-row, .left-cell, .right-cell, .left-half, .right-half, .left-mid-cell, .right-mid-cell, .middle, .force-left-half, .force-right-half, .force-left-cell, .force-right-cell'
     })
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DetailsComponent implements OnInit {
-  // @HostBinding('@pageAnimations')
-  // public animatePage = 0;
-
   contentPath: string;
   cms$: Observable<[]>;
   pos = Position;

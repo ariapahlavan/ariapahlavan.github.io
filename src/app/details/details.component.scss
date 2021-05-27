@@ -7,6 +7,23 @@
   overflow: hidden;
 }
 
+.force-left-half {
+  grid-column: left / middle;
+}
+
+.force-right-half {
+  grid-column: middle / right;
+}
+
+.force-left-cell {
+  grid-column: left / left-middle;
+}
+
+.force-right-cell {
+  grid-column: right-middle / right;
+}
+
+
 img:hover {
   transform: scale(1.1);
   transition: ease-out transform 2s;

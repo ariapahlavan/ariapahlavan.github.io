@@ -6,9 +6,9 @@
                [opened]="(isLargeScreen$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/posts/articles">Articles</a>
-      <a mat-list-item routerLink="/posts/projects">Projects</a>
-      <a mat-list-item routerLink="/posts/jobs">Experience</a>
+      <a mat-list-item routerLink="/posts/articles" (click)="drawer.close()">Articles</a>
+      <a mat-list-item routerLink="/posts/projects" (click)="drawer.close()">Projects</a>
+      <a mat-list-item routerLink="/posts/jobs" (click)="drawer.close()">Experience</a>
     </mat-nav-list>
   </mat-sidenav>
 

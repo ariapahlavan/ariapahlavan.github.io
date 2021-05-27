@@ -104,11 +104,11 @@ export const STRIKE_THROUGH = trigger('shrinkOut', [
 ]);
 
 export const ENTRANCE_PARAMS = {
-  startY: -100,
+  startY: 250,
   endY: 0,
   startOpacity: 0,
   endOpacity: 1,
-  staggerTime: -100,
+  staggerTime: 100,
   animationTime: 750
 };
 export const SMOOTH_ENTRANCE = (params = ENTRANCE_PARAMS) => trigger('pageAnimations', [
@@ -125,8 +125,8 @@ export const SMOOTH_ENTRANCE = (params = ENTRANCE_PARAMS) => trigger('pageAnimat
 export const SMOOTH_ENTRANCE_2 = ({elements} = {elements: '.hero, form'} ) => trigger('pageAnimations', [
   transition(':enter', [
     query(elements, [
-      style({opacity: 0, transform: 'translateY(-100px)'}),
-      stagger(-100, [
+      style({opacity: 0, transform: 'translateY(100px)'}),
+      stagger(100, [
         animate(`600ms ${CUBIC_BEZIER_EASE}`, style({opacity: 1, transform: 'translateY(0)'})),
       ])
     ], {optional: true})

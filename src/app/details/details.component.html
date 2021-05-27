@@ -10,9 +10,9 @@
 </div>
 
 <ng-template #header let-content>
-  <div class="full-row mat-display-1 mb3">{{content['title']}}</div>
-  <h1 class="left-cell self-align-center mb0">{{content['subTitle']}}</h1>
-  <h5 class="right-cell self-align-center self-justify-end mb0">{{date(content)}}</h5>
+  <div class="full-row mat-display-1 mb0">{{content['title']}}</div>
+  <h1 class="force-left-half self-align-center mb0">{{content['subTitle']}}</h1>
+  <h5 class="force-right-half self-align-center self-justify-end mb0">{{date(content)}}</h5>
   <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
 </ng-template>
 
