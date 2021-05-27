@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "Polynomial Regression Simulation",
     "subTitle": "Personal",
     "startDate": "August 2018",
-    "endDate": "",
+    "endDate": ""
+  },
+  {
+    "type": "markdown",
     "url": "/projects/markdowns/poly_reg.md"
   }
 ]

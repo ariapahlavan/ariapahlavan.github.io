@@ -126,8 +126,8 @@ export const SMOOTH_ENTRANCE_2 = ({elements} = {elements: '.hero, form'} ) => tr
   transition(':enter', [
     query(elements, [
       style({opacity: 0, transform: 'translateY(-100px)'}),
-      stagger(-30, [
-        animate(`750ms ${CUBIC_BEZIER_EASE}`, style({opacity: 1, transform: 'translateY(0)'})),
+      stagger(-100, [
+        animate(`600ms ${CUBIC_BEZIER_EASE}`, style({opacity: 1, transform: 'translateY(0)'})),
       ])
     ], {optional: true})
   ])

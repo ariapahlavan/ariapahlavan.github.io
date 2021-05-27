@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "Augmented Audio",
     "subTitle": "Academic",
     "startDate": "Jan 2017",
-    "endDate": "Nov 2017",
+    "endDate": "Nov 2017"
+  },
+  {
+    "type": "markdown",
     "url": "/projects/markdowns/augmented_audio.md"
   }
 ]

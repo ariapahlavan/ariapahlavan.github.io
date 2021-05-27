@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "Electrical Engineer Intern",
     "subTitle": "Luminant",
     "startDate": "May 2016",
-    "endDate": "Aug 2016",
+    "endDate": "Aug 2016"
+  },
+  {
+    "type": "markdown",
     "url": "/jobs/markdowns/luminant_ee_intern.md"
   }
 ]

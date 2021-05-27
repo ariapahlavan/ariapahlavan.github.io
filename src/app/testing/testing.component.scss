@@ -3,11 +3,11 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.left {
+.left-half {
   grid-column: 1 / 2;
 }
 
-.right {
+.right-half {
   grid-column: 3 / 4;
 }
 

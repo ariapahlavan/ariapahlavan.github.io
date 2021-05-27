@@ -46,7 +46,35 @@ body {
 
 
 $bp-mobile: 300px;
-@media (min-width: $bp-mobile) {
+$bp-tablet: 768px;
+$bp-laptop: 1024px;
+$bp-desktop: 1440px;
+
+@mixin mobile {
+  @media (min-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $bp-laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@include mobile {
   .wrapper {
     padding: 20px 40px;
   }
@@ -58,8 +86,7 @@ $bp-mobile: 300px;
   }
 }
 
-$bp-tablet: 768px;
-@media (min-width: $bp-tablet) {
+@include tablet {
   .wrapper {
     padding: 20px 100px;
   }
@@ -70,9 +97,7 @@ $bp-tablet: 768px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-$bp-laptop: 1024px;
-@media (min-width: $bp-laptop) {
+@include laptop {
   .wrapper {
     padding: 20px 200px;
   }
@@ -80,9 +105,7 @@ $bp-laptop: 1024px;
     //grid-template-columns: repeat(2, 1fr);
   }
 }
-
-$bp-desktop: 1440px;
-@media (min-width: $bp-desktop) {
+@include desktop {
   .wrapper {
     padding: 20px 200px;
   }
@@ -97,7 +120,3 @@ $bp-desktop: 1440px;
 .hide-overflow {
   overflow: hidden;
 }
-
-//   text-overflow: ellipsis;
-//  white-space: nowrap;
-//  overflow: hidden;

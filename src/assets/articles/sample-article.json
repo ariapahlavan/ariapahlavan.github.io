@@ -1,0 +1,60 @@
+[
+  {
+    "type": "header",
+    "title": "Sample Article",
+    "subTitle": "Subject",
+    "startDate": "03/15/2020",
+    "endDate": "05/26/2021"
+  },
+  {
+    "type": "teaser",
+    "position": "left",
+    "images": [
+      {
+        "text": "doge",
+        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  {
+    "type": "markdown",
+    "position": "right",
+    "url": "/articles/markdowns/sample-article.md"
+  },
+  {
+    "type": "markdown",
+    "position": "left",
+    "url": "/articles/markdowns/sample-article.md"
+  },
+  {
+    "type": "teaser",
+    "position": "right",
+    "images": [
+      {
+        "text": "doge",
+        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  {
+    "type": "markdown",
+    "url": "/articles/markdowns/sample-article.md"
+  },
+  {
+    "type": "teaser",
+    "position": "full",
+    "images": [
+      {
+        "text": "doge",
+        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  {
+    "type": "markdown",
+    "url": "/articles/markdowns/sample-article.md"
+  }
+]

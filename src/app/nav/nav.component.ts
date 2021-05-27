@@ -1,7 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { map, shareReplay, tap } from 'rxjs/operators';
 import { ThemeService } from '../shared/services/theme.service';
 
 @Component({
@@ -11,9 +11,9 @@ import { ThemeService } from '../shared/services/theme.service';
 })
 export class NavComponent implements OnInit {
   isLight = true;
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  isLargeScreen$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large])
     .pipe(
-      map(result => result.matches),
+      map(result => !result.matches),
       shareReplay()
     );
 

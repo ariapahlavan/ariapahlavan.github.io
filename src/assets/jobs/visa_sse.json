@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "Senior Software Engineer",
     "subTitle": "Visa",
     "startDate": "Aug 2020",
-    "endDate": "Present",
+    "endDate": "Present"
+  },
+  {
+    "type": "markdown",
     "url": "/jobs/markdowns/visa_sse.md"
   }
 ]

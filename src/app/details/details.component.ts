@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../environments/environment';
-import { Content, ContentType, Link, MarkdownContent } from '../posts/constants/content.interface';
+import { Content, ContentType, Link, MarkdownContent, Position, Positionable, TeaserContent } from '../posts/constants/content.interface';
 import { Observable } from 'rxjs';
 import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
 
@@ -11,7 +11,7 @@ import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
   styleUrls: ['./details.component.scss'],
   animations: [
     SMOOTH_ENTRANCE_2({
-      elements: '.full-row, .left-cell, .right-cell'
+      elements: '.full-row, .left-cell, .right-cell, .left-half, .right-half, .left-mid-cell, .right-mid-cell, .middle'
     })
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -22,6 +22,7 @@ export class DetailsComponent implements OnInit {
 
   contentPath: string;
   cms$: Observable<[]>;
+  pos = Position;
 
   get contentUrl(): string {
     return `${env.assetsPath}${this.contentPath}`;
@@ -66,10 +67,37 @@ export class DetailsComponent implements OnInit {
     return content['startDate'] + (content['endDate'] ? ' – ' + content['endDate'] : '');
   }
 
-  templateFor(content: Content, param: TemplateRef<any>[]) {
+  of(content: Content, params: TemplateRef<any>[]) {
     switch (content.type) {
-      case ContentType.MARKDOWN: return param[0];
-      case ContentType.CARD: return param[1];
+      case ContentType.HEADER: return params[2];
+      case ContentType.MARKDOWN:
+        const markdownContent = (content as MarkdownContent);
+        markdownContent.position = markdownContent.position || Position.FULL;
+        return params[0];
+      case ContentType.TEASER:
+        const teaserContent = (content as TeaserContent);
+        teaserContent.position = teaserContent.position || Position.FULL;
+        return params[1];
+      case ContentType.CARD: return params[3];
     }
+  }
+
+  position(content: Positionable): Position {
+    return content.position || Position.FULL;
+  }
+  isFull(content: Positionable): boolean {
+    return this.position(content) === Position.FULL;
+  }
+
+  isLeft(content: Positionable): boolean {
+    return this.position(content) === Position.LEFT;
+  }
+  isRight(content: Positionable): boolean {
+    return this.position(content) === Position.RIGHT;
+  }
+
+  isHalf(content: Positionable): boolean {
+    const pos = this.position(content);
+    return pos === Position.RIGHT || pos === Position.LEFT;
   }
 }

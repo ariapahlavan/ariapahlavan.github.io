@@ -7,11 +7,11 @@
   grid-column: left-gap / right-gap;
 }
 
-.left {
+.left-half {
   grid-column: start / left-gap;
 }
 
-.middle-left {
+.left-half {
   grid-column: left-gap / middle;
 }
 
@@ -19,10 +19,10 @@
   grid-column: left-gap / right-gap;
 }
 
-.middle-right {
+.right-half {
   grid-column: middle / right-gap;
 }
 
-.right {
+.right-half {
   grid-column: right-gap / end;
 }

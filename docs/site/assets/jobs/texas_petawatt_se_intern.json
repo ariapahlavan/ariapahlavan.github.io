@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "Software Developer Intern",
     "subTitle": "Texas PetaWatt",
     "startDate": "June 2015",
-    "endDate": "Aug 2015",
+    "endDate": "Aug 2015"
+  },
+  {
+    "type": "markdown",
     "url": "/jobs/markdowns/texas_petawatt_se_intern.md"
   }
 ]

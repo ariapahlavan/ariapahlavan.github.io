@@ -1,10 +1,13 @@
 [
   {
-    "type": "markdown",
+    "type": "header",
     "title": "See-Through ADAS",
     "subTitle": "Academic",
     "startDate": "Sep 2017",
-    "endDate": "May 2018",
+    "endDate": "May 2018"
+  },
+  {
+    "type": "markdown",
     "url": "/projects/markdowns/see_through_adas.md"
   }
 ]

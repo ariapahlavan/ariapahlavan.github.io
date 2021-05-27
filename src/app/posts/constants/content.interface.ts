@@ -1,12 +1,20 @@
 export enum ContentType {
+  HEADER = 'header',
   CARD = 'card',
-  MARKDOWN = 'markdown'
+  MARKDOWN = 'markdown',
+  TEASER = 'teaser'
 }
 
 export enum UrlType {
-  RELATIVE= 'RELATIVE',
-  ASSETS= 'ASSETS',
+  RELATIVE = 'RELATIVE',
+  ASSETS = 'ASSETS',
   EXTERNAL = 'EXTERNAL'
+}
+
+export enum Position {
+  FULL = 'full',
+  LEFT = 'left',
+  RIGHT = 'right'
 }
 
 export interface Content {
@@ -19,6 +27,12 @@ export interface DescriptiveContent extends Content {
   subTitle?: string;
 }
 
+export interface HeaderContent extends DescriptiveContent {
+  type: ContentType.HEADER;
+  startDate?: string;
+  endDate?: string;
+}
+
 export interface CardContent extends DescriptiveContent {
   type: ContentType.CARD;
   description?: string;
@@ -27,11 +41,18 @@ export interface CardContent extends DescriptiveContent {
   thumbnails?: Image[];
 }
 
-export interface MarkdownContent extends DescriptiveContent {
+export interface Positionable {
+  position: Position;
+}
+
+export interface MarkdownContent extends Content, Positionable  {
   type: ContentType.MARKDOWN;
-  startDate?: string;
-  endDate?: string;
   url: string;
+}
+
+export interface TeaserContent extends Content, Positionable {
+  type: ContentType.TEASER;
+  images: Image[];
 }
 
 export class Link {
