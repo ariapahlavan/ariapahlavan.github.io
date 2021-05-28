@@ -9,5 +9,14 @@
   {
     "type": "markdown",
     "url": "/projects/markdowns/poly_reg.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "poly_reg",
+        "url": "/projects/images/poly_reg.gif"
+      }
+    ]
   }
 ]

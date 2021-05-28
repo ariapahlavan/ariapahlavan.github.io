@@ -9,5 +9,14 @@
   {
     "type": "markdown",
     "url": "/projects/markdowns/granular_synth.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "granular_synth",
+        "url": "/projects/images/granular_synth.png"
+      }
+    ]
   }
 ]

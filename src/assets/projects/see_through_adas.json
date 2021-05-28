@@ -9,5 +9,14 @@
   {
     "type": "markdown",
     "url": "/projects/markdowns/see_through_adas.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "see_through_adas",
+        "url": "/projects/images/see_through_adas.png"
+      }
+    ]
   }
 ]

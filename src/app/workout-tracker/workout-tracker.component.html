@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="content items-align-center items-justify-center">
-    <h1 class="full-row">Tracker</h1>
+    <h1 class="full-row">Workout Tracker</h1>
 
-    <h2 class="left-mid-cell self-justify-start">Title</h2>
+    <h2 class="left-mid-cell self-justify-start">Move</h2>
     <h2 class="right-mid-cell self-justify-start">Count</h2>
 
     <ng-container *ngIf="counts$ | async as counts">
@@ -16,19 +16,14 @@
       <div class="right-mid-cell">{{counts.pullUp}}</div>
     </ng-container>
 
-    <markdown class="full-row">---</markdown>
+    <markdown class="full-row mt2 mb2">---</markdown>
 
-    <div class="left">
-      <button mat-icon-button aria-label="Activate to toggle light or dark theme" (click)="prevDay()">
+    <div class="middle self-center">
+      <button class="mr2" mat-icon-button mat-raised-button aria-label="Activate to toggle light or dark theme" (click)="prevDay()">
         <mat-icon>remove</mat-icon>
       </button>
-    </div>
-
-    <div class="middle">{{daysSubject.asObservable() | async}}</div>
-
-
-    <div class="right">
-      <button mat-icon-button aria-label="Activate to toggle light or dark theme" (click)="nextDay()">
+      <span class="m2">{{daysSubject.asObservable() | async}}</span>
+      <button class="ml2" mat-icon-button mat-raised-button aria-label="Activate to toggle light or dark theme" (click)="nextDay()">
         <mat-icon>add</mat-icon>
       </button>
     </div>

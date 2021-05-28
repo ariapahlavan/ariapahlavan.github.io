@@ -8,6 +8,17 @@
   },
   {
     "type": "markdown",
+    "position": "left",
     "url": "/projects/markdowns/pastiche.md"
+  },
+  {
+    "type": "teaser",
+    "position": "right",
+    "images": [
+      {
+        "text": "pastiche",
+        "url": "/projects/images/pastiche_cropped.png"
+      }
+    ]
   }
 ]

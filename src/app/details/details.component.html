@@ -17,7 +17,7 @@
 </ng-template>
 
 <ng-template #markdown let-content>
-  <div class="self-center" markdown lineNumbers
+  <div markdown lineNumbers
        [src]="markdownUrl(content)"
        (load)="onload($event)"
        [ngClass]="{'full-row': isFull(content), 'left-half': isLeft(content), 'right-half': isRight(content)}"
@@ -27,11 +27,11 @@
 
 
 <ng-template #teaser let-content>
-  <div class="self-center hide-overflow"
+  <div *ngIf="hasLink(content.images)" class="self-center hide-overflow"
        [ngClass]="{'full-row': isFull(content), 'left-half': isLeft(content), 'right-half': isRight(content)}">
     <img [class.full-teaser-img]="isFull(content)"
          [class.half-teaser-img]="isHalf(content)"
-         [src]="content.images[0].url"
-         [alt]="content.images[0]?.text">
+         [src]="imageUrlOf(content.images[0])"
+         [alt]="textOf(content.images[0])">
   </div>
 </ng-template>

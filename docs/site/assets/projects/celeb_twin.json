@@ -9,5 +9,14 @@
   {
     "type": "markdown",
     "url": "/projects/markdowns/celeb_twin.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "celeb_twin",
+        "url": "/projects/images/celeb_twin.png"
+      }
+    ]
   }
 ]

@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay, tap } from 'rxjs/operators';
 import { ThemeService } from '../shared/services/theme.service';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav',
@@ -11,7 +12,7 @@ import { ThemeService } from '../shared/services/theme.service';
 })
 export class NavComponent implements OnInit {
   isLight = true;
-  isLargeScreen$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large])
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large])
     .pipe(
       map(result => !result.matches),
       shareReplay()
@@ -32,5 +33,13 @@ export class NavComponent implements OnInit {
   switchTheme() {
     this.isLight = !this.isLight;
     this.themeService.updateTheme(this.isLight);
+  }
+
+  closeDrawer(drawer: MatSidenav) {
+    this.isHandset$.subscribe(handset => {
+      if (handset) {
+        drawer.close();
+      }
+    });
   }
 }

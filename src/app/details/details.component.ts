@@ -1,7 +1,16 @@
 import { ChangeDetectionStrategy, Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../environments/environment';
-import { Content, ContentType, Link, MarkdownContent, Position, Positionable, TeaserContent } from '../posts/constants/content.interface';
+import {
+  Content,
+  ContentType,
+  Link,
+  MarkdownContent,
+  Position,
+  Positionable,
+  TeaserContent,
+  UrlType
+} from '../posts/constants/content.interface';
 import { Observable } from 'rxjs';
 import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
 
@@ -82,6 +91,7 @@ export class DetailsComponent implements OnInit {
   position(content: Positionable): Position {
     return content.position || Position.FULL;
   }
+
   isFull(content: Positionable): boolean {
     return this.position(content) === Position.FULL;
   }
@@ -89,6 +99,7 @@ export class DetailsComponent implements OnInit {
   isLeft(content: Positionable): boolean {
     return this.position(content) === Position.LEFT;
   }
+
   isRight(content: Positionable): boolean {
     return this.position(content) === Position.RIGHT;
   }
@@ -96,5 +107,14 @@ export class DetailsComponent implements OnInit {
   isHalf(content: Positionable): boolean {
     const pos = this.position(content);
     return pos === Position.RIGHT || pos === Position.LEFT;
+  }
+
+  imageUrlOf(link: Link) {
+    switch (link.type) {
+      case UrlType.RELATIVE: return link.url;
+      case UrlType.ASSETS: return `${env.assetsPath}${link.url}`;
+      case UrlType.EXTERNAL: return link.url;
+      default: return `${env.assetsPath}${link.url}`;
+    }
   }
 }

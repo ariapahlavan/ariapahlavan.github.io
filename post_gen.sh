@@ -13,10 +13,10 @@ post=$2
 title=$3
 subtitle=$4
 listing_filepath=${assets_dir}/${type}.json
-listing_item=",{\"id\": \"${type}-?\",\"type\": \"card\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"description\": \"\",\"actions\": [{\"text\": \"see more\",\"url\": \"/details?filepath=/${type}/${post}.json\"}],\"images\": [{\"text\": \"${post}\",\"url\": \"/${type}/images/${post}.png\"}],\"thumbnails\":[]}]"
+listing_item=",{\"id\": \"${type}-?\",\"type\": \"card\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"description\": \"\",\"actions\": [{\"text\": \"see more\",\"url\": \"/details?filepath=/${type}/${post}.json\"}],\"images\": [{\"text\": \"${post}\",\"url\": \"/${type}/images/doge.jpg\"}],\"thumbnails\":[]}]"
 
 details_filepath=${assets_dir}/${type}/${post}.json
-details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"startDate\": \"\",\"endDate\": \"\"},{\"type\": \"markdown\",\"url\": \"/${type}/markdowns/${post}.md\"}]"
+details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"startDate\": \"\",\"endDate\": \"\"},{\"type\": \"markdown\",\"url\": \"/${type}/markdowns/${post}.md\"},{\"type\":\"teaser\",\"images\":[{\"text\":\"Doge\",\"url\": \"/${type}/images/doge.jpg\"}]}]"
 
 markdown_filepath=${assets_dir}/${type}/markdowns/${post}.md
 markdown_content="# ${post}"

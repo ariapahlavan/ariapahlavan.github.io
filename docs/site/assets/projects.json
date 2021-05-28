@@ -19,7 +19,8 @@
     "images": [
       {
         "text": "poly_reg",
-        "url": "/projects/images/poly_reg.gif"
+        "url": "/projects/images/poly_reg.gif",
+        "type": "ASSETS"
       }
     ],
     "thumbnails": []
@@ -180,8 +181,7 @@
     "images": [
       {
         "text": "freechat",
-        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
-        "type": "EXTERNAL"
+        "url": "/projects/images/doge.jpg"
       }
     ],
     "thumbnails": []
@@ -206,8 +206,7 @@
     "images": [
       {
         "text": "cpp_stream",
-        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
-        "type": "EXTERNAL"
+        "url": "/projects/images/doge.jpg"
       }
     ],
     "thumbnails": []

@@ -9,5 +9,14 @@
   {
     "type": "markdown",
     "url": "/projects/markdowns/augmented_audio.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "augmented_audio",
+        "url": "/projects/images/augmented_audio.png"
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "id": "articles-?",
+    "id": "articles-1",
     "type": "card",
     "title": "Sample Article",
     "subTitle": "Subject",
@@ -14,28 +14,7 @@
     "images": [
       {
         "text": "sample-article",
-        "url": "https://www.forbes.com/advisor/wp-content/uploads/2021/04/dogecoin.jpeg.jpg",
-        "type": "EXTERNAL"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "articles-?",
-    "type": "card",
-    "title": "Sample Article 2",
-    "subTitle": "Suject 2",
-    "description": "",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/articles/sample-article-2.json"
-      }
-    ],
-    "images": [
-      {
-        "text": "sample-article-2",
-        "url": "/articles/images/sample-article-2.png"
+        "url": "/projects/images/doge.jpg"
       }
     ],
     "thumbnails": []

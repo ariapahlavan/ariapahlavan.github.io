@@ -1,14 +1,14 @@
 <mat-sidenav-container class="sidenav-container">
 
   <mat-sidenav #drawer class="sidenav" fixedInViewport
-               [attr.role]="(isLargeScreen$ | async) ? 'dialog' : 'navigation'"
-               [mode]="(isLargeScreen$ | async) ? 'over' : 'side'"
-               [opened]="(isLargeScreen$ | async) === false">
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/posts/articles" (click)="drawer.close()">Articles</a>
-      <a mat-list-item routerLink="/posts/projects" (click)="drawer.close()">Projects</a>
-      <a mat-list-item routerLink="/posts/jobs" (click)="drawer.close()">Experience</a>
+      <a mat-list-item routerLink="/posts/articles" (click)="closeDrawer(drawer)">Articles</a>
+      <a mat-list-item routerLink="/posts/projects" (click)="closeDrawer(drawer)">Projects</a>
+      <a mat-list-item routerLink="/posts/jobs" (click)="closeDrawer(drawer)">Experience</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -19,7 +19,7 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isLargeScreen$ | async">
+        *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Posts</span>
@@ -28,6 +28,6 @@
         <mat-icon>{{isLight ? 'dark_mode' : 'light_mode'}}</mat-icon>
       </button>
     </mat-toolbar>
-        <ng-content></ng-content>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
