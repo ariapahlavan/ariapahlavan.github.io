@@ -17,7 +17,7 @@
 </ng-template>
 
 <ng-template #markdown let-content>
-  <div markdown lineNumbers
+  <div markdown lineNumbers emoji
        [src]="markdownUrl(content)"
        (load)="onload($event)"
        [ngClass]="{'full-row': isFull(content), 'left-half': isLeft(content), 'right-half': isRight(content)}"
