@@ -1,7 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { CardContent, Image, Link, UrlType } from '../../../posts/constants/content.interface';
+import { CardContent, Link, UrlType } from '../../../posts/constants/content.interface';
 import { Router } from '@angular/router';
 import { environment as env } from '../../../../environments/environment';
+import { urlOf } from '../../helpers/content.helper';
 
 @Component({
   selector: 'app-card',
@@ -21,17 +22,8 @@ export class CardComponent implements OnInit {
     return links && links.length > 0;
   }
 
-  assetUrlOf(link: Link) {
-    switch (link.type) {
-      case UrlType.RELATIVE: return link.url;
-      case UrlType.ASSETS: return `${env.assetsPath}${link.url}`;
-      case UrlType.EXTERNAL: return link.url;
-      default: return `${env.assetsPath}${link.url}`;
-    }
-  }
-
   urlOf(link: Link) {
-    return link.url;
+    return urlOf(link);
   }
 
   textOf(link: Link) {

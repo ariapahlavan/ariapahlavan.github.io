@@ -60,6 +60,7 @@
   {
     "id": "job-5",
     "type": "card",
+    "hidden": true,
     "title": "Senior Software Engineer",
     "subTitle": "Visa",
     "description": "I've been drinking even more coffee and tapping even harder on my keyboard ☕️☕️☕️",

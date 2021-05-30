@@ -2,7 +2,10 @@
   <ng-container *ngIf="cms$ | async as cms">
     <div [@pageAnimations]="cms?.length" class="content">
       <ng-container *ngFor="let content of cms">
-        <ng-container *ngTemplateOutlet="of(content, [markdown, teaser, header]); context: {$implicit: content}">
+        <ng-container
+          *ngTemplateOutlet="
+          of(content, [markdown, teaser, header]);
+          context: {$implicit: content}">
         </ng-container>
       </ng-container>
     </div>
@@ -25,9 +28,8 @@
   </div>
 </ng-template>
 
-
 <ng-template #teaser let-content>
-  <div *ngIf="hasLink(content.images)" class="self-center hide-overflow"
+  <div *ngIf="hasLink(content.images)" class="self-justify-center hide-overflow teaser"
        [ngClass]="{'full-row': isFull(content), 'left-half': isLeft(content), 'right-half': isRight(content)}">
     <img [class.full-teaser-img]="isFull(content)"
          [class.half-teaser-img]="isHalf(content)"

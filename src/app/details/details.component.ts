@@ -13,6 +13,8 @@ import {
 } from '../posts/constants/content.interface';
 import { Observable } from 'rxjs';
 import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
+import { hasLink, isHidden, isReady, publishedOnly, textOf, urlOf } from '../shared/helpers/content.helper';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-details',
@@ -27,7 +29,7 @@ import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
 })
 export class DetailsComponent implements OnInit {
   contentPath: string;
-  cms$: Observable<[]>;
+  cms$: Observable<Content[]>;
   pos = Position;
 
   get contentUrl(): string {
@@ -35,8 +37,13 @@ export class DetailsComponent implements OnInit {
   }
 
   constructor(private http: HttpClient) {
-    this.contentPath = window.location.search.replace('?filepath=', '');
-    this.cms$ = this.http.get<[]>(this.contentUrl);
+    this.contentPath
+      = window.location.search
+      .replace('?filepath=', '');
+    this.cms$
+      = this.http
+      .get<[]>(this.contentUrl)
+      .pipe(map(this.toPublishedOnly()));
   }
 
   ngOnInit(): void {
@@ -49,42 +56,32 @@ export class DetailsComponent implements OnInit {
     console.error('on error:', event);
   }
 
-  isMarkdown(content: Content) {
-    return content.type === ContentType.MARKDOWN;
+  toPublishedOnly() {
+    return publishedOnly();
   }
 
   markdownUrl(content: MarkdownContent) {
     return `${env.assetsPath}${content.url}`;
   }
 
-  hasLink(links: Link[]) {
-    return links && links.length > 0;
+  hasLink(link: Link[]) {
+    return hasLink(link);
   }
 
-  urlOf(links: Link) {
-    return links.url;
-  }
-
-  textOf(links: Link) {
-    return links.text;
+  textOf(link: Link) {
+    return textOf(link);
   }
 
   date(content: Content) {
     return content['startDate'] + (content['endDate'] ? ' – ' + content['endDate'] : '');
   }
 
-  of(content: Content, params: TemplateRef<any>[]) {
+  of(content: Content, templates: TemplateRef<any>[]) {
     switch (content.type) {
-      case ContentType.HEADER: return params[2];
-      case ContentType.MARKDOWN:
-        const markdownContent = (content as MarkdownContent);
-        markdownContent.position = markdownContent.position || Position.FULL;
-        return params[0];
-      case ContentType.TEASER:
-        const teaserContent = (content as TeaserContent);
-        teaserContent.position = teaserContent.position || Position.FULL;
-        return params[1];
-      case ContentType.CARD: return params[3];
+      case ContentType.HEADER: return templates[2];
+      case ContentType.MARKDOWN: return templates[0];
+      case ContentType.TEASER: return templates[1];
+      case ContentType.CARD: return templates[3];
     }
   }
 
@@ -110,11 +107,6 @@ export class DetailsComponent implements OnInit {
   }
 
   imageUrlOf(link: Link) {
-    switch (link.type) {
-      case UrlType.RELATIVE: return link.url;
-      case UrlType.ASSETS: return `${env.assetsPath}${link.url}`;
-      case UrlType.EXTERNAL: return link.url;
-      default: return `${env.assetsPath}${link.url}`;
-    }
+    return urlOf(link);
   }
 }

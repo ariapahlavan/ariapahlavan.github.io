@@ -20,6 +20,7 @@ export enum Position {
 export interface Content {
   id: string;
   type: ContentType;
+  hidden: boolean;
 }
 
 export interface DescriptiveContent extends Content {

@@ -23,8 +23,4 @@ export class CardGridComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  titles(cardsContent: CardContent[]) {
-    return cardsContent.map(x => x.title);
-  }
 }

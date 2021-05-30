@@ -2,9 +2,11 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Content } from './constants/posts-content.interface';
 import { environment as env } from '../../environments/environment';
-import { CardContent, Link } from './constants/content.interface';
+import { CardContent } from './constants/content.interface';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { publishedOnly } from '../shared/helpers/content.helper';
 
 @Component({
   selector: 'app-posts',
@@ -13,7 +15,6 @@ import { Observable } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostsComponent implements OnInit {
-  cms$ = this.http.get<Content[]>(this.contentUrl);
   experienceCms$: Observable<CardContent[]>;
 
   get contentUrl(): string {
@@ -24,38 +25,16 @@ export class PostsComponent implements OnInit {
     private http: HttpClient,
     private router: ActivatedRoute
   ) {
-    this.experienceCms$ = this.http.get<CardContent[]>(`${env.assetsPath}${router.snapshot.data.path}`);
+    this.experienceCms$
+      = this.http
+      .get<CardContent[]>(`${env.assetsPath}${router.snapshot.data.path}`)
+      .pipe(map(this.toPublishedOnly()), map(x => x as CardContent[]));
   }
 
   ngOnInit(): void {
   }
 
-  trackPosts(index, post: Content) {
-    return post.id;
+  toPublishedOnly() {
+    return publishedOnly();
   }
-
-  onload(event) {
-    // console.log('on load:', event);
-  }
-
-  onerror(event) {
-    console.log('on error:', event);
-  }
-
-  hasLink(links: Link[]) {
-    return links && links.length > 0;
-  }
-
-  urlOf(links: Link) {
-    return links.url;
-  }
-
-  textOf(links: Link) {
-    return links.text;
-  }
-
-  clickHandler(s: string) {
-    console.log('clicked:', s);
-  }
-
 }
