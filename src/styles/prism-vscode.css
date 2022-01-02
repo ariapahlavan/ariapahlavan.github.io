@@ -50,7 +50,7 @@ pre[class*="language-"] {
 code:not([class*="language-"]) {
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 0.94em;
-  background-color: lightgray;
+  background-color: gray;
   padding: 0.15em;
   border-radius: .3em;
   white-space: normal;

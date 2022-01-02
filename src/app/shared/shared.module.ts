@@ -9,8 +9,12 @@ import { MatCardModule } from '@angular/material/card';
 import { CardComponent } from './components/card/card.component';
 import { CardGridComponent } from './components/card-grid/card-grid.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { SurveyComponent } from './components/survey/survey.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 const COMPONENTS = [
+  CardComponent, CardGridComponent, SurveyComponent
 ];
 
 const MAT_MODULES = [
@@ -18,19 +22,22 @@ const MAT_MODULES = [
   MatButtonModule,
   MatIconModule,
   MatCardModule,
-  MatGridListModule
+  MatGridListModule,
+  MatCheckboxModule
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS, CardComponent, CardGridComponent],
-  imports: [
-    CommonModule,
-    ...MAT_MODULES
-  ],
+  declarations: [...COMPONENTS],
+    imports: [
+        CommonModule,
+        ...MAT_MODULES,
+        ReactiveFormsModule
+    ],
   providers: [
     LocalStorageService,
     ThemeService
   ],
-  exports: [...COMPONENTS, ...MAT_MODULES, CardGridComponent]
+  exports: [...COMPONENTS, ...MAT_MODULES]
 })
-export class SharedModule { }
+export class SharedModule {
+}

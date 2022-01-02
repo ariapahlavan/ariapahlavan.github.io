@@ -1,5 +1,7 @@
 @import '~@angular/material/theming';
 @import "src/styles/spacing";
+@import "src/styles/media";
+@import "src/styles/grid";
 
 @include mat-core();
 
@@ -16,6 +18,21 @@ $light-theme: mat-light-theme((
 
 .light-theme {
   @include angular-material-color($light-theme);
+  .mat-typography p {
+    margin: 0;
+  }
+  blockquote {
+    background: rgba(10,133,255,.14);
+    border-left: 4px solid #06c;
+    color: #666;
+  }
+  td, th {
+    border-color: rgba(0,0,0,.12);
+  }
+
+  code:not([class*="language-"]) {
+    background-color: lightgrey;
+  }
 }
 
 $dark-primary: mat-palette($mat-blue-grey, A200, A100, A400);
@@ -31,6 +48,18 @@ $dark-theme: mat-dark-theme((
 
 .dark-theme {
   @include angular-material-color($dark-theme);
+  blockquote {
+    background: hsla(0,0%,87.8%,.14);
+    border-left: 4px solid #03a9f4;
+    color: #ccc;
+  }
+  td, th {
+    border-color: rgba(204, 204, 204, .12);
+  }
+
+  code:not([class*="language-"]) {
+    background-color: dimgray;
+  }
 }
 
 @include angular-material-theme($dark-theme);
@@ -44,33 +73,36 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
-$bp-mobile: 300px;
-$bp-tablet: 768px;
-$bp-laptop: 1024px;
-$bp-desktop: 1440px;
-
-@mixin mobile {
-  @media (min-width: $bp-mobile) {
-    @content;
-  }
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  margin: 20px 0;
+  padding: 1px 20px;
+  border-radius: 4px;
 }
 
-@mixin tablet {
-  @media (min-width: $bp-tablet) {
-    @content;
-  }
-}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-style: hidden;
 
-@mixin laptop {
-  @media (min-width: $bp-laptop) {
-    @content;
+  th {
+    height: 56px;
   }
-}
 
-@mixin desktop {
-  @media (min-width: $bp-desktop) {
-    @content;
+  td {
+    font-size: 15px;
+    height: 48px;
+  }
+
+  td, th {
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
   }
 }
 
@@ -107,7 +139,7 @@ $bp-desktop: 1440px;
 }
 @include desktop {
   .wrapper {
-    padding: 20px 200px;
+    padding: 20px 300px;
   }
   .listing-wrapper {
     padding: 20px 100px;

@@ -2,7 +2,8 @@ export enum ContentType {
   HEADER = 'header',
   CARD = 'card',
   MARKDOWN = 'markdown',
-  TEASER = 'teaser'
+  TEASER = 'teaser',
+  SURVEY = 'survey'
 }
 
 export enum UrlType {
@@ -20,7 +21,7 @@ export enum Position {
 export interface Content {
   id: string;
   type: ContentType;
-  hidden: boolean;
+  hidden?: boolean;
 }
 
 export interface DescriptiveContent extends Content {
@@ -43,7 +44,7 @@ export interface CardContent extends DescriptiveContent {
 }
 
 export interface Positionable {
-  position: Position;
+  position?: Position;
 }
 
 export interface MarkdownContent extends Content, Positionable  {
@@ -54,6 +55,17 @@ export interface MarkdownContent extends Content, Positionable  {
 export interface TeaserContent extends Content, Positionable {
   type: ContentType.TEASER;
   images: Image[];
+}
+
+export interface SurveyContent extends DescriptiveContent, Positionable {
+  choices: Choice[];
+  multi?: boolean;
+  points?: number;
+}
+
+export interface Choice {
+  title: string;
+  correct: boolean;
 }
 
 export class Link {

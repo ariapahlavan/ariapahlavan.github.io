@@ -2,6 +2,7 @@
   {
     "id": "articles-1",
     "type": "card",
+    "hidden": true,
     "title": "Sample Article",
     "subTitle": "Subject",
     "description": "",
@@ -15,6 +16,26 @@
       {
         "text": "sample-article",
         "url": "/projects/images/doge.jpg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": "articles-2",
+    "type": "card",
+    "title": "Programming Paradigms",
+    "subTitle": "Functional Programming, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/programming-paradigms.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "programming-paradigms",
+        "url": "/articles/images/doge.jpg"
       }
     ],
     "thumbnails": []

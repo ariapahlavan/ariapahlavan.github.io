@@ -56,6 +56,10 @@ export class DetailsComponent implements OnInit {
     console.error('on error:', event);
   }
 
+  isReady(content: Content) {
+    return isReady(content);
+  }
+
   toPublishedOnly() {
     return publishedOnly();
   }
@@ -72,16 +76,27 @@ export class DetailsComponent implements OnInit {
     return textOf(link);
   }
 
-  date(content: Content) {
-    return content['startDate'] + (content['endDate'] ? ' – ' + content['endDate'] : '');
+  date(content: Content): string {
+    return this.startDate(content) + (this.endDate(content) ? ' – ' + this.endDate(content) : '');
   }
 
+  hasDate(content: Content): boolean {
+    return !!this.startDate(content);
+  }
+
+  startDate(content: Content): string {
+    return content['startDate'];
+  }
+
+  endDate(content: Content): string {
+    return content['endDate'];
+  }
   of(content: Content, templates: TemplateRef<any>[]) {
     switch (content.type) {
       case ContentType.HEADER: return templates[2];
       case ContentType.MARKDOWN: return templates[0];
       case ContentType.TEASER: return templates[1];
-      case ContentType.CARD: return templates[3];
+      case ContentType.SURVEY: return templates[3];
     }
   }
 

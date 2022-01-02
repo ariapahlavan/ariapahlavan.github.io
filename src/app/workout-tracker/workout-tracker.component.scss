@@ -1,38 +1,38 @@
-.content {
+.tracker-content {
   display: grid;
   grid-template-columns: [start] 1fr [left-gap]  1fr [middle] 1fr [right-gap]  1fr [end];
   grid-gap: 15px;
 }
 
-.full-row {
+.tracker-full-row {
   grid-column: start / end;
 }
 
-.left-half {
+.tracker-left-half {
   grid-column: start / middle;
 }
 
-.left-cell {
+.tracker-left-cell {
   grid-column: start / left-gap;
 }
 
-.left-mid-cell {
+.tracker-left-mid-cell {
   grid-column: left-gap / middle;
 }
 
-.middle {
+.tracker-middle {
   grid-column: left-gap / right-gap;
 }
 
-.right-half {
+.tracker-right-half {
   grid-column: middle / end;
 }
 
-.right-cell {
+.tracker-right-cell {
   grid-column: right-gap / end;
 }
 
-.right-mid-cell {
+.tracker-right-mid-cell {
   grid-column: middle / right-gap;
 }
 

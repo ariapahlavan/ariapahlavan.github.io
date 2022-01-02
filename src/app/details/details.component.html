@@ -1,21 +1,21 @@
-<div class="wrapper mat-typography">
-  <ng-container *ngIf="cms$ | async as cms">
-    <div [@pageAnimations]="cms?.length" class="content">
-      <ng-container *ngFor="let content of cms">
+<div class="wrapper mat-typography" *ngIf="cms$ | async as cms">
+  <div [@pageAnimations]="cms?.length" class="content">
+    <ng-container *ngFor="let content of cms">
+      <ng-container *ngIf="isReady(content)">
         <ng-container
           *ngTemplateOutlet="
-          of(content, [markdown, teaser, header]);
+          of(content, [markdown, teaser, header, survey]);
           context: {$implicit: content}">
         </ng-container>
       </ng-container>
-    </div>
-  </ng-container>
+    </ng-container>
+  </div>
 </div>
 
 <ng-template #header let-content>
   <div class="full-row mat-display-1 mb0">{{content['title']}}</div>
-  <h1 class="force-left-half self-align-center mb0">{{content['subTitle']}}</h1>
-  <h5 class="force-right-half self-align-center self-justify-end mb0">{{date(content)}}</h5>
+  <h2 class="self-align-center mb0" [ngClass]="{'force-left-half': hasDate(content), 'full-row': !hasDate(content)}">{{content['subTitle']}}</h2>
+  <h5 *ngIf="hasDate(content)" class="force-right-half self-align-center self-justify-end mb0">{{date(content)}}</h5>
   <markdown class="full-row mt2 mb2">{{'---'}}</markdown>
 </ng-template>
 
@@ -36,4 +36,8 @@
          [src]="imageUrlOf(content.images[0])"
          [alt]="textOf(content.images[0])">
   </div>
+</ng-template>
+
+<ng-template #survey let-content>
+  <app-survey class="full-row  mt2 mb2" [content]="content"></app-survey>
 </ng-template>

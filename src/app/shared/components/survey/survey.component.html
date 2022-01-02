@@ -1,0 +1,15 @@
+<section class="content mt1 mb1" [formGroup]="surveyForm">
+  <div class="full-row header mb2">
+    <h3 class="m0 pb1">{{content.title}}</h3>
+    <h5 class="m0">{{content.subTitle}}</h5>
+  </div>
+
+  <ng-container  *ngFor="let choice of content.choices; index as i">
+    <p class="full-row ml3 mr3"><mat-checkbox [disabled]="!!results" [formControlName]="choice.title">{{choice.title}}</mat-checkbox></p>
+  </ng-container>
+
+  <div class="force-left-cell">
+    <button mat-stroked-button color="primary" [disabled]="!!results" (click)="submit(surveyForm.value)">Submit</button>
+  </div>
+  <p class="full-row mt2" *ngIf="results">{{results.message}}</p>
+</section>

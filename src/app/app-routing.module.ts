@@ -4,8 +4,12 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'posts',
+    redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'posts',
@@ -15,8 +19,14 @@ const routes: Routes = [
     path: 'details',
     loadChildren: () => import('./details/details.module').then(m => m.DetailsModule)
   },
-  { path: 'test', loadChildren: () => import('./testing/testing.module').then(m => m.TestingModule) },
-  { path: 'tracker', loadChildren: () => import('./workout-tracker/workout-tracker.module').then(m => m.WorkoutTrackerModule) }
+  {
+    path: 'test',
+    loadChildren: () => import('./testing/testing.module').then(m => m.TestingModule)
+  },
+  {
+    path: 'tracker',
+    loadChildren: () => import('./workout-tracker/workout-tracker.module').then(m => m.WorkoutTrackerModule)
+  }
 ];
 
 @NgModule({

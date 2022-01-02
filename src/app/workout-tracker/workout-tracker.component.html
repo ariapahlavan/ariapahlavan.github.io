@@ -1,24 +1,24 @@
 <div class="wrapper">
-  <div class="content items-align-center items-justify-center">
-    <h1 class="full-row">Workout Tracker</h1>
+  <div class="tracker-content items-align-center items-justify-center">
+    <h1 class="tracker-full-row ">Workout Tracker</h1>
 
-    <h2 class="left-mid-cell self-justify-start">Move</h2>
-    <h2 class="right-mid-cell self-justify-start">Count</h2>
+    <h2 class="tracker-left-mid-cell self-justify-start">Move</h2>
+    <h2 class="tracker-right-mid-cell self-justify-start">Count</h2>
 
     <ng-container *ngIf="counts$ | async as counts">
-      <div class="left-mid-cell self-justify-start">Push ups</div>
-      <div class="right-mid-cell">{{counts.pushUp}}</div>
+      <div class="tracker-left-mid-cell self-justify-start">Push ups</div>
+      <div class="tracker-right-mid-cell">{{counts.pushUp}}</div>
 
-      <div class="left-mid-cell self-justify-start">Sit ups</div>
-      <div class="right-mid-cell">{{counts.sitUp}}</div>
+      <div class="tracker-left-mid-cell self-justify-start">Sit ups</div>
+      <div class="tracker-right-mid-cell">{{counts.sitUp}}</div>
 
-      <div class="left-mid-cell self-justify-start">Pull ups</div>
-      <div class="right-mid-cell">{{counts.pullUp}}</div>
+      <div class="tracker-left-mid-cell self-justify-start">Pull ups</div>
+      <div class="tracker-right-mid-cell">{{counts.pullUp}}</div>
     </ng-container>
 
-    <markdown class="full-row mt2 mb2">---</markdown>
+    <markdown class="tracker-full-row mt2 mb2">---</markdown>
 
-    <div class="middle self-center">
+    <div class="tracker-middle self-center">
       <button class="mr2" mat-icon-button mat-raised-button aria-label="Activate to toggle light or dark theme" (click)="prevDay()">
         <mat-icon>remove</mat-icon>
       </button>

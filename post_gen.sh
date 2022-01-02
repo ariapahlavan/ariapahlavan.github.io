@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
 
-if [ $# -lt 4 ]
+if [ $# -lt 3 ]
   then
-    echo "Usage:"
-    echo "sh <script_name>.sh <post_type> <post_name> <title> <subtitle>"
+    printf "╭───────────────────────────────────────────────────────────────╮\n"
+    printf "│ Usage: sh <script_name>.sh <post_type> <title> <subtitle>     │\n"
+    printf "│                                                               │\n"
+    printf "│ NOTE: valid post types are articles | projects | jobs         │\n"
+    printf "╰───────────────────────────────────────────────────────────────╯\n"
     exit 1
 fi
 
 assets_dir=./src/assets
 type=$1
-post=$2
-title=$3
-subtitle=$4
+title=$2
+subtitle=$3
+post=$(printf "${title// /-}" | tr '[:upper:]' '[:lower:]')
 listing_filepath=${assets_dir}/${type}.json
 listing_item=",{\"id\": \"${type}-?\",\"type\": \"card\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"description\": \"\",\"actions\": [{\"text\": \"see more\",\"url\": \"/details?filepath=/${type}/${post}.json\"}],\"images\": [{\"text\": \"${post}\",\"url\": \"/${type}/images/doge.jpg\"}],\"thumbnails\":[]}]"
 
