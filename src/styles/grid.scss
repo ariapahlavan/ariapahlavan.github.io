@@ -36,14 +36,14 @@
   grid-column: right-middle / right;
 }
 
-@include mobile-min {
+@include mobile-n-larger {
   .full-row, .left-half, .right-half, .left-cell,
   .right-cell, .left-mid-cell, .middle, .right-mid-cell {
     grid-column: left / right;
   }
 }
 
-@include tablet-min {
+@include tablet-n-larger {
   .full-row, .right-half, .right-cell, .right-mid-cell,
   .left-half, .left-cell, .left-mid-cell {
     grid-column: left / right;
@@ -54,7 +54,7 @@
   }
 }
 
-@include laptop-min {
+@include laptop-n-larger {
   .full-row {
     grid-column: left / right;
   }
@@ -88,5 +88,5 @@
   }
 }
 
-@include desktop-min {
+@include desktop-n-larger {
 }

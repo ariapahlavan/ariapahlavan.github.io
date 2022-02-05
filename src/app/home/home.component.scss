@@ -4,20 +4,62 @@
   display: grid;
   grid-template-areas:
     'side main main main main';
+  grid-column-gap: 5px;
 }
 
 .side-section {
-  background-color: lightseagreen;
   grid-area: side;
 }
 
 .main-section {
-  background-color: lightpink;
   grid-area: main;
 }
 
-@include mobile-max {
+.side-layout {
+  display: grid;
+  grid-gap: 0;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas:
+    'avatar'
+    'avatar'
+    'name'
+    'summary'
+    'links'
+    'aboutme'
+    'aboutme'
+    'aboutme';
+}
+
+.avatar-section {
+  background-color: lightgrey;
+  grid-area: avatar;
+  grid-gap: 0 !important;
+}
+
+.name-section {
+  background-color: #1c1c1c;
+  grid-area: name;
+}
+
+.summary-section {
+  background-color: #2c2c2c;
+  grid-area: summary;
+}
+
+.aboutme-section {
+  background-color: #3c3c3c;
+  grid-area: aboutme;
+}
+
+.contacts-section {
+  background-color: #4c4c4c;
+  grid-area: links;
+}
+
+@include mobile-n-smaller {
   .page-layout {
+    grid-column-gap: 0;
+    grid-row-gap: 5px;
     grid-template-areas:
       'side'
       'main'
@@ -25,7 +67,34 @@
       'main';
   }
 
-  .main-section {
-    background-color: lightsalmon;
+  .side-layout {
+    grid-template-areas:
+    'avatar  name    name'
+    'avatar  name    name'
+    'avatar  summary summary'
+    'links   links   links'
+    'aboutme aboutme aboutme'
+    'aboutme aboutme aboutme'
+    'aboutme aboutme aboutme';
   }
+}
+
+.avatar-section, .avatar-section img {
+  object-fit: cover;
+  min-width: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-section img {
+  //border-radius: 50%;
+}
+
+.contacts-section a {
+  color: white;
+}
+
+.contacts-layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }

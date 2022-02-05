@@ -10,65 +10,65 @@ $bp-laptop-max: 1024px;
 $bp-desktop-min: $bp-laptop-max;
 $bp-desktop-max: 1440px;
 
-$bp-highres-min: $bp-desktop-max;
-$bp-highres-max: 2560px;
+$bp-display4k-min: $bp-desktop-max;
+$bp-display4k-max: 2560px;
 
-@mixin mobile-min {
+@mixin mobile-n-larger {
   @media (min-width: $bp-mobile-min) {
     @content;
   }
 }
 
-@mixin mobile-max {
+@mixin mobile-n-smaller {
   @media (max-width: $bp-mobile-max) {
     @content;
   }
 }
 
-@mixin tablet-min {
+@mixin tablet-n-larger {
   @media (min-width: $bp-tablet-min) {
     @content;
   }
 }
 
-@mixin tablet-max {
+@mixin tablet-n-smaller {
   @media (max-width: $bp-tablet-max) {
     @content;
   }
 }
 
-@mixin laptop-min {
+@mixin laptop-n-larger {
   @media (min-width: $bp-laptop-min) {
     @content;
   }
 }
 
-@mixin laptop-max {
+@mixin laptop-n-smaller {
   @media (max-width: $bp-laptop-max) {
     @content;
   }
 }
 
-@mixin desktop-min {
+@mixin desktop-n-larger {
   @media (min-width: $bp-desktop-min) {
     @content;
   }
 }
 
-@mixin desktop-max {
+@mixin desktop-n-smaller {
   @media (max-width: $bp-desktop-max) {
     @content;
   }
 }
 
-@mixin highres-min {
-  @media (min-width: $bp-highres-min) {
+@mixin display4k-n-larger {
+  @media (min-width: $bp-display4k-min) {
     @content;
   }
 }
 
-@mixin highres-max {
-  @media (max-width: $bp-highres-max) {
+@mixin display4k-smaller {
+  @media (max-width: $bp-display4k-max) {
     @content;
   }
 }

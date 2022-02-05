@@ -106,7 +106,7 @@ table {
   }
 }
 
-@include mobile-min {
+@include mobile-n-larger {
   .wrapper {
     padding: 20px 40px;
   }
@@ -118,7 +118,7 @@ table {
   }
 }
 
-@include tablet-min {
+@include tablet-n-larger {
   .wrapper {
     padding: 20px 100px;
   }
@@ -129,7 +129,7 @@ table {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@include laptop-min {
+@include laptop-n-larger {
   .wrapper {
     padding: 20px 200px;
   }
@@ -137,7 +137,7 @@ table {
     //grid-template-columns: repeat(2, 1fr);
   }
 }
-@include desktop-min {
+@include desktop-n-larger {
   .wrapper {
     padding: 20px 300px;
   }
@@ -148,7 +148,7 @@ table {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@include highres-min {
+@include display4k-n-larger {
   .wrapper {
     padding: 20px 300px;
   }
