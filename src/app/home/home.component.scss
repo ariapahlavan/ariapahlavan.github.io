@@ -1,0 +1,31 @@
+@import "src/styles/media";
+
+.page-layout {
+  display: grid;
+  grid-template-areas:
+    'side main main main main';
+}
+
+.side-section {
+  background-color: lightseagreen;
+  grid-area: side;
+}
+
+.main-section {
+  background-color: lightpink;
+  grid-area: main;
+}
+
+@include mobile-max {
+  .page-layout {
+    grid-template-areas:
+      'side'
+      'main'
+      'main'
+      'main';
+  }
+
+  .main-section {
+    background-color: lightsalmon;
+  }
+}

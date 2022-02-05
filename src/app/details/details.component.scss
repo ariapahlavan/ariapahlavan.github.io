@@ -3,7 +3,7 @@
 .teaser {
 }
 
-@include mobile {
+@include mobile-min {
   .full-teaser-img {
     max-width: 290px;
     object-fit: cover;
@@ -15,7 +15,7 @@
   }
 }
 
-@include tablet {
+@include tablet-min {
   .full-teaser-img {
     max-width: 550px;
     object-fit: cover;
@@ -26,7 +26,7 @@
   }
 }
 
-@include laptop {
+@include laptop-min {
   .full-teaser-img {
     max-width: 625px;
     object-fit: cover;
@@ -39,7 +39,7 @@
   }
 }
 
-@include desktop {
+@include desktop-min {
   .full-teaser-img {
     max-width: 640px;
     object-fit: cover;

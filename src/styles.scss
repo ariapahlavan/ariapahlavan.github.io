@@ -106,7 +106,7 @@ table {
   }
 }
 
-@include mobile {
+@include mobile-min {
   .wrapper {
     padding: 20px 40px;
   }
@@ -118,7 +118,7 @@ table {
   }
 }
 
-@include tablet {
+@include tablet-min {
   .wrapper {
     padding: 20px 100px;
   }
@@ -129,7 +129,7 @@ table {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@include laptop {
+@include laptop-min {
   .wrapper {
     padding: 20px 200px;
   }
@@ -137,7 +137,7 @@ table {
     //grid-template-columns: repeat(2, 1fr);
   }
 }
-@include desktop {
+@include desktop-min {
   .wrapper {
     padding: 20px 300px;
   }
@@ -146,6 +146,17 @@ table {
   }
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@include highres-min {
+  .wrapper {
+    padding: 20px 300px;
+  }
+  .listing-wrapper {
+    padding: 20px 100px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

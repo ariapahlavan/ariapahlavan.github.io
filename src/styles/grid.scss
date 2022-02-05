@@ -1,5 +1,18 @@
 @import "src/styles/media";
 
+// right-cell             |  -  |  -  |  -   |  X   |
+// force-right-cell       |  -  |  -  |  -   |  X   |
+// right-half             |  -  |  -  |  X   |  X   |
+// force-right-half       |  -  |  -  |  X   |  X   |
+// right-mid-cell         |  -  |  -  |  X   |  -   |
+// middle                 |  -  |  X  |  X   |  -   |
+// left-mid-cell          |  -  |  X  |  -   |  -   |
+// left-half              |  X  |  X  |  -   |  -   |
+// force-left-half        |  X  |  X  |  -   |  -   |
+// left-cell              |  X  |  -  |  -   |  -   |
+// force-left-cell        |  X  |  -  |  -   |  -   |
+// full-row               |  X  |  X  |  X   |  X   |
+
 .content {
   display: grid;
   grid-template-columns: [left] 1fr [left-middle]  1fr [middle] 1fr [right-middle] 1fr [right];
@@ -23,14 +36,14 @@
   grid-column: right-middle / right;
 }
 
-@include mobile {
+@include mobile-min {
   .full-row, .left-half, .right-half, .left-cell,
   .right-cell, .left-mid-cell, .middle, .right-mid-cell {
     grid-column: left / right;
   }
 }
 
-@include tablet {
+@include tablet-min {
   .full-row, .right-half, .right-cell, .right-mid-cell,
   .left-half, .left-cell, .left-mid-cell {
     grid-column: left / right;
@@ -41,7 +54,7 @@
   }
 }
 
-@include laptop {
+@include laptop-min {
   .full-row {
     grid-column: left / right;
   }
@@ -75,5 +88,5 @@
   }
 }
 
-@include desktop {
+@include desktop-min {
 }
