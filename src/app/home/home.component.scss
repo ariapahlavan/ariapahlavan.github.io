@@ -1,5 +1,9 @@
 @import "src/styles/media";
 
+.container {
+  padding: 5% 10%;
+}
+
 .page-layout {
   display: grid;
   grid-template-areas:
@@ -31,7 +35,7 @@
 }
 
 .avatar-section {
-  background-color: lightgrey;
+  background-color: black;
   grid-area: avatar;
   grid-gap: 0 !important;
 }
@@ -45,15 +49,14 @@
   background-color: #2c2c2c;
   grid-area: summary;
 }
-
-.aboutme-section {
+.contacts-section {
   background-color: #3c3c3c;
-  grid-area: aboutme;
+  grid-area: links;
 }
 
-.contacts-section {
+.aboutme-section {
   background-color: #4c4c4c;
-  grid-area: links;
+  grid-area: aboutme;
 }
 
 @include mobile-n-smaller {
