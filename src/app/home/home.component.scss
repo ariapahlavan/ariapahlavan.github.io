@@ -23,7 +23,7 @@
 .main-layout {
   display: grid;
   grid-template-columns: minmax(0, min-content) 1fr;
-  grid-column-gap: 5px;
+  grid-column-gap: 20px;
 }
 
 .side-layout {
@@ -46,22 +46,19 @@
 }
 
 .name-section {
-  background-color: #1c1c1c;
   grid-area: name;
+  align-self: end;
 }
 
 .summary-section {
-  background-color: #2c2c2c;
   grid-area: summary;
 }
 
 .contacts-section {
-  background-color: #3c3c3c;
   grid-area: links;
 }
 
 .aboutme-section {
-  background-color: #4c4c4c;
   grid-area: aboutme;
 }
 
@@ -95,7 +92,7 @@
 }
 
 .avatar-section img {
-  //border-radius: 50%;
+  border-radius: 50%;
 }
 
 .contacts-section a {
@@ -126,13 +123,24 @@ $tl-color: #0c0c0c;
 
 .tl-item {
   justify-self: start;
+  align-self: center;
 }
 
 .tl-icon,
 .tl-item {
+  margin: 0;
   padding: 5px;
   border-radius: 5px;
+}
+
+.tl-icon {
+  align-self: center;
+  // todo maybe remove:
+  width: 10px;
+  height: 10px;
   background-color: $tl-color;
+  border: 2px solid #686868;
+  border-radius: 50%;
 }
 
 .tl-icon,
@@ -140,5 +148,6 @@ $tl-color: #0c0c0c;
 .tl-dotted-line,
 .tl-small-line
 {
+  margin: 0;
   justify-self: center;
 }

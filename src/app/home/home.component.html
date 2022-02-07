@@ -2,62 +2,33 @@
   <div class="page-layout">
     <div class="side-section side-layout">
       <div class="avatar-section self-center items-center content-center">
-        <img alt="Aria Pahlavan"
-             src="https://avatars.githubusercontent.com/u/8824819?s=400&u=caf1f3662ae94428df3b098a721cfa24d4b72bc0&v=4">
+        <img [alt]="aboutMeContent.avatarAlt" [src]="aboutMeContent.avatarUrl">
       </div>
-      <h2 class="name-section m0 p1">Aria Pahlavan</h2>
-      <h5 class="summary-section m0 p1">Sr. SW Engineer @ Visa</h5>
-      <div class="aboutme-section m0 p1">
-        <p>
-          My talents are
-          aesthetically pleasing apps 🤩,
-          blazing fast apis 🔥,
-          scalable and reactive designs 🚀,
-          and trick shots in ping pong 🏓
-        </p>
-      </div>
+      <h2 class="name-section m0 pl1">{{aboutMeContent.name}}</h2>
+      <h5 class="summary-section m0 p1">{{aboutMeContent.summary}}</h5>
       <div class="contacts-section contacts-layout items-justify-center m0 p1">
-        <a title="GitHub" target="_blank" href="https://github.com/ariapahlavan">
-          <i class="fab fa-github-alt"></i>
-        </a>
-        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/ariapahlavan/">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a title="Stack Overflow" target="_blank" href="https://stackoverflow.com/users/6042837/aria-pahlavan?tab=profile">
-          <i class="fab fa-stack-overflow"></i>
-        </a>
-        <a title="Email" target="_blank" href="mailto:arix.ap@gmail.com">
-          <i class="fas fa-at"></i>
-        </a>
-        <a title="Resume" target="_blank" href="#">
-          <i class="fas fa-align-left"></i>
-        </a>
-        <!--        <a title="Twitter" target="_blank" href="#">-->
-        <!--          <i class="fab fa-twitter"></i>-->
-        <!--        </a>-->
+        <ng-container *ngFor="let content of contactsContent">
+          <a [title]="content.title" target="_blank" [href]="content.url">
+            <i class="{{content.icon}}"></i>
+          </a>
+        </ng-container>
+      </div>
+      <div class="aboutme-section m0 p1">
+        <p>{{aboutMeContent.description}}</p>
       </div>
     </div>
     <div class="main-section main-layout self-justify-center">
-      <div class="tl-dotted-line"></div><div></div>
-      <div class="tl-small-line"></div><div></div>
-      <div class="tl-icon">📄</div><div class="tl-item">Published an article about Progressive Web Apps</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">📜</div><div class="tl-item">Co-authored and filed a patent at Visa</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🙌</div><div class="tl-item">Senior Software Engineer at Visa</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">📄</div><div class="tl-item">Published an article about Reactive Programming</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">📄</div><div class="tl-item">Published an article about Functional Programming</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🧑‍💻</div><div class="tl-item">Software Engineer at Visa</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">👨‍🎓</div><div class="tl-item">Graduated from The University of Texas at Austin</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🧑‍💻</div><div class="tl-item">Software Engineer Intern at Intel</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🧑‍💻</div><div class="tl-item">Electrical Engineer Intern at Luminant</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🧑‍💻</div><div class="tl-item">Software Engineer Intern at Texas Petawatt Laser</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🏫</div><div class="tl-item">Transferred to The University of Texas at Austin</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🛒</div><div class="tl-item">Cashier at Walmart</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🏫</div><div class="tl-item">Started college at Collin College</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">✈️</div><div class="tl-item">️Immigrated to USA</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🏫</div><div class="tl-item">Studied at Firooz Bahram High School</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🏫</div><div class="tl-item">Studied at Rostam Abadian Middle School</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🏫</div><div class="tl-item">Studied at Jamshid Jam Elementary School</div><div class="tl-line"></div><div></div>
-      <div class="tl-icon">🍼</div><div class="tl-item">Was born</div>
+      <div class="tl-dotted-line"></div>
+      <div></div>
+      <div class="tl-small-line"></div>
+      <div></div>
+
+      <ng-container *ngFor="let content of timelineContent">
+        <div class="tl-icon"></div>
+        <div class="tl-item">{{content.event}}</div>
+        <div class="tl-line"></div>
+        <div></div>
+      </ng-container>
     </div>
   </div>
 </div>
