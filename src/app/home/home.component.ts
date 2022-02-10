@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     avatarUrl: 'https://avatars.githubusercontent.com/u/8824819?s=400&u=caf1f3662ae94428df3b098a721cfa24d4b72bc0&v=4',
     avatarAlt: 'Aria Pahlavan',
     name: 'Aria Pahlavan',
-    summary: 'Sr. SW Engineer @ Visa',
+    summary: 'Sr. Full Stack Engineer',
     description: `My talents are
           aesthetically pleasing apps 🤩,
           blazing fast apis 🔥,
@@ -42,10 +42,10 @@ export class HomeComponent implements OnInit {
   timelineContent: TimelineContent[] = [
     {event: 'Published an article about Progressive Web Apps', icon: '📄'},
     {event: 'Co-authored and filed a patent at Visa', icon: '📜'},
-    {event: 'Senior Software Engineer at Visa', icon: '🙌'},
+    {event: 'Senior Full Stack Engineer at Visa', icon: '🙌'},
     {event: 'Published an article about Reactive Programming', icon: '📄'},
     {event: 'Published an article about Functional Programming', icon: '📄'},
-    {event: 'Software Engineer at Visa', icon: '🧑‍💻'},
+    {event: 'Full Stack Engineer at Visa', icon: '🧑‍💻'},
     {event: 'Graduated from The University of Texas at Austin', icon: '👨‍🎓'},
     {event: 'Software Engineer Intern at Intel', icon: '🧑‍💻'},
     {event: 'Electrical Engineer Intern at Luminant', icon: '🧑‍💻'},

@@ -5,8 +5,78 @@
 
 @include mat-core();
 
-$light-primary: mat-palette($mat-indigo);
-$light-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-palette-2: (
+  50 : #e1e9ec,
+  100 : #b4c8d0,
+  200 : #83a3b1,
+  300 : #517e92,
+  400 : #2b627a,
+  500 : #064663,
+  600 : #053f5b,
+  700 : #043751,
+  800 : #032f47,
+  900 : #022035,
+  A100 : #6db6ff,
+  A200 : #3a9cff,
+  A400 : #0783ff,
+  A700 : #0076ec,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$my-palette-1: (
+  50 : #fdf6ed,
+  100 : #f9e8d1,
+  200 : #f6d9b2,
+  300 : #f2ca93,
+  400 : #efbe7c,
+  500 : #ecb365,
+  600 : #eaac5d,
+  700 : #e7a353,
+  800 : #e49a49,
+  900 : #df8b37,
+  A100 : #ffffff,
+  A200 : #fffaf5,
+  A400 : #ffdfc2,
+  A700 : #ffd2a8,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+
+
+
+$light-primary: mat-palette($my-palette-1);
+$light-accent: mat-palette($my-palette-2);
+
 $light-warn: mat-palette($mat-red);
 $light-theme: mat-light-theme((
   color: (
@@ -35,8 +105,8 @@ $light-theme: mat-light-theme((
   }
 }
 
-$dark-primary: mat-palette($mat-blue-grey, A200, A100, A400);
-$dark-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-primary: mat-palette($my-palette-2);
+$dark-accent: mat-palette($my-palette-1);
 $dark-warn: mat-palette($mat-deep-orange);
 $dark-theme: mat-dark-theme((
   color: (

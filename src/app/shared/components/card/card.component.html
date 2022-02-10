@@ -15,8 +15,13 @@
     </p>
   </mat-card-content>
   <mat-card-actions *ngIf="hasLink(content.actions)">
-    <button *ngFor="let cta of content.actions" mat-button color="primary" (click)="clickHandler(cta)">
-      {{textOf(cta)}}
-    </button>
+    <ng-container *ngFor="let cta of content.actions; index as i">
+      <button *ngIf="i === 0" mat-raised-button color="accent" (click)="clickHandler(cta)">
+        {{textOf(cta)}}
+      </button>
+      <button *ngIf="i > 0" mat-button color="accent" (click)="clickHandler(cta)">
+        {{textOf(cta)}}
+      </button>
+    </ng-container>
   </mat-card-actions>
 </mat-card>
