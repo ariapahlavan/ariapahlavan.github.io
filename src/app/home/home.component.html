@@ -23,10 +23,10 @@
       <div class="tl-small-line"></div>
       <div></div>
 
-      <ng-container *ngFor="let content of timelineContent">
+      <ng-container *ngFor="let content of timelineContent; last as isLast">
         <div class="tl-icon"></div>
         <div class="tl-item">{{content.event}}</div>
-        <div class="tl-line"></div>
+        <div *ngIf="!isLast" class="tl-line"></div>
         <div></div>
       </ng-container>
     </div>

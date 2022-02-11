@@ -74,8 +74,8 @@ $my-palette-1: (
 
 
 
-$light-primary: mat-palette($my-palette-1);
-$light-accent: mat-palette($my-palette-2);
+$light-primary: mat-palette($my-palette-1, 300, 100, 500);
+$light-accent: mat-palette($my-palette-2, 300, 100, 500);
 
 $light-warn: mat-palette($mat-red);
 $light-theme: mat-light-theme((
@@ -141,6 +141,10 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
 }
 
 blockquote {

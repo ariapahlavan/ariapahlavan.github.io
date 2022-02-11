@@ -12,7 +12,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class NavComponent implements OnInit {
   isLight = true;
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large])
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large, Breakpoints.Medium])
     .pipe(
       map(result => !result.matches),
       shareReplay()
