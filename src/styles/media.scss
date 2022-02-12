@@ -1,16 +1,16 @@
 $bp-mobile-min: 0;
 $bp-mobile-max: 425px;
 
-$bp-tablet-min: $bp-mobile-max;
+$bp-tablet-min: $bp-mobile-max + 1;
 $bp-tablet-max: 768px;
 
-$bp-laptop-min: $bp-tablet-max;
+$bp-laptop-min: $bp-tablet-max  + 1;
 $bp-laptop-max: 1024px;
 
-$bp-desktop-min: $bp-laptop-max;
+$bp-desktop-min: $bp-laptop-max  + 1;
 $bp-desktop-max: 1440px;
 
-$bp-display4k-min: $bp-desktop-max;
+$bp-display4k-min: $bp-desktop-max  + 1;
 $bp-display4k-max: 2560px;
 
 @mixin mobile-n-larger {

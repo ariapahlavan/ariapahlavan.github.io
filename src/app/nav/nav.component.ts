@@ -3,7 +3,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { ThemeService } from '../shared/services/theme.service';
-import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-nav',
@@ -11,6 +10,12 @@ import { MatSidenav } from '@angular/material/sidenav';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  menuContent = [
+    {text: 'Home', link: '/home'},
+    {text: 'Articles', link: '/posts/articles'},
+    {text: 'Projects', link: '/posts/projects'},
+    {text: 'Experience', link: '/posts/jobs'},
+  ];
   isLight = true;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large, Breakpoints.Medium])
     .pipe(
@@ -33,13 +38,5 @@ export class NavComponent implements OnInit {
   switchTheme() {
     this.isLight = !this.isLight;
     this.themeService.updateTheme(this.isLight);
-  }
-
-  closeDrawer(drawer: MatSidenav) {
-    this.isHandset$.subscribe(handset => {
-      if (handset) {
-        drawer.close();
-      }
-    });
   }
 }
