@@ -1,4 +1,4 @@
-@import "src/styles/media";
+@use "src/styles/media" as m;
 
 .container {
   padding: 5% 10%;
@@ -62,7 +62,7 @@
   grid-area: aboutme;
 }
 
-@include mobile-n-smaller {
+@include m.mobile-n-smaller {
   .page-layout {
     grid-column-gap: 0;
     grid-row-gap: 5px;

@@ -14,7 +14,7 @@ interface ContactContent {
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss', './_home.component-theme.scss']
 })
 export class HomeComponent implements OnInit {
   aboutMeContent = {

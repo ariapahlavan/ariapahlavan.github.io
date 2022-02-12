@@ -1,14 +1,14 @@
-<div class="container">
+<div class="container mat-typography">
   <div class="page-layout">
     <div class="side-section side-layout">
       <div class="avatar-section self-center items-center content-center">
         <img [alt]="aboutMeContent.avatarAlt" [src]="aboutMeContent.avatarUrl">
       </div>
-      <h2 class="name-section m0 pl1">{{aboutMeContent.name}}</h2>
-      <h5 class="summary-section m0 p1">{{aboutMeContent.summary}}</h5>
+      <h1 class="name-section m0 pl1">{{aboutMeContent.name}}</h1>
+      <div class="mat-small summary-section m0 p1">{{aboutMeContent.summary}}</div>
       <div class="contacts-section contacts-layout items-justify-center m0 p1">
         <ng-container *ngFor="let content of contactsContent">
-          <a [title]="content.title" target="_blank" [href]="content.url">
+          <a class="mat-body" [title]="content.title" target="_blank" [href]="content.url">
             <i class="{{content.icon}}"></i>
           </a>
         </ng-container>
