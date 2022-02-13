@@ -37,12 +37,12 @@
         "url": "/details?filepath=/projects/pastiche.json"
       },
       {
-        "text": "ui",
+        "text": "UI",
         "url": "https://github.com/JesusLegaspy/EE461L-Pastiche",
         "type": "EXTERNAL"
       },
       {
-        "text": "api",
+        "text": "API",
         "url": "https://github.com/Jacobingalls/EE461L-Pastiche-Server",
         "type": "EXTERNAL"
       }
@@ -68,12 +68,12 @@
         "url": "/details?filepath=/projects/see_through_adas.json"
       },
       {
-        "text": "ui",
+        "text": "UI",
         "url": "https://github.com/AriaPahlavan/see-through-adas-app",
         "type": "EXTERNAL"
       },
       {
-        "text": "api",
+        "text": "API",
         "url": "https://github.com/AriaPahlavan/see-through-adas-core",
         "type": "EXTERNAL"
       }
@@ -118,12 +118,12 @@
         "url": "/details?filepath=/projects/celeb_twin.json"
       },
       {
-        "text": "ui",
+        "text": "UI",
         "url": "https://github.com/AriaPahlavan/celebtwin",
         "type": "EXTERNAL"
       },
       {
-        "text": "api",
+        "text": "API",
         "url": "https://github.com/AriaPahlavan/celebtwin-server",
         "type": "EXTERNAL"
       }

@@ -1,3 +1,4 @@
+@use "src/app/home/home.component-theme" as home;
 @use '@angular/material' as mat;
 @import "src/styles/spacing";
 @import "src/styles/media";
@@ -74,8 +75,8 @@ $my-palette-1: (
 
 
 
-$light-primary: mat.define-palette($my-palette-1, 300, 100, 500);
-$light-accent: mat.define-palette($my-palette-2, 300, 100, 500);
+$light-primary: mat.define-palette($my-palette-2, 300, 100, 500);
+$light-accent: mat.define-palette($my-palette-1);
 
 $light-warn: mat.define-palette(mat.$red-palette);
 $light-theme: mat.define-light-theme((
@@ -103,6 +104,8 @@ $light-theme: mat.define-light-theme((
   code:not([class*="language-"]) {
     background-color: lightgrey;
   }
+
+  @include home.theme($light-theme);
 }
 
 $dark-primary: mat.define-palette($my-palette-2);
@@ -130,6 +133,8 @@ $dark-theme: mat.define-dark-theme((
   code:not([class*="language-"]) {
     background-color: dimgray;
   }
+
+  @include home.theme($dark-theme);
 }
 
 @include mat.all-component-themes($dark-theme);

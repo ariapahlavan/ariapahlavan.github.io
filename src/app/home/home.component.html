@@ -8,7 +8,7 @@
       <div class="mat-small summary-section m0 p1">{{aboutMeContent.summary}}</div>
       <div class="contacts-section contacts-layout items-justify-center m0 p1">
         <ng-container *ngFor="let content of contactsContent">
-          <a class="mat-body" [title]="content.title" target="_blank" [href]="content.url">
+          <a mat-icon-button [title]="content.title" target="_blank" [href]="content.url">
             <i class="{{content.icon}}"></i>
           </a>
         </ng-container>
