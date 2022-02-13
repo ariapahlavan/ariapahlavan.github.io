@@ -1,42 +1,15 @@
 [
   {
-    "id": "job-1",
+    "id": "job-5",
     "type": "card",
-    "title": "Software Developer Intern",
-    "subTitle": "Texas PetaWatt",
-    "description": "At Texas PetaWatt, I developed LabVIEW software to automate operation of laser cameras and a vacuum pump.",
+    "hidden": true,
+    "title": "Senior Software Engineer",
+    "subTitle": "Visa",
+    "description": "I've been drinking even more coffee and tapping even harder on my keyboard ☕️☕️☕️",
     "actions": [
       {
         "text": "see more",
-        "url": "/details?filepath=/jobs/texas_petawatt_se_intern.json"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "job-2",
-    "type": "card",
-    "title": "Electrical Engineer Intern",
-    "subTitle": "Luminant",
-    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/jobs/luminant_ee_intern.json"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "job-3",
-    "type": "card",
-    "title": "Software Engineer Intern",
-    "subTitle": "Intel",
-    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/jobs/intel_sw_intern.json"
+        "url": "/details?filepath=/jobs/visa_sse.json"
       }
     ],
     "images": [],
@@ -58,19 +31,46 @@
     "thumbnails": []
   },
   {
-    "id": "job-5",
+    "id": "job-3",
     "type": "card",
-    "hidden": true,
-    "title": "Senior Software Engineer",
-    "subTitle": "Visa",
-    "description": "I've been drinking even more coffee and tapping even harder on my keyboard ☕️☕️☕️",
+    "title": "Software Engineer Intern",
+    "subTitle": "Intel",
+    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
     "actions": [
       {
         "text": "see more",
-        "url": "/details?filepath=/jobs/visa_sse.json"
+        "url": "/details?filepath=/jobs/intel_sw_intern.json"
       }
     ],
     "images": [],
+    "thumbnails": []
+  },
+  {
+    "id": "job-2",
+    "type": "card",
+    "title": "Electrical Engineer Intern",
+    "subTitle": "Luminant",
+    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/luminant_ee_intern.json"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": "job-1",
+    "type": "card",
+    "title": "Software Developer Intern",
+    "subTitle": "Texas PetaWatt",
+    "description": "At Texas PetaWatt, I developed LabVIEW software to automate operation of laser cameras and a vacuum pump.",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/jobs/texas_petawatt_se_intern.json"
+      }
+    ],
     "thumbnails": []
   }
 ]

@@ -9,7 +9,7 @@
   </ng-container>
 
   <div class="force-left-cell">
-    <button mat-stroked-button color="primary" [disabled]="!!results" (click)="submit(surveyForm.value)">Submit</button>
+    <button mat-stroked-button color="accent" [disabled]="!!results" (click)="submit(surveyForm.value)">Submit</button>
   </div>
   <p class="full-row mt2" *ngIf="results">{{results.message}}</p>
 </section>

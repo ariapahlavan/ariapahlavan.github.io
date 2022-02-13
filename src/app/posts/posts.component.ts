@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Content } from './constants/posts-content.interface';
 import { environment as env } from '../../environments/environment';
 import { CardContent } from './constants/content.interface';
 import { ActivatedRoute } from '@angular/router';

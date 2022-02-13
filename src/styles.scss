@@ -6,7 +6,7 @@
 
 @include mat.core();
 
-$my-palette-2: (
+$my-palette-1: (
   50 : #e1e9ec,
   100 : #b4c8d0,
   200 : #83a3b1,
@@ -39,7 +39,7 @@ $my-palette-2: (
   )
 );
 
-$my-palette-1: (
+$my-palette-2: (
   50 : #fdf6ed,
   100 : #f9e8d1,
   200 : #f6d9b2,
@@ -72,11 +72,8 @@ $my-palette-1: (
   )
 );
 
-
-
-
-$light-primary: mat.define-palette($my-palette-2, 300, 100, 500);
-$light-accent: mat.define-palette($my-palette-1);
+$light-primary: mat.define-palette($my-palette-1, 300, 100, 500);
+$light-accent: mat.define-palette($my-palette-2);
 
 $light-warn: mat.define-palette(mat.$red-palette);
 $light-theme: mat.define-light-theme((
@@ -108,8 +105,8 @@ $light-theme: mat.define-light-theme((
   @include home.theme($light-theme);
 }
 
-$dark-primary: mat.define-palette($my-palette-2);
-$dark-accent: mat.define-palette($my-palette-1);
+$dark-primary: mat.define-palette($my-palette-1);
+$dark-accent: mat.define-palette($my-palette-2);
 $dark-warn: mat.define-palette(mat.$deep-orange-palette);
 $dark-theme: mat.define-dark-theme((
   color: (
@@ -187,22 +184,21 @@ table {
 
 @include mobile-n-larger {
   .wrapper {
-    padding: 20px 40px;
+    padding: 20px 1rem;
   }
   .listing-wrapper {
-    padding: 20px 15px;
+    padding: 20px 1rem;
   }
   .cards-grid {
     grid-template-columns: 1fr;
   }
 }
-
 @include tablet-n-larger {
   .wrapper {
-    padding: 20px 100px;
+    padding: 20px 5rem;
   }
   .listing-wrapper {
-    padding: 20px 50px;
+    padding: 20px 2rem;
   }
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -210,7 +206,7 @@ table {
 }
 @include laptop-n-larger {
   .wrapper {
-    padding: 20px 200px;
+    padding: 20px 10rem;
   }
   .cards-grid {
     //grid-template-columns: repeat(2, 1fr);
@@ -218,10 +214,10 @@ table {
 }
 @include desktop-n-larger {
   .wrapper {
-    padding: 20px 300px;
+    padding: 20px 15rem;
   }
   .listing-wrapper {
-    padding: 20px 100px;
+    padding: 20px 5rem;
   }
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -229,10 +225,10 @@ table {
 }
 @include display4k-n-larger {
   .wrapper {
-    padding: 20px 300px;
+    padding: 20px 25rem;
   }
   .listing-wrapper {
-    padding: 20px 100px;
+    padding: 20px 10rem;
   }
   .cards-grid {
     grid-template-columns: repeat(4, 1fr);
