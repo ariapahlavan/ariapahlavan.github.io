@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
     {text: 'Projects', link: '/posts/projects'},
     {text: 'Experience', link: '/posts/jobs'},
   ];
-  isLight = true;
+  isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large, Breakpoints.Medium])
     .pipe(
       map(result => !result.matches),
