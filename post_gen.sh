@@ -21,6 +21,10 @@ listing_item="[{\"id\": \"${type}-?\",\"type\": \"card\",\"title\": \"${title}\"
 details_filepath=${assets_dir}/${type}/${post}.json
 details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"startDate\": \"\",\"endDate\": \"\"},{\"type\": \"markdown\",\"url\": \"/${type}/markdowns/${post}.md\"},{\"type\":\"teaser\",\"images\":[{\"text\":\"Doge\",\"url\": \"/${type}/images/doge.jpg\"}]}]"
 
+if [ "${type}" = 'articles' ]; then
+  details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"startDate\": \"\",\"endDate\": \"\"},{\"id\": \"?\",\"type\": \"component\"}]"
+fi
+
 markdown_filepath=${assets_dir}/${type}/markdowns/${post}.md
 markdown_content="# ${post}"
 
