@@ -10,7 +10,7 @@ if [ $# -lt 3 ]
     exit 1
 fi
 
-assets_dir=./src/assets
+assets_dir=src/assets
 type=$1
 title=$2
 subtitle=$3
@@ -28,13 +28,13 @@ fi
 markdown_filepath=${assets_dir}/${type}/markdowns/${post}.md
 markdown_content="# ${post}"
 
-echo "CREATE a new item for '${post}' in ${listing_filepath}"
+echo "UPDATE ${listing_filepath}"
 
-echo "CREATE a new details file: ${details_filepath}"
+echo "CREATE ${details_filepath}"
 touch $details_filepath
 echo "$details_content" >$details_filepath
 
-echo "CREATE a new markdown file: ${markdown_filepath}"
+echo "CREATE ${markdown_filepath}"
 touch $markdown_filepath
 echo "$markdown_content" >$markdown_filepath
 
