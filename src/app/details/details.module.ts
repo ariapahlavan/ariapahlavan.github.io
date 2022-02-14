@@ -8,13 +8,15 @@ import { SharedModule } from '../shared/shared.module';
 import { MarkdownModule } from 'ngx-markdown';
 import { FunctionalProgrammingComponent } from './pages/functional-programming/functional-programming.component';
 import { ReactiveProgrammingComponent } from './pages/reactive-programming/reactive-programming.component';
+import { PwaWorkboxComponent } from './pages/pwa-workbox/pwa-workbox.component';
 
 
 @NgModule({
   declarations: [
     DetailsComponent,
     FunctionalProgrammingComponent,
-    ReactiveProgrammingComponent
+    ReactiveProgrammingComponent,
+    PwaWorkboxComponent
   ],
   imports: [
     CommonModule,

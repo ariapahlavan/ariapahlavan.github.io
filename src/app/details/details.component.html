@@ -47,6 +47,7 @@
     <ng-container [ngSwitch]="content.id">
       <app-functional-programming *ngSwitchCase="'fp'"></app-functional-programming>
       <app-reactive-programming  *ngSwitchCase="'rp'"></app-reactive-programming>
+      <app-pwa-workbox *ngSwitchCase="'pwa-workbox'"></app-pwa-workbox>
       <!--PLACEHOLDER-->
       <div *ngSwitchDefault>
         <ng-container *ngTemplateOutlet="none"></ng-container>

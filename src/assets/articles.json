@@ -1,5 +1,25 @@
 [
   {
+    "id": "articles-5",
+    "type": "card",
+    "title": "Progressive Web Apps with Workbox",
+    "subTitle": "Multi-SPA Progressive Web Apps, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/progressive-web-apps-with-workbox.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "progressive-web-apps-with-workbox",
+        "url": "/articles/images/doge.jpg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
     "id": "articles-4",
     "type": "card",
     "title": "Reactive Programming",
