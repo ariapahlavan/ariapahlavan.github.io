@@ -102,6 +102,10 @@ $light-theme: mat.define-light-theme((
     background-color: lightgrey;
   }
 
+  markdown a {
+    color: mat.get-color-from-palette($my-palette-2, 800);
+  }
+
   @include home.theme($light-theme);
 }
 
@@ -129,6 +133,10 @@ $dark-theme: mat.define-dark-theme((
 
   code:not([class*="language-"]) {
     background-color: dimgray;
+  }
+
+  markdown a {
+    color: mat.get-color-from-palette($my-palette-2, 400);
   }
 
   @include home.theme($dark-theme);

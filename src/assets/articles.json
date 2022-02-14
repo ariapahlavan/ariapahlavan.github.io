@@ -1,21 +1,40 @@
 [
   {
-    "id": "articles-1",
+    "id": "articles-4",
     "type": "card",
-    "hidden": true,
-    "title": "Sample Article",
-    "subTitle": "Subject",
+    "title": "Reactive Programming",
+    "subTitle": "Functional and Reactive Programming, Part 2",
     "description": "",
     "actions": [
       {
         "text": "see more",
-        "url": "/details?filepath=/articles/sample-article.json"
+        "url": "/details?filepath=/articles/reactive-programming.json"
       }
     ],
     "images": [
       {
-        "text": "sample-article",
-        "url": "/projects/images/doge.jpg"
+        "text": "reactive-programming",
+        "url": "/articles/images/doge.jpg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": "articles-3",
+    "type": "card",
+    "title": "Functional Programming",
+    "subTitle": "Functional and Reactive Programming, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/functional-programming.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "functional-programming",
+        "url": "/articles/images/doge.jpg"
       }
     ],
     "thumbnails": []
@@ -42,21 +61,22 @@
     "thumbnails": []
   },
   {
-    "id": "articles-3",
+    "id": "articles-1",
     "type": "card",
-    "title": "Functional Programming",
-    "subTitle": "Functional and Reactive Programming, Part 1",
+    "hidden": true,
+    "title": "Sample Article",
+    "subTitle": "Subject",
     "description": "",
     "actions": [
       {
         "text": "see more",
-        "url": "/details?filepath=/articles/functional-programming.json"
+        "url": "/details?filepath=/articles/sample-article.json"
       }
     ],
     "images": [
       {
-        "text": "functional-programming",
-        "url": "/articles/images/doge.jpg"
+        "text": "sample-article",
+        "url": "/projects/images/doge.jpg"
       }
     ],
     "thumbnails": []

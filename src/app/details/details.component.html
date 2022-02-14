@@ -46,10 +46,9 @@
   <div class="full-row">
     <ng-container [ngSwitch]="content.id">
       <app-functional-programming *ngSwitchCase="'fp'"></app-functional-programming>
+      <app-reactive-programming  *ngSwitchCase="'rp'"></app-reactive-programming>
       <div *ngSwitchDefault>
-        <ng-container
-          *ngTemplateOutlet="none">
-        </ng-container>
+        <ng-container *ngTemplateOutlet="none"></ng-container>
       </div>
     </ng-container>
   </div>

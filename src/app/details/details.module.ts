@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { MarkdownModule } from 'ngx-markdown';
 import { FunctionalProgrammingComponent } from './pages/functional-programming/functional-programming.component';
+import { ReactiveProgrammingComponent } from './pages/reactive-programming/reactive-programming.component';
 
 
 @NgModule({
   declarations: [
     DetailsComponent,
-    FunctionalProgrammingComponent
+    FunctionalProgrammingComponent,
+    ReactiveProgrammingComponent
   ],
   imports: [
     CommonModule,
