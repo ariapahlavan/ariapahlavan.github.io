@@ -24,13 +24,13 @@ details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"
 markdown_filepath=${assets_dir}/${type}/markdowns/${post}.md
 markdown_content="# ${post}"
 
-echo "creating a new item for '${post}' in ${listing_filepath}"
+echo "CREATE a new item for '${post}' in ${listing_filepath}"
 
-echo "creating a new details file: ${details_filepath}"
+echo "CREATE a new details file: ${details_filepath}"
 touch $details_filepath
 echo "$details_content" >$details_filepath
 
-echo "creating a new markdown file: ${markdown_filepath}"
+echo "CREATE a new markdown file: ${markdown_filepath}"
 touch $markdown_filepath
 echo "$markdown_content" >$markdown_filepath
 

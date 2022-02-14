@@ -11,7 +11,7 @@ page_name=$1
 page_title=$2
 page_dir=details/pages/${page_name}
 
-printf "RUN: 'ng g c %s -m details'\n" "${page_dir}"
+printf "RUN 'ng g c %s -m details'\n" "${page_dir}"
 ng g c "${page_dir}" -m details
 
 sh post_gen.sh articles "${page_title}" "Summary for ${page_title}"
