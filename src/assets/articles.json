@@ -23,6 +23,7 @@
   {
     "id": "articles-2",
     "type": "card",
+    "hidden": true,
     "title": "Programming Paradigms",
     "subTitle": "Functional Programming, Part 1",
     "description": "",
@@ -35,6 +36,26 @@
     "images": [
       {
         "text": "programming-paradigms",
+        "url": "/articles/images/doge.jpg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": "articles-3",
+    "type": "card",
+    "title": "Functional Programming",
+    "subTitle": "Functional and Reactive Programming, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/functional-programming.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "functional-programming",
         "url": "/articles/images/doge.jpg"
       }
     ],

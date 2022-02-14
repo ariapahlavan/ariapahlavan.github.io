@@ -4,7 +4,7 @@
       <ng-container *ngIf="isReady(content)">
         <ng-container
           *ngTemplateOutlet="
-          of(content, [markdown, teaser, header, survey]);
+          of(content, [none, markdown, teaser, header, survey, component]);
           context: {$implicit: content}">
         </ng-container>
       </ng-container>
@@ -40,4 +40,21 @@
 
 <ng-template #survey let-content>
   <app-survey class="full-row  mt2 mb2" [content]="content"></app-survey>
+</ng-template>
+
+<ng-template #component let-content>
+  <div class="full-row">
+    <ng-container [ngSwitch]="content.id">
+      <app-functional-programming *ngSwitchCase="'fp'"></app-functional-programming>
+      <div *ngSwitchDefault>
+        <ng-container
+          *ngTemplateOutlet="none">
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</ng-template>
+
+<ng-template #none>
+  <h1 class="full-row">Something went wrong 🥴</h1>
 </ng-template>

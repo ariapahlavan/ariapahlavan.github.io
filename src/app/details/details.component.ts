@@ -1,20 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnInit, TemplateRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../environments/environment';
-import {
-  Content,
-  ContentType,
-  Link,
-  MarkdownContent,
-  Position,
-  Positionable,
-  TeaserContent,
-  UrlType
-} from '../posts/constants/content.interface';
+import { Content, ContentType, Link, MarkdownContent, Position, Positionable } from '../posts/constants/content.interface';
 import { Observable } from 'rxjs';
 import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
-import { hasLink, isHidden, isReady, publishedOnly, textOf, urlOf } from '../shared/helpers/content.helper';
-import { filter, map } from 'rxjs/operators';
+import { hasLink, isReady, publishedOnly, textOf, urlOf } from '../shared/helpers/content.helper';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-details',
@@ -93,10 +84,12 @@ export class DetailsComponent implements OnInit {
   }
   of(content: Content, templates: TemplateRef<any>[]) {
     switch (content.type) {
-      case ContentType.HEADER: return templates[2];
-      case ContentType.MARKDOWN: return templates[0];
-      case ContentType.TEASER: return templates[1];
-      case ContentType.SURVEY: return templates[3];
+      case ContentType.MARKDOWN: return templates[1];
+      case ContentType.TEASER: return templates[2];
+      case ContentType.HEADER: return templates[3];
+      case ContentType.SURVEY: return templates[4];
+      case ContentType.COMPONENT: return templates[5];
+      default: return templates[0];
     }
   }
 

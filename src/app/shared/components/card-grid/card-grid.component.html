@@ -1,5 +1,5 @@
 <div class="listing-wrapper">
-  <div class="cards-grid items-center" [@pageAnimations]="cardsContent?.length || 0">
+  <div class="cards-grid items-justify-center" [@pageAnimations]="cardsContent?.length || 0">
     <div *ngFor="let content of cardsContent">
       <app-card [content]="content"></app-card>
     </div>

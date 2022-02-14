@@ -95,7 +95,7 @@ $light-theme: mat.define-light-theme((
     color: #666;
   }
   td, th {
-    border-color: rgba(0,0,0,.12);
+    border-color: mat.get-color-from-palette($my-palette-1, 700, .5);
   }
 
   code:not([class*="language-"]) {
@@ -124,7 +124,7 @@ $dark-theme: mat.define-dark-theme((
     color: #ccc;
   }
   td, th {
-    border-color: rgba(204, 204, 204, .12);
+    border-color: mat.get-color-from-palette($my-palette-1, 200, .5);
   }
 
   code:not([class*="language-"]) {
@@ -147,6 +147,33 @@ body {
 
 .mat-card-header-text {
   margin: 0 !important;
+}
+
+markdown > p > img,
+markdown > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+div.svg-container {
+  display:grid;
+  justify-items: center;
+}
+
+div.svg-container > img {
+  width: 100%;
+}
+
+markdown > p > img,
+markdown > img,
+div.svg-container {
+  margin: 1rem 0;
+}
+
+markdown > pre,
+markdown > table {
+  margin-bottom: 2.5rem !important;
 }
 
 blockquote {

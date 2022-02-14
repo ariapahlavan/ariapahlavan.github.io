@@ -3,7 +3,8 @@ export enum ContentType {
   CARD = 'card',
   MARKDOWN = 'markdown',
   TEASER = 'teaser',
-  SURVEY = 'survey'
+  SURVEY = 'survey',
+  COMPONENT = 'component'
 }
 
 export enum UrlType {
