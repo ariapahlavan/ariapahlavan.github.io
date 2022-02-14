@@ -29,7 +29,7 @@ echo "<markdown>{{section1}}</markdown>" > "src/app/${page_dir}/${page_name}.com
 
 
 componentPage="src/app/${page_dir}/${page_name}.component.ts"
-printf "UPDATE %s" "${componentPage}"
+printf "UPDATE %s\n" "${componentPage}"
 
 oldPattern="OnInit {"
 newPattern="OnInit {\\n  section1 = require('\!raw-loader\!.\/sections\/section-1.md').default;\\n"
