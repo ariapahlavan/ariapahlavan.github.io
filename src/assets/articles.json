@@ -14,7 +14,7 @@
     "images": [
       {
         "text": "progressive-web-apps-with-workbox",
-        "url": "/articles/images/doge.jpg"
+        "url": "/articles/images/pwa-n-workbox.svg"
       }
     ],
     "thumbnails": []
@@ -34,7 +34,7 @@
     "images": [
       {
         "text": "reactive-programming",
-        "url": "/articles/images/doge.jpg"
+        "url": "/articles/images/reactive.svg"
       }
     ],
     "thumbnails": []
@@ -54,7 +54,7 @@
     "images": [
       {
         "text": "functional-programming",
-        "url": "/articles/images/doge.jpg"
+        "url": "/articles/images/functional.svg"
       }
     ],
     "thumbnails": []

@@ -23,7 +23,7 @@ export class CardComponent implements OnInit {
   }
 
   urlOf(link: Link) {
-    return urlOf(link)
+    return urlOf(link);
   }
 
   thumbUrlOf(link: Link) {
@@ -41,5 +41,10 @@ export class CardComponent implements OnInit {
       case UrlType.EXTERNAL: window.open(link.url, '_blank'); break;
       default: this.router.navigateByUrl(link.url);
     }
+  }
+
+  isSvg(link: Link) {
+    console.log('isSvg', urlOf(link).endsWith('.svg'), 'for',  urlOf(link));
+    return urlOf(link).endsWith('.svg');
   }
 }

@@ -11,7 +11,7 @@
         "url": "/details?filepath=/projects/poly_reg.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/PolyRegJS",
         "type": "EXTERNAL"
       }
@@ -148,7 +148,7 @@
         "url": "/details?filepath=/projects/granular_synth.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/ee445l/tree/master/lab11",
         "type": "EXTERNAL"
       }
@@ -173,7 +173,7 @@
         "url": "/details?filepath=/projects/freechat.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/freechat",
         "type": "EXTERNAL"
       }
@@ -198,7 +198,7 @@
         "url": "/details?filepath=/projects/cpp_stream.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/cppstream",
         "type": "EXTERNAL"
       }
