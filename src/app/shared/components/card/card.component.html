@@ -1,5 +1,5 @@
 <mat-card class="mat-typography card">
-  <img *ngIf="hasLink(content.images)" mat-card-image [src]="urlOf(content.images[0])"
+  <img *ngIf="hasLink(content.images)" mat-card-image [src]="thumbUrlOf(content.images[0])"
        [alt]="textOf(content.images[0])" class="card-img">
   <mat-card-header *ngIf="content.title">
     <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="urlOf(content.thumbnails[0])"

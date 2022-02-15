@@ -23,7 +23,11 @@ export class CardComponent implements OnInit {
   }
 
   urlOf(link: Link) {
-    return urlOf(link);
+    return urlOf(link)
+  }
+
+  thumbUrlOf(link: Link) {
+    return urlOf(link).replace('/images', '/images/thumb');
   }
 
   textOf(link: Link) {
