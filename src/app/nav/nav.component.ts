@@ -12,9 +12,9 @@ import { ThemeService } from '../shared/services/theme.service';
 export class NavComponent implements OnInit {
   menuContent = [
     {text: 'Home', link: '/home'},
+    {text: 'Experiences', link: '/posts/jobs'},
     {text: 'Articles', link: '/posts/articles'},
     {text: 'Projects', link: '/posts/projects'},
-    {text: 'Experience', link: '/posts/jobs'},
   ];
   isLight = window.matchMedia('(prefers-color-scheme: light)').matches;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.XLarge, Breakpoints.Large, Breakpoints.Medium])

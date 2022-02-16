@@ -1,0 +1,24 @@
+[
+  {
+    "type": "header",
+    "title": "VIB3",
+    "subTitle": "Personal",
+    "startDate": "Nov 2021",
+    "endDate": "Present"
+  },
+  {
+    "type": "markdown",
+    "position": "left",
+    "url": "/projects/markdowns/vib3.md"
+  },
+  {
+    "type": "teaser",
+    "position": "right",
+    "images": [
+      {
+        "text": "Doge",
+        "url": "/projects/images/vib3-logo.svg"
+      }
+    ]
+  }
+]

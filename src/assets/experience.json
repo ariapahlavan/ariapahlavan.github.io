@@ -1,76 +1,96 @@
 [
   {
-    "id": "job-5",
+    "id": 5,
     "type": "card",
-    "hidden": true,
-    "title": "Senior Software Engineer",
-    "subTitle": "Visa",
-    "description": "I've been drinking even more coffee and tapping even harder on my keyboard ☕️☕️☕️",
+    "hidden": false,
+    "title": "Senior Full-Stack Software Engineer",
+    "subTitle": "Visa • 2020 - Present",
+    "description": "Leading major migration, releases, and performance improvement & optimization efforts",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/jobs/visa_sse.json"
       }
     ],
-    "images": [],
-    "thumbnails": []
+    "thumbnails": [
+      {
+        "text": "visa logo",
+        "url": "/jobs/images/visa-logo.svg"
+      }
+    ]
   },
   {
-    "id": "job-4",
+    "id": 4,
     "type": "card",
-    "title": "Software Engineer",
-    "subTitle": "Visa",
-    "description": "I've been drinking coffee and tapping on my keyboard ☕️",
+    "title": "Full-Stack Software Engineer",
+    "subTitle": "Visa • 2018 - 2020",
+    "description": "Led migrations and releases, and built full-stack solutions for reCAPTCHA",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/jobs/visa_se.json"
       }
     ],
-    "images": [],
-    "thumbnails": []
+    "thumbnails": [
+      {
+        "text": "visa logo",
+        "url": "/jobs/images/visa-logo.svg"
+      }
+    ]
   },
   {
-    "id": "job-3",
+    "id": 3,
     "type": "card",
     "title": "Software Engineer Intern",
-    "subTitle": "Intel",
-    "description": "During the internship, I debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements.",
+    "subTitle": "Intel • 2017 - 2018",
+    "description": "Debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/jobs/intel_sw_intern.json"
       }
     ],
-    "images": [],
-    "thumbnails": []
+    "thumbnails": [
+      {
+        "text": "intel logo",
+        "url": "/jobs/images/intel-logo.svg"
+      }
+    ]
   },
   {
-    "id": "job-2",
+    "id": 2,
     "type": "card",
     "title": "Electrical Engineer Intern",
-    "subTitle": "Luminant",
-    "description": "At Luminant, I developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams.",
+    "subTitle": "Luminant • 2016 - 2016",
+    "description": "Developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/jobs/luminant_ee_intern.json"
       }
     ],
-    "thumbnails": []
+    "thumbnails": [
+      {
+        "text": "luminant logo",
+        "url": "/jobs/images/luminant-logo.svg"
+      }
+    ]
   },
   {
-    "id": "job-1",
+    "id": 1,
     "type": "card",
     "title": "Software Developer Intern",
-    "subTitle": "Texas PetaWatt",
-    "description": "At Texas PetaWatt, I developed LabVIEW software to automate operation of laser cameras and a vacuum pump.",
+    "subTitle": "Texas PetaWatt • 2015 - 2015",
+    "description": "Developed LabVIEW software to automate operation of laser cameras and a vacuum pump",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/jobs/texas_petawatt_se_intern.json"
       }
     ],
-    "thumbnails": []
+    "thumbnails": [{
+      "text": "texas petawatt logo",
+      "url": "/jobs/images/texas-petawatt-logo2.svg"
+    }]
   }
 ]

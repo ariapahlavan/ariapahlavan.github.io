@@ -102,7 +102,7 @@ $light-theme: mat.define-light-theme((
     background-color: lightgrey;
   }
 
-  markdown a {
+  a {
     color: mat.get-color-from-palette($my-palette-2, 800);
   }
 
@@ -135,7 +135,7 @@ $dark-theme: mat.define-dark-theme((
     background-color: dimgray;
   }
 
-  markdown a {
+  a {
     color: mat.get-color-from-palette($my-palette-2, 400);
   }
 
@@ -153,7 +153,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.mat-card-header-text {
+.not-thumbnail .mat-card-header-text {
   margin: 0 !important;
 }
 

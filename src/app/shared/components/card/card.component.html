@@ -1,8 +1,8 @@
-<mat-card class="mat-typography card">
+<mat-card class="mat-typography card" [ngClass]="{'not-thumbnail': !hasLink(content.thumbnails)}">
   <img *ngIf="hasLink(content.images)" mat-card-image [src]="thumbUrlOf(content.images[0])"
        [alt]="textOf(content.images[0])" class="card-img" [ngClass]="{'svg': isSvg(content.images[0])}">
   <mat-card-header *ngIf="content.title">
-    <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="urlOf(content.thumbnails[0])"
+    <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="thumbUrlOf(content.thumbnails[0])"
          [alt]="textOf(content.thumbnails[0])">
     <mat-card-title>{{content.title}}</mat-card-title>
     <mat-card-subtitle *ngIf="content.subTitle">
@@ -15,11 +15,11 @@
     </p>
   </mat-card-content>
   <mat-card-actions *ngIf="hasLink(content.actions)">
-    <ng-container *ngFor="let cta of content.actions; index as i">
-      <button *ngIf="i === 0" mat-flat-button color="accent" (click)="clickHandler(cta)">
+    <ng-container *ngFor="let cta of content.actions; let first = first">
+      <button *ngIf="first" mat-flat-button color="accent" (click)="clickHandler(cta)">
         {{textOf(cta)}}
       </button>
-      <button *ngIf="i > 0" mat-stroked-button color="accent" (click)="clickHandler(cta)">
+      <button *ngIf="!first" mat-stroked-button color="accent" (click)="clickHandler(cta)">
         {{textOf(cta)}}
       </button>
     </ng-container>

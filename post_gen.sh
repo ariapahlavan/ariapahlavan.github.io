@@ -16,7 +16,7 @@ title=$2
 subtitle=$3
 post=$(printf "${title// /-}" | tr '[:upper:]' '[:lower:]')
 listing_filepath=${assets_dir}/${type}.json
-listing_item="[{\"id\": \"${type}-?\",\"type\": \"card\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"description\": \"\",\"actions\": [{\"text\": \"see more\",\"url\": \"/details?filepath=/${type}/${post}.json\"}],\"images\": [{\"text\": \"${post}\",\"url\": \"/${type}/images/doge.jpg\"}],\"thumbnails\":[]},"
+listing_item="[{\"id\": 0,\"type\": \"card\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"description\": \"\",\"actions\": [{\"text\": \"see more\",\"url\": \"/details?filepath=/${type}/${post}.json\"}],\"images\": [{\"text\": \"${post}\",\"url\": \"/${type}/images/doge.jpg\"}],\"thumbnails\":[]},"
 
 details_filepath=${assets_dir}/${type}/${post}.json
 details_content="[{\"type\": \"header\",\"title\": \"${title}\",\"subTitle\": \"${subtitle}\",\"startDate\": \"\",\"endDate\": \"\"},{\"type\": \"markdown\",\"url\": \"/${type}/markdowns/${post}.md\"},{\"type\":\"teaser\",\"images\":[{\"text\":\"Doge\",\"url\": \"/${type}/images/doge.jpg\"}]}]"

@@ -1,13 +1,13 @@
 [
   {
-    "id": "articles-5",
+    "id": 5,
     "type": "card",
     "title": "Progressive Web Apps with Workbox",
     "subTitle": "Multi-SPA Progressive Web Apps, Part 1",
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/progressive-web-apps-with-workbox.json"
       }
     ],
@@ -20,14 +20,14 @@
     "thumbnails": []
   },
   {
-    "id": "articles-4",
+    "id": 4,
     "type": "card",
     "title": "Reactive Programming",
     "subTitle": "Functional and Reactive Programming, Part 2",
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/reactive-programming.json"
       }
     ],
@@ -40,14 +40,14 @@
     "thumbnails": []
   },
   {
-    "id": "articles-3",
+    "id": 3,
     "type": "card",
     "title": "Functional Programming",
     "subTitle": "Functional and Reactive Programming, Part 1",
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/functional-programming.json"
       }
     ],
@@ -60,7 +60,7 @@
     "thumbnails": []
   },
   {
-    "id": "articles-2",
+    "id": 2,
     "type": "card",
     "hidden": true,
     "title": "Programming Paradigms",
@@ -68,7 +68,7 @@
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/programming-paradigms.json"
       }
     ],
@@ -81,7 +81,7 @@
     "thumbnails": []
   },
   {
-    "id": "articles-1",
+    "id": 1,
     "type": "card",
     "hidden": true,
     "title": "Sample Article",
@@ -89,7 +89,7 @@
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/sample-article.json"
       }
     ],

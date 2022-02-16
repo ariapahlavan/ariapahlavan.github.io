@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { CardContent, Link, UrlType } from '../../../posts/constants/content.interface';
 import { Router } from '@angular/router';
-import { environment as env } from '../../../../environments/environment';
 import { urlOf } from '../../helpers/content.helper';
 
 @Component({
