@@ -3,7 +3,7 @@
     "id": 5,
     "type": "card",
     "hidden": false,
-    "title": "Senior Full-Stack Software Engineer",
+    "title": "Senior Full-Stack SW Engineer",
     "subTitle": "Visa • 2020 - Present",
     "description": "Leading major migration, releases, and performance improvement & optimization efforts",
     "actions": [
@@ -22,9 +22,9 @@
   {
     "id": 4,
     "type": "card",
-    "title": "Full-Stack Software Engineer",
+    "title": "Full-Stack SW Engineer",
     "subTitle": "Visa • 2018 - 2020",
-    "description": "Led migrations and releases, and built full-stack solutions for reCAPTCHA",
+    "description": "Led migrations and releases, and designed a full-stack solution for reCAPTCHA integration",
     "actions": [
       {
         "text": "MORE",
@@ -43,7 +43,7 @@
     "type": "card",
     "title": "Software Engineer Intern",
     "subTitle": "Intel • 2017 - 2018",
-    "description": "Debugged 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements",
+    "description": "Fixed 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements",
     "actions": [
       {
         "text": "MORE",
@@ -62,7 +62,7 @@
     "type": "card",
     "title": "Electrical Engineer Intern",
     "subTitle": "Luminant • 2016 - 2016",
-    "description": "Developed a technical specification for an obsolete transformer by collaborating with 4 different engineering teams",
+    "description": "Developed a technical spec for an obsolete transformer by collaborating with 4 different engineering teams",
     "actions": [
       {
         "text": "MORE",

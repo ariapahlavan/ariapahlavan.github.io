@@ -24,8 +24,13 @@
       <div></div>
 
       <ng-container *ngFor="let content of timelineContent; last as isLast">
-        <div class="tl-icon"></div>
-        <div class="tl-item">{{content.event}}</div>
+        <a [href]="content.link" mat-mini-fab class="tl-icon">
+          {{content.icon}}
+        </a>
+        <div class="tl-item" (mouseover)="content.showDate=true" (mouseleave)="content.showDate=false">
+          {{content.showDate ? content.event : content.event}}
+        </div>
+        <div class="tl-item tl-date">{{content.date}}</div>
         <div *ngIf="!isLast" class="tl-line"></div>
         <div></div>
       </ng-container>

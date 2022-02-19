@@ -3,6 +3,7 @@
        [alt]="textOf(content.images[0])" class="card-img" [ngClass]="{'svg': isSvg(content.images[0])}">
   <mat-card-header *ngIf="content.title">
     <img *ngIf="hasLink(content.thumbnails)" mat-card-avatar [src]="thumbUrlOf(content.thumbnails[0])"
+         [ngClass]="{'svg': isSvg(content.thumbnails[0])}"
          [alt]="textOf(content.thumbnails[0])">
     <mat-card-title>{{content.title}}</mat-card-title>
     <mat-card-subtitle *ngIf="content.subTitle">

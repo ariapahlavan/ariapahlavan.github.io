@@ -217,6 +217,10 @@ table {
   }
 }
 
+li {
+  margin-bottom: 20px;
+}
+
 @include mobile-n-larger {
   .wrapper {
     padding: 20px 1rem;

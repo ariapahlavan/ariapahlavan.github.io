@@ -43,7 +43,6 @@ export class CardComponent implements OnInit {
   }
 
   isSvg(link: Link) {
-    console.log('isSvg', urlOf(link).endsWith('.svg'), 'for',  urlOf(link));
     return urlOf(link).endsWith('.svg');
   }
 }
