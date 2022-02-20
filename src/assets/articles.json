@@ -1,6 +1,6 @@
 [
   {
-    "id": 5,
+    "id": 6,
     "type": "card",
     "title": "Progressive Web Apps with Workbox",
     "subTitle": "Multi-SPA Progressive Web Apps, Part 1",
@@ -16,11 +16,10 @@
         "text": "progressive-web-apps-with-workbox",
         "url": "/articles/images/pwa-n-workbox.svg"
       }
-    ],
-    "thumbnails": []
+    ]
   },
   {
-    "id": 4,
+    "id": 5,
     "type": "card",
     "title": "Reactive Programming",
     "subTitle": "Functional and Reactive Programming, Part 2",
@@ -36,8 +35,27 @@
         "text": "reactive-programming",
         "url": "/articles/images/reactive.svg"
       }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "card",
+    "title": "reCAPTCHA verification by Nginx",
+    "subTitle": "Verify reCAPTCHA token using auth_request",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/nginx-and-recaptcha.json"
+      }
     ],
-    "thumbnails": []
+    "images": [
+
+      {
+        "text": "nginx-and-recaptcha",
+        "url": "/articles/images/nginx-n-recaptcha.svg"
+      }
+    ]
   },
   {
     "id": 3,
@@ -56,8 +74,7 @@
         "text": "functional-programming",
         "url": "/articles/images/functional.svg"
       }
-    ],
-    "thumbnails": []
+    ]
   },
   {
     "id": 2,
@@ -77,8 +94,7 @@
         "text": "programming-paradigms",
         "url": "/articles/images/doge.jpg"
       }
-    ],
-    "thumbnails": []
+    ]
   },
   {
     "id": 1,
@@ -98,7 +114,6 @@
         "text": "sample-article",
         "url": "/projects/images/doge.jpg"
       }
-    ],
-    "thumbnails": []
+    ]
   }
 ]

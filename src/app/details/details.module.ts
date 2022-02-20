@@ -9,6 +9,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { FunctionalProgrammingComponent } from './pages/functional-programming/functional-programming.component';
 import { ReactiveProgrammingComponent } from './pages/reactive-programming/reactive-programming.component';
 import { PwaWorkboxComponent } from './pages/pwa-workbox/pwa-workbox.component';
+import { NginxRecaptchaComponent } from './pages/nginx-recaptcha/nginx-recaptcha.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PwaWorkboxComponent } from './pages/pwa-workbox/pwa-workbox.component';
     DetailsComponent,
     FunctionalProgrammingComponent,
     ReactiveProgrammingComponent,
-    PwaWorkboxComponent
+    PwaWorkboxComponent,
+    NginxRecaptchaComponent
   ],
   imports: [
     CommonModule,

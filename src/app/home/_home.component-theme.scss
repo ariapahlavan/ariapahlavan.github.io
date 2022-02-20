@@ -10,6 +10,7 @@
 
   $primary-400: mat.get-color-from-palette($primary-palette, 400);
   $accent-400: mat.get-color-from-palette($accent-palette, 400);
+  $accent-800: mat.get-color-from-palette($accent-palette, 800);
 
   .tl-dotted-line,
   .tl-line,
@@ -24,8 +25,18 @@
   }
 
   .contacts-section a {
-    color: $accent-400;
     font-size: 1.2rem;
+    @if $is-dark-theme {
+      color: $accent-400;
+    } @else {
+      color: $accent-800;
+    }
+  }
+
+  .avatar-section img {
+    @if $is-dark-theme {
+      filter: grayscale(100%);
+    }
   }
 }
 
