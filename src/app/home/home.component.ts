@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment as env } from '../../environments/environment';
 
 interface TimelineContent {
   event: string;
@@ -22,7 +23,7 @@ interface ContactContent {
 export class HomeComponent implements OnInit {
   aboutMeContent = {
 
-    avatarUrl: '/assets/me.jpg',
+    avatarUrl: `${env.assetsPath}/assets/me.jpg`,
     avatarAlt: 'Aria Pahlavan',
     name: 'Aria Pahlavan',
     summary: 'Sr. Full-Stack SW Engineer',
