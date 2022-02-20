@@ -1,0 +1,91 @@
+[
+  {
+    "type": "header",
+    "title": "Programming Paradigms",
+    "subTitle": "Functional Programming, Part 1",
+    "startDate": "June 5, 2021",
+    "endDate": ""
+  },
+  {
+    "type": "markdown",
+    "position": "left",
+    "url": "/articles/markdowns/programming-paradigms-1.md"
+  },
+  {
+    "type": "teaser",
+    "position": "right",
+    "images": [
+      {
+        "text": "Uninterested cat",
+        "url": "/articles/images/uninterested.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "survey",
+    "title": "Which of these programming languages are procedural?",
+    "subTitle": "Select all possibilities",
+    "multi": true,
+    "points": 5,
+    "choices": [
+      {
+        "title": "Java",
+        "correct": false
+      },
+      {
+        "title": "C",
+        "correct": true
+      },
+      {
+        "title": "C++",
+        "correct": true
+      },
+      {
+        "title": "JavaScript",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "type": "survey",
+    "title": "Which of these programming languages are object-oriented?",
+    "subTitle": "Select all possibilities",
+    "multi": true,
+    "points": 5,
+    "choices": [
+      {
+        "title": "Java",
+        "correct": true
+      },
+      {
+        "title": "Lisp",
+        "correct": false
+      },
+      {
+        "title": "C++",
+        "correct": true
+      },
+      {
+        "title": "JavaScript",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "type": "markdown",
+    "url": "/articles/markdowns/programming-paradigms-2.md"
+  },
+  {
+    "type": "teaser",
+    "images": [
+      {
+        "text": "Programming paradigms",
+        "url": "/articles/images/programming-paradigms.svg"
+      }
+    ]
+  },
+  {
+    "type": "markdown",
+    "url": "/articles/markdowns/programming-paradigms-3.md"
+  }
+]

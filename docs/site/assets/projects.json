@@ -1,17 +1,47 @@
 [
   {
-    "id": "projects-8",
+    "id": 9,
+    "type": "card",
+    "title": "VIB3",
+    "subTitle": "Personal",
+    "description": "An NPM package aimed to abstract out three.js boilerplate code",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/vib3.json"
+      },
+      {
+        "text": "GITHUB",
+        "url": "https://github.com/ariapahlavan/vib3",
+        "type": "EXTERNAL"
+      },
+      {
+        "text": "NPM",
+        "url": "https://www.npmjs.com/package/vib3",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+      {
+        "text": "vib3",
+        "url": "/projects/images/vib3-logo.svg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 8,
     "type": "card",
     "title": "Polynomial Regression Sim",
     "subTitle": "Personal",
     "description": "I developed an application for simulating/visualizing polynomial regression —through interactive sampling of data— using TensorFlow.js library.",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/projects/poly_reg.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/PolyRegJS",
         "type": "EXTERNAL"
       }
@@ -26,23 +56,128 @@
     "thumbnails": []
   },
   {
-    "id": "project-1",
+    "id": 7,
+    "type": "card",
+    "title": "Celebrity Look-alike Finder",
+    "subTitle": "Personal",
+    "description": "I designed a responsive web app, allowing users find out who's their Celebrity look-alike, using Clarifai celebrity detection API. The app, as well as its server and database are all deployed separately on Heroku cloud",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/celeb_twin.json"
+      },
+      {
+        "text": "UI",
+        "url": "https://github.com/AriaPahlavan/celebtwin",
+        "type": "EXTERNAL"
+      },
+      {
+        "text": "API",
+        "url": "https://github.com/AriaPahlavan/celebtwin-server",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+      {
+        "text": "celeb_twin",
+        "url": "/projects/images/celeb_twin.png"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 6,
+    "type": "card",
+    "title": "See-Through ADAS",
+    "subTitle": "Academic",
+    "description": "See-Through ADAS honors project is an autonomous driver assistance system with stitched video feeds from the perspective of two cars, one behind the other, with useful annotated information",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/see_through_adas.json"
+      },
+      {
+        "text": "UI",
+        "url": "https://github.com/AriaPahlavan/see-through-adas-app",
+        "type": "EXTERNAL"
+      },
+      {
+        "text": "API",
+        "url": "https://github.com/AriaPahlavan/see-through-adas-core",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+      {
+        "text": "see_through_adas",
+        "url": "/projects/images/see_through_adas.png"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 5,
+    "type": "card",
+    "title": "Granular Synthesizer",
+    "subTitle": "Academic",
+    "description": "For the final project of my embedded systems laboratory class, my partner and I developed a portable granular synthesizer, which allows recording a snippet of audio and playing different parts of it at different times and frequencies",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/granular_synth.json"
+      },
+      {
+        "text": "GITHUB",
+        "url": "https://github.com/AriaPahlavan/ee445l/tree/master/lab11",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+      {
+        "text": "granular_synth",
+        "url": "/projects/images/granular_synth.png"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 4,
+    "type": "card",
+    "title": "Augmented Audio",
+    "subTitle": "Academic",
+    "description": "Augmented Audio project is my senior design project, and won 2nd place among 13 teams using just over half of the budget ($599)",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/augmented_audio.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "augmented_audio",
+        "url": "/projects/images/augmented_audio.png"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 3,
     "type": "card",
     "title": "Pastiche",
     "subTitle": "Academic",
     "description": "As part of our academic project, we built an android and deployed its backed service in AWS",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/projects/pastiche.json"
       },
       {
-        "text": "ui",
+        "text": "UI",
         "url": "https://github.com/JesusLegaspy/EE461L-Pastiche",
         "type": "EXTERNAL"
       },
       {
-        "text": "api",
+        "text": "API",
         "url": "https://github.com/Jacobingalls/EE461L-Pastiche-Server",
         "type": "EXTERNAL"
       }
@@ -57,148 +192,18 @@
     "thumbnails": []
   },
   {
-    "id": "projects-5",
-    "type": "card",
-    "title": "See-Through ADAS",
-    "subTitle": "Academic",
-    "description": "See-Through ADAS honors project is an autonomous driver assistance system with stitched video feeds from the perspective of two cars, one behind the other, with useful annotated information.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/projects/see_through_adas.json"
-      },
-      {
-        "text": "ui",
-        "url": "https://github.com/AriaPahlavan/see-through-adas-app",
-        "type": "EXTERNAL"
-      },
-      {
-        "text": "api",
-        "url": "https://github.com/AriaPahlavan/see-through-adas-core",
-        "type": "EXTERNAL"
-      }
-    ],
-    "images": [
-      {
-        "text": "see_through_adas",
-        "url": "/projects/images/see_through_adas.png"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "projects-3",
-    "type": "card",
-    "title": "Augmented Audio",
-    "subTitle": "Academic",
-    "description": "Augmented Audio project is my senior design project, and won 2nd place among 13 teams using just over half of the budget ($599).",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/projects/augmented_audio.json"
-      }
-    ],
-    "images": [
-      {
-        "text": "augmented_audio",
-        "url": "/projects/images/augmented_audio.png"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "projects-7",
-    "type": "card",
-    "title": "Celebrity Look-alike Finder",
-    "subTitle": "Personal",
-    "description": "I designed a responsive web app, allowing users find out who's their Celebrity look-alike, using Clarifai celebrity detection API. The app, as well as its server and database are all deployed separately on Heroku cloud.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/projects/celeb_twin.json"
-      },
-      {
-        "text": "ui",
-        "url": "https://github.com/AriaPahlavan/celebtwin",
-        "type": "EXTERNAL"
-      },
-      {
-        "text": "api",
-        "url": "https://github.com/AriaPahlavan/celebtwin-server",
-        "type": "EXTERNAL"
-      }
-    ],
-    "images": [
-      {
-        "text": "celeb_twin",
-        "url": "/projects/images/celeb_twin.png"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "projects-6",
-    "type": "card",
-    "title": "Granular Synthesizer",
-    "subTitle": "Academic",
-    "description": "For the final project of my embedded systems laboratory class, my partner and I developed a portable granular synthesizer, which allows recording a snippet of audio and playing different parts of it at different times and frequencies.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/projects/granular_synth.json"
-      },
-      {
-        "text": "github",
-        "url": "https://github.com/AriaPahlavan/ee445l/tree/master/lab11",
-        "type": "EXTERNAL"
-      }
-    ],
-    "images": [
-      {
-        "text": "granular_synth",
-        "url": "/projects/images/granular_synth.png"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "projects-2",
-    "type": "card",
-    "title": "Freechat",
-    "subTitle": "Academic",
-    "description": "Freechat project is a chatroom Android app that I developed in a group of four students. We developed both the Android app and the servers servicing the client requests.",
-    "actions": [
-      {
-        "text": "see more",
-        "url": "/details?filepath=/projects/freechat.json"
-      },
-      {
-        "text": "github",
-        "url": "https://github.com/AriaPahlavan/freechat",
-        "type": "EXTERNAL"
-      }
-    ],
-    "images": [
-      {
-        "text": "freechat",
-        "url": "/projects/images/doge.jpg"
-      }
-    ],
-    "thumbnails": []
-  },
-  {
-    "id": "projects-4",
+    "id": 2,
     "type": "card",
     "title": "C++ Stream",
     "subTitle": "Personal",
-    "description": "Java 8 style streams for C++.",
+    "description": "Java 8 style streams for C++",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/projects/cpp_stream.json"
       },
       {
-        "text": "github",
+        "text": "GITHUB",
         "url": "https://github.com/AriaPahlavan/cppstream",
         "type": "EXTERNAL"
       }
@@ -206,6 +211,31 @@
     "images": [
       {
         "text": "cpp_stream",
+        "url": "/projects/images/doge.jpg"
+      }
+    ],
+    "thumbnails": []
+  },
+  {
+    "id": 1,
+    "type": "card",
+    "title": "Freechat",
+    "subTitle": "Academic",
+    "description": "Freechat project is a chatroom Android app that I developed in a group of four students. We developed both the Android app and the servers servicing the client requests",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/projects/freechat.json"
+      },
+      {
+        "text": "GITHUB",
+        "url": "https://github.com/AriaPahlavan/freechat",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+      {
+        "text": "freechat",
         "url": "/projects/images/doge.jpg"
       }
     ],

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "header",
+    "title": "Functional Programming",
+    "subTitle": "Functional and Reactive Programming, Part 1",
+    "startDate": "May 2019",
+    "endDate": ""
+  },
+  {
+    "id": "fp",
+    "type": "component"
+  }
+]

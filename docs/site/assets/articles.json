@@ -1,13 +1,111 @@
 [
   {
-    "id": "articles-1",
+    "id": 6,
     "type": "card",
+    "title": "Progressive Web Apps with Workbox",
+    "subTitle": "Multi-SPA Progressive Web Apps, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/articles/progressive-web-apps-with-workbox.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "progressive-web-apps-with-workbox",
+        "url": "/articles/images/pwa-n-workbox.svg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "card",
+    "title": "Reactive Programming",
+    "subTitle": "Functional and Reactive Programming, Part 2",
+    "description": "",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/articles/reactive-programming.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "reactive-programming",
+        "url": "/articles/images/reactive.svg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "card",
+    "title": "reCAPTCHA verification by Nginx",
+    "subTitle": "Verify reCAPTCHA token using auth_request",
+    "description": "",
+    "actions": [
+      {
+        "text": "see more",
+        "url": "/details?filepath=/articles/nginx-and-recaptcha.json"
+      }
+    ],
+    "images": [
+
+      {
+        "text": "nginx-and-recaptcha",
+        "url": "/articles/images/nginx-n-recaptcha.svg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "card",
+    "title": "Functional Programming",
+    "subTitle": "Functional and Reactive Programming, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/articles/functional-programming.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "functional-programming",
+        "url": "/articles/images/functional.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "card",
+    "hidden": true,
+    "title": "Programming Paradigms",
+    "subTitle": "Functional Programming, Part 1",
+    "description": "",
+    "actions": [
+      {
+        "text": "MORE",
+        "url": "/details?filepath=/articles/programming-paradigms.json"
+      }
+    ],
+    "images": [
+      {
+        "text": "programming-paradigms",
+        "url": "/articles/images/doge.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "card",
+    "hidden": true,
     "title": "Sample Article",
     "subTitle": "Subject",
     "description": "",
     "actions": [
       {
-        "text": "see more",
+        "text": "MORE",
         "url": "/details?filepath=/articles/sample-article.json"
       }
     ],
@@ -16,7 +114,6 @@
         "text": "sample-article",
         "url": "/projects/images/doge.jpg"
       }
-    ],
-    "thumbnails": []
+    ]
   }
 ]

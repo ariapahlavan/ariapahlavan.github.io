@@ -1,0 +1,13 @@
+[
+  {
+    "type": "header",
+    "title": "Progressive Web Apps with Workbox",
+    "subTitle": "Multi-SPA Progressive Web Apps, Part 1",
+    "startDate": "Feb 2020",
+    "endDate": ""
+  },
+  {
+    "id": "pwa-workbox",
+    "type": "component"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "header",
+    "title": "reCAPTCHA verification by Nginx",
+    "subTitle": "Verify reCAPTCHA token using auth_request",
+    "startDate": "Jul 2019",
+    "endDate": ""
+  },
+  {
+    "id": "nginx-recaptcha",
+    "type": "component"
+  }
+]

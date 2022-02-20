@@ -3,7 +3,7 @@ specification for an electrical transformer. To do so, I broke down the
 project into three steps: collaboration, research and development.
 
 First, I collaborated with electrical, mechanical and civil engineering
-teams outside of my group to gather valuable technical requirements
+teams outside my group to gather valuable technical requirements
 regarding the transformer.
 
 Second, I researched different industry standards for
