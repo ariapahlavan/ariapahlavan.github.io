@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment as env } from '../../environments/environment';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 interface TimelineContent {
   event: string;
@@ -13,6 +15,7 @@ interface ContactContent {
   title: string;
   url: string;
   icon: string;
+  isSvg?: boolean;
 }
 
 @Component({
@@ -21,6 +24,8 @@ interface ContactContent {
   styleUrls: ['./home.component.scss', './_home.component-theme.scss']
 })
 export class HomeComponent implements OnInit {
+  constructor() { }
+
   aboutMeContent = {
 
     avatarUrl: `${env.assetsPath}/me2.jpg`,
@@ -35,12 +40,12 @@ export class HomeComponent implements OnInit {
   };
 
   contactsContent: ContactContent[] = [
-    {title: 'GitHub', icon: 'fab fa-github-alt', url: 'https://github.com/ariapahlavan'},
-    {title: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/ariapahlavan/'},
-    {title: 'Stack Overflow', icon: 'fab fa-stack-overflow', url: 'https://stackoverflow.com/users/6042837/aria-pahlavan?tab=profile'},
-    // {title: 'Twitter', icon: 'fab fa-twitter', url: '#'},
-    {title: 'Email', icon: 'fas fa-at', url: 'mailto:arix.ap@gmail.com'},
-    {title: 'Resume', icon: 'fas fa-align-left', url: '#'}
+    {title: 'GitHub', icon: 'github', url: 'https://github.com/ariapahlavan', isSvg: true},
+    {title: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/ariapahlavan/', isSvg: true},
+    {title: 'Stack Overflow', icon: 'stack-overflow', url: 'https://stackoverflow.com/users/6042837/aria-pahlavan?tab=profile', isSvg: true},
+    // {title: 'Twitter', icon: 'twitter', url: '#', isSvg: true},
+    {title: 'Email', icon: 'alternate_email', url: 'mailto:arix.ap@gmail.com'},
+    {title: 'Resume', icon: 'description', url: '#'}
   ];
 
   timelineContent: TimelineContent[] = [

@@ -9,7 +9,8 @@
       <div class="contacts-section contacts-layout items-justify-center m0 p1">
         <ng-container *ngFor="let content of contactsContent">
           <a mat-icon-button [title]="content.title" target="_blank" [href]="content.url">
-            <i class="{{content.icon}}"></i>
+            <mat-icon *ngIf="content.isSvg" [svgIcon]="content.icon"></mat-icon>
+            <mat-icon *ngIf="!content.isSvg">{{content.icon}}</mat-icon>
           </a>
         </ng-container>
       </div>
