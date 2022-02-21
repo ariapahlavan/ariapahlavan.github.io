@@ -5,7 +5,7 @@
     "hidden": false,
     "title": "Senior Full-Stack SW Engineer",
     "subTitle": "Visa • 2020 - Present",
-    "description": "Leading major migration, releases, and performance improvement & optimization efforts",
+    "description": "Leading LTA releases and performance improvement efforts, allowing enrollment of 25M+ users",
     "actions": [
       {
         "text": "MORE",
@@ -24,7 +24,7 @@
     "type": "card",
     "title": "Full-Stack SW Engineer",
     "subTitle": "Visa • 2018 - 2020",
-    "description": "Led migrations and releases, and designed a full-stack solution for reCAPTCHA integration",
+    "description": "Led releases and migration of 750K+ users, resulting in over $500K/year of saving",
     "actions": [
       {
         "text": "MORE",
@@ -43,7 +43,7 @@
     "type": "card",
     "title": "Software Engineer Intern",
     "subTitle": "Intel • 2017 - 2018",
-    "description": "Fixed 2 high-priority parser issues that reduced compilation time by 15% (45 min) through algorithmic improvements",
+    "description": "Refactored legacy code to enable concurrency and fixed 2 high-priority parser issues",
     "actions": [
       {
         "text": "MORE",
