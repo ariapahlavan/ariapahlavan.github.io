@@ -1,11 +1,10 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../environments/environment';
 import { CardContent } from './constants/content.interface';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { publishedOnly } from '../shared/helpers/content.helper';
+import { PostsService } from '../shared/services/posts.service';
 
 @Component({
   selector: 'app-posts',
@@ -21,19 +20,12 @@ export class PostsComponent implements OnInit {
   }
 
   constructor(
-    private http: HttpClient,
+    private postsService: PostsService,
     private router: ActivatedRoute
   ) {
-    this.experienceCms$
-      = this.http
-      .get<CardContent[]>(`${env.assetsPath}${router.snapshot.data.path}`)
-      .pipe(map(this.toPublishedOnly()), map(x => x as CardContent[]));
+    this.experienceCms$ = postsService.posts(this.router.snapshot.data.key);
   }
 
   ngOnInit(): void {
-  }
-
-  toPublishedOnly() {
-    return publishedOnly();
   }
 }

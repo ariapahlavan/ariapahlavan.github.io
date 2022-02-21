@@ -11,17 +11,17 @@ const routes: Routes = [
   {
     path: 'jobs',
     component: PostsComponent,
-    data: {path: environment.experiencePath}
+    data: {path: environment.experiencePath, key: environment.experienceKey}
   },
   {
     path: 'projects',
     component: PostsComponent,
-    data: {path: environment.projectsPath}
+    data: {path: environment.projectsPath, key: environment.projectsKey}
   },
   {
     path: 'articles',
     component: PostsComponent,
-    data: {path: environment.articlesPath}
+    data: {path: environment.articlesPath, key: environment.articlesKey}
   }
 ];
 

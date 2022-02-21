@@ -3,5 +3,8 @@ export const environment = {
   contentPath: '/postsContent.json',
   experiencePath: '/experience.json',
   articlesPath: '/articles.json',
-  projectsPath: '/projects.json'
+  projectsPath: '/projects.json',
+  experienceKey: 'experience',
+  articlesKey: 'articles',
+  projectsKey: 'projects'
 };

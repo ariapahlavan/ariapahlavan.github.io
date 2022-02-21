@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { SurveyComponent } from './components/survey/survey.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PostsService } from './services/posts.service';
 
 const COMPONENTS = [
   CardComponent, CardGridComponent, SurveyComponent
@@ -35,7 +36,8 @@ const MAT_MODULES = [
     ],
   providers: [
     LocalStorageService,
-    ThemeService
+    ThemeService,
+    PostsService
   ],
   exports: [...COMPONENTS, ...MAT_MODULES]
 })
