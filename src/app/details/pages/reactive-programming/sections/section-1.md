@@ -87,7 +87,7 @@ that process on each event in a stream, and **complete** is the last step:
 </div>
 
 ## RxJS (Front-end)
-```typescript
+```js
 // Publisher
 Observable.create(...)
 
@@ -132,7 +132,7 @@ In Reactive Spring, we might want to convert a `Mono` to `Flux` and vice versa:
 # Map, Filter and Reduce
 
 RxJS:
-```typescript
+```js
 const sampleObservable$: Observable<string> = new Observable(observer => {
     observer.next('Hello');
     observer.next('Bad message');
@@ -176,7 +176,7 @@ sampleFlux.map(String::toLowerCase)
 
 # Logging
 
-```typescript
+```js
 of('hello', 'world')
     .pipe(
         tap(x => console.debug('__ORIGINAL_CONTENT__:', x)),
@@ -217,7 +217,7 @@ Flux.just("Hello", "world")
 
 # Error handling
 
-```typescript
+```js
 const observable$: Observable<string> = new Observable(observer => {
     observer.next('hello');
     observer.error('source error');
