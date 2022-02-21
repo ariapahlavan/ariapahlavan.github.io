@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, SecurityContext } from '@angular/core';
+import { InjectionToken, NgModule, SecurityContext } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { isPlatformBrowser } from '@angular/common';
+import { DefaultUrlSerializer, UrlSerializer, UrlTree } from '@angular/router';
+import { urlSerializerFactory } from './shared/helpers/trailing-slash.helper';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,7 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatListModule
   ],
-  providers: [],
+  providers: [{ provide: UrlSerializer, useFactory: urlSerializerFactory }],
   bootstrap: [AppComponent]
 })
 export class AppModule {
