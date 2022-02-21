@@ -7,8 +7,9 @@
     "postbuild:watch": "kill (ps | grep 'lite-server' | head -n1 | awk '{print $1;}')",
     "lite-server": "lite-server --baseDir=dist/gh-pages",
     "add-404": "cp docs/site/index.html docs/site/404.html && cp docs/site/index.html docs/404.html",
+    "add-index": "cp docs/site/index.html docs/index.html",
     "ci": "ng build --configuration production --output-path docs/site --base-href /site/",
-    "postci": "npm run add-404 && touch docs/site/.nojekyll",
+    "postci": "npm run add-404 && npm run add-index && touch docs/site/.nojekyll",
     "gen-post": "./post_gen.sh"
   },
   "private": true,
