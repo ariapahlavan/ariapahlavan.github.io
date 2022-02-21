@@ -23,7 +23,7 @@ interface ContactContent {
 export class HomeComponent implements OnInit {
   aboutMeContent = {
 
-    avatarUrl: `${env.assetsPath}/me.jpg`,
+    avatarUrl: `${env.assetsPath}/me2.jpg`,
     avatarAlt: 'Aria Pahlavan',
     name: 'Aria Pahlavan',
     summary: 'Sr. Full-Stack SW Engineer',
