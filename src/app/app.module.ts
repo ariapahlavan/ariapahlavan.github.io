@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { InjectionToken, NgModule, SecurityContext } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,9 +14,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { isPlatformBrowser } from '@angular/common';
-import { DefaultUrlSerializer, UrlSerializer, UrlTree } from '@angular/router';
+import { UrlSerializer } from '@angular/router';
 import { urlSerializerFactory } from './shared/helpers/trailing-slash.helper';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,11 @@ import { urlSerializerFactory } from './shared/helpers/trailing-slash.helper';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: true,
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [{ provide: UrlSerializer, useFactory: urlSerializerFactory }],
   bootstrap: [AppComponent]
