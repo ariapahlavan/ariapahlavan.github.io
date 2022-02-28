@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1646026340585,
+  "timestamp": 1646072841736,
   "index": "/site/index.html",
   "assetGroups": [
     {
@@ -16,10 +16,10 @@
         "/site/main.008688f836e1f5be.js",
         "/site/manifest.webmanifest",
         "/site/polyfills.460f34a99d5c9f54.js",
-        "/site/runtime.192b0e47e9e273a5.js",
+        "/site/runtime.6bd3fb1aff364818.js",
         "/site/scripts.13c8938816ee9b67.js",
         "/site/src_app_details_details_module_ts.1861d999771490a9.js",
-        "/site/src_app_home_home_module_ts.171a165c33275f0e.js",
+        "/site/src_app_home_home_module_ts.bca2fdb7c4256c67.js",
         "/site/src_app_posts_posts_module_ts.c65418e24c47d7e4.js",
         "/site/src_app_testing_testing_module_ts.7fb4779e78410b02.js",
         "/site/src_app_workout-tracker_workout-tracker_module_ts.0e79804873862fd3.js",
@@ -35,7 +35,6 @@
         "ignoreVary": true
       },
       "urls": [
-        "/site/assets/Aria-Pahlavan-Resume.pdf",
         "/site/assets/articles.json",
         "/site/assets/articles/functional-programming.json",
         "/site/assets/articles/images/acc-reduce.svg",
@@ -161,7 +160,6 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/site/assets/Aria-Pahlavan-Resume.pdf": "84d8f0bcf365ff0e5e9a8bca7416dd55927c2874",
     "/site/assets/articles.json": "73614429cedc2cd203fab8d4a2821ec4f6303084",
     "/site/assets/articles/functional-programming.json": "fef9ec4880762f613ab0d443414190a657e813cb",
     "/site/assets/articles/images/acc-reduce.svg": "9158f60260894865439bf34b38982a898139bed7",
@@ -282,14 +280,14 @@
     "/site/assets/projects/see_through_adas.json": "171fb42214847f52819446a02833bfb91645b57f",
     "/site/assets/projects/vib3.json": "0b63f61730caa25b0c2d418690096ae74172422a",
     "/site/favicon.ico": "32854e83e9fc5104b0689ddc1a6ca2d02f5c0f73",
-    "/site/index.html": "13e1523c7706542bfd91f6bc7661b3e04d84e5ad",
+    "/site/index.html": "8f11d3cda767a59c7e65ce1ebbe5197f5a8143f3",
     "/site/main.008688f836e1f5be.js": "10a30001e67de2490d772581e25cd737005816e4",
     "/site/manifest.webmanifest": "6c47fa118a72d54553e208c79d6d793a42249cff",
     "/site/polyfills.460f34a99d5c9f54.js": "8e3556b2d99783d3d2f856145de3641f84f8febe",
-    "/site/runtime.192b0e47e9e273a5.js": "7708806ca8053adc672eff37e555179068d34501",
+    "/site/runtime.6bd3fb1aff364818.js": "9e9db1b722750b36cf95d4042dee108721cdf003",
     "/site/scripts.13c8938816ee9b67.js": "3d6208469f6d141401bdaa6beb9e39da9de67a8d",
     "/site/src_app_details_details_module_ts.1861d999771490a9.js": "b6e37f2976cf633a4f131690c1f228c8b12a9408",
-    "/site/src_app_home_home_module_ts.171a165c33275f0e.js": "7a7e78603df6c7345e8ccf885bcd3d82149b7558",
+    "/site/src_app_home_home_module_ts.bca2fdb7c4256c67.js": "80b6043d2e127a634fde35dbe9c108b6826367b7",
     "/site/src_app_posts_posts_module_ts.c65418e24c47d7e4.js": "0fb608aa4cefbe9ea6f9b41ebb4efd7c0ee1e589",
     "/site/src_app_testing_testing_module_ts.7fb4779e78410b02.js": "9f9efb9c736a189c00fda2e290f883288ca83fee",
     "/site/src_app_workout-tracker_workout-tracker_module_ts.0e79804873862fd3.js": "38ed7b0655cf4cccbb7c3cba4684598a9da6a3cd",
