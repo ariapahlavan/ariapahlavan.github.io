@@ -1,3 +1,4 @@
+[//]: # (Developed a technical specification for an obsolete transformer in collaboration with 4 different engineering teams.)
 My summer project at Luminant Power was to develop a technical
 specification for an electrical transformer. To do so, I broke down the
 project into three steps: collaboration, research and development.

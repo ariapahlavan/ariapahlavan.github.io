@@ -1,3 +1,5 @@
+[//]: # (Updated camera APIs to ensure compatibility with 4 new cameras)
+[//]: # (Automated pump process in LabVIEW, saving ~0.75 hour manual work daily)
 I automated the process of vacuuming a chamber through developing
 a LabVIEW program to pump the vacuum chamber using a vacuum pump, 
 stepper motor, and throttle valve. The program would initiate the pump 
