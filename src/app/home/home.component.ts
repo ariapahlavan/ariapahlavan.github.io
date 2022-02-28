@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     {title: 'Stack Overflow', icon: 'stack-overflow', url: 'https://stackoverflow.com/users/6042837/aria-pahlavan?tab=profile', isSvg: true},
     // {title: 'Twitter', icon: 'twitter', url: '#', isSvg: true},
     {title: 'Email', icon: 'alternate_email', url: 'mailto:arix.ap@gmail.com'},
-    {title: 'Resume', icon: 'description', url: '#'}
+    {title: 'Resume', icon: 'description', url: `${env.assetsPath}/Aria-Pahlavan-Resume.pdf`}
   ];
 
   timelineContent: TimelineContent[] = [
