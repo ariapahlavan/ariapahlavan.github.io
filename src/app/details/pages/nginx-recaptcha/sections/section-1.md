@@ -50,7 +50,7 @@ server {
 
 That's it! 🥳
 
-Since your endpoint returns a `401` if the verification was successful, `auth_request`
+Since your endpoint returns a `401` if the verification was unsuccessful, `auth_request`
 module handles that as failure, so it will not proxy pass the original request to the
 corresponding service.
 
