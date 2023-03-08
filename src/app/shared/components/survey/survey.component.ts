@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SurveyContent } from '../../../posts/constants/content.interface';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-survey',
@@ -9,10 +9,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class SurveyComponent implements OnInit {
   @Input() content: SurveyContent;
-  surveyForm: FormGroup;
+  surveyForm: UntypedFormGroup;
   results = null;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.surveyForm = this.fb.group(
