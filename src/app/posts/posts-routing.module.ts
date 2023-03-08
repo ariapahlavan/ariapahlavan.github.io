@@ -6,22 +6,26 @@ import {environment} from '../../environments/environment';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'jobs'
+    redirectTo: 'jobs',
+    pathMatch: 'prefix'
   },
   {
     path: 'jobs',
     component: PostsComponent,
-    data: {path: environment.experiencePath, key: environment.experienceKey}
+    data: {path: environment.experiencePath, key: environment.experienceKey},
+    pathMatch: 'prefix'
   },
   {
     path: 'projects',
     component: PostsComponent,
-    data: {path: environment.projectsPath, key: environment.projectsKey}
+    data: {path: environment.projectsPath, key: environment.projectsKey},
+    pathMatch: 'prefix'
   },
   {
     path: 'articles',
     component: PostsComponent,
-    data: {path: environment.articlesPath, key: environment.articlesKey}
+    data: {path: environment.articlesPath, key: environment.articlesKey},
+    pathMatch: 'prefix'
   }
 ];
 

@@ -9,23 +9,28 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    pathMatch: 'prefix'
   },
   {
     path: 'posts',
-    loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)
+    loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule),
+    pathMatch: 'prefix'
   },
   {
     path: 'details',
-    loadChildren: () => import('./details/details.module').then(m => m.DetailsModule)
+    loadChildren: () => import('./details/details.module').then(m => m.DetailsModule),
+    pathMatch: 'prefix'
   },
   {
     path: 'test',
-    loadChildren: () => import('./testing/testing.module').then(m => m.TestingModule)
+    loadChildren: () => import('./testing/testing.module').then(m => m.TestingModule),
+    pathMatch: 'prefix'
   },
   {
     path: 'tracker',
-    loadChildren: () => import('./workout-tracker/workout-tracker.module').then(m => m.WorkoutTrackerModule)
+    loadChildren: () => import('./workout-tracker/workout-tracker.module').then(m => m.WorkoutTrackerModule),
+    pathMatch: 'prefix'
   }
 ];
 
