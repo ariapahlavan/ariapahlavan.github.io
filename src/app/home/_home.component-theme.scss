@@ -8,34 +8,44 @@
   $warn-palette: map.get($color-config, 'warn');
   $is-dark-theme: map.get($color-config, 'is-dark');
 
-  $primary-400: mat.get-color-from-palette($primary-palette, 400);
-  $accent-400: mat.get-color-from-palette($accent-palette, 400);
-  $accent-800: mat.get-color-from-palette($accent-palette, 800);
+  $primary-light-theme: mat.get-color-from-palette($primary-palette, 400);
+  $primary-dark-theme: mat.get-color-from-palette($primary-palette, 900);
+  $accent-dark-theme: mat.get-color-from-palette($accent-palette, 500);
+  $accent-light-theme: mat.get-color-from-palette($accent-palette, 800);
 
-  .tl-dotted-line,
-  .tl-line,
-  .tl-small-line {
-    border-left-color: $primary-400 !important;
-  }
-
-  .tl-icon {
-    background-color: $primary-400 !important;
-    border-color: $primary-400 !important;
+  @if $is-dark-theme {
+    .tl-dotted-line,
+    .tl-line,
+    .tl-small-line {
+      border-left-color: $primary-dark-theme !important;
+    }
+    .tl-icon {
+      background-color: $primary-dark-theme !important;
+      border-color: $primary-dark-theme !important;
+    }
+    .contacts-section a {
+      color: $accent-dark-theme;
+    }
+    .avatar-section img {
+      filter: grayscale(100%);
+    }
+  } @else {
+    .tl-dotted-line,
+    .tl-line,
+    .tl-small-line {
+      border-left-color: $primary-light-theme !important;
+    }
+    .tl-icon {
+      background-color: $primary-light-theme !important;
+      border-color: $primary-light-theme !important;
+    }
+    .contacts-section a {
+      color: $accent-light-theme;
+    }
   }
 
   .contacts-section a {
     font-size: 1.2rem;
-    @if $is-dark-theme {
-      color: $accent-400;
-    } @else {
-      color: $accent-800;
-    }
-  }
-
-  .avatar-section img {
-    @if $is-dark-theme {
-      filter: grayscale(100%);
-    }
   }
 }
 

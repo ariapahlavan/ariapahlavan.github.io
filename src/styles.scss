@@ -1,5 +1,6 @@
 @use "src/app/home/home.component-theme" as home;
 @use '@angular/material' as mat;
+@use 'src/styles/palette-helper';
 @import "src/styles/spacing";
 @import "src/styles/media";
 @import "src/styles/grid";
@@ -95,9 +96,6 @@ $light-theme: mat.define-light-theme((
 
 .light-theme {
   @include mat.all-legacy-component-colors($light-theme);
-  .mat-typography p {
-    margin: 0;
-  }
   blockquote {
     background: rgba(10,133,255,.14);
     border-left: 4px solid #06c;
@@ -118,9 +116,19 @@ $light-theme: mat.define-light-theme((
   @include home.theme($light-theme);
 }
 
-$dark-primary: mat.define-palette($my-palette-1);
+//$dark-primary: mat.define-palette($my-palette-1);
+//$dark-primary: mat.define-palette(mat.$grey-palette, 900, 700, 600);
+$dark-primary: mat.define-palette($my-palette-1, 900, 700, 600);
 $dark-accent: mat.define-palette($my-palette-2);
 $dark-warn: mat.define-palette(mat.$deep-orange-palette);
+//$bg-color: #121212;
+//$dark-bg-color-components: #272727;
+
+$primary-color-tint: rgba(6, 70, 99, 0.08);
+$bg-color: #111618;
+//$dark-bg-color-components: #262B2D;
+$dark-bg-color-components: darken(#232C30,5%);
+
 $dark-theme: mat.define-dark-theme((
   color: (
     primary: $dark-primary,
@@ -129,10 +137,11 @@ $dark-theme: mat.define-dark-theme((
   )
 ));
 
+$dark-theme: palette-helper.modify-background($dark-theme, $bg-color);
 .dark-theme {
   @include mat.all-legacy-component-colors($dark-theme);
   blockquote {
-    background: hsla(0,0%,87.8%,.14);
+    background: hsla(0,0%,95.8%,.14);
     border-left: 4px solid #03a9f4;
     color: #ccc;
   }
@@ -143,13 +152,22 @@ $dark-theme: mat.define-dark-theme((
   code:not([class*="language-"]) {
     background-color: dimgray;
   }
+  pre[class*="language-"] {
+    background: hsla(0,0%,60.8%,.14);
+  }
 
   a {
     color: mat.get-color-from-palette($my-palette-2, 400);
   }
-
+  .mat-card {
+    background: $dark-bg-color-components;
+  }
+  .mat-card-avatar {
+    background: lighten($dark-bg-color-components, 8%);
+  }
   @include home.theme($dark-theme);
 }
+
 
 @include mat.all-legacy-component-themes($dark-theme);
 
@@ -176,6 +194,8 @@ markdown > img {
 div.svg-container {
   display:grid;
   justify-items: center;
+  background: hsla(0,0%,60.8%,.14);
+  border-radius: 5px;
 }
 
 div.svg-container > img {
@@ -200,7 +220,7 @@ blockquote {
   margin-inline-start: 40px;
   margin-inline-end: 40px;
   margin: 20px 0;
-  padding: 1px 20px;
+  padding: 15px 20px;
   border-radius: 4px;
 }
 

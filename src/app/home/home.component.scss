@@ -84,8 +84,16 @@
   }
 }
 
+@include m.tablet-n-larger {
+  .side-section {
+    position: sticky;
+    top: 140px;
+    align-self: start;
+  }
+}
+
 .avatar-section, .avatar-section img {
-  object-fit: cover;
+  object-fit: contain;
   min-width: 40px;
   width: 100%;
   height: 100%;
