@@ -121,13 +121,13 @@ $light-theme: mat.define-light-theme((
 $dark-primary: mat.define-palette($my-palette-1, 900, 700, 600);
 $dark-accent: mat.define-palette($my-palette-2);
 $dark-warn: mat.define-palette(mat.$deep-orange-palette);
-//$bg-color: #121212;
-//$dark-bg-color-components: #272727;
 
 $primary-color-tint: rgba(6, 70, 99, 0.08);
-$bg-color: #111618;
-//$dark-bg-color-components: #262B2D;
-$dark-bg-color-components: darken(#232C30,5%);
+//$bg-color: #14181A;
+//$bg-color: darken(#022035, 7%);
+//$bg-color: darken(mat.get-color-from-palette($dark-primary, 900), 7%);
+$bg-color: #121212;
+$dark-bg-color-components: lighten($bg-color, 12%);
 
 $dark-theme: mat.define-dark-theme((
   color: (

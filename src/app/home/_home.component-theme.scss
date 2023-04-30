@@ -9,7 +9,8 @@
   $is-dark-theme: map.get($color-config, 'is-dark');
 
   $primary-light-theme: mat.get-color-from-palette($primary-palette, 400);
-  $primary-dark-theme: mat.get-color-from-palette($primary-palette, 900);
+  //$primary-dark-theme: mat.get-color-from-palette($primary-palette, 900);
+  $primary-dark-theme: lighten(#121212, 20%);
   $accent-dark-theme: mat.get-color-from-palette($accent-palette, 500);
   $accent-light-theme: mat.get-color-from-palette($accent-palette, 800);
 
