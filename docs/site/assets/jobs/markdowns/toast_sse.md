@@ -1,5 +1,10 @@
 <ul style="list-style-type: '✅  ';">
-  <li>Collaborating closely with several internal teams and external partners to integrate numerous features (e.g. upsells, 3rd party loyalty, auth and account management) into the online ordering web app</li>
+  <li>Collaborating closely with several internal teams and external partners to integrate numerous features into the online ordering web app</li>
+  <ul style="list-style-type: '🚀  ';">
+    <li>upsells</li>
+    <li>3rd party loyalty</li>
+    <li>auth and account management</li>
+  </ul>
   <li>Integrated Apple Pay in 1300+ branded restaurant domains (32% of transactions), registered by a cron job</li>
 </ul>
 
