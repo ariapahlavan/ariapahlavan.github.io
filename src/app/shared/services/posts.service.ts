@@ -13,6 +13,7 @@ export class PostsService {
   jobs = new ReplaySubject<CardContent[]>(1);
   projects = new ReplaySubject<CardContent[]>(1);
   articles = new ReplaySubject<CardContent[]>(1);
+  certs = new ReplaySubject<CardContent[]>(1);
 
   postSubjects;
 
@@ -22,7 +23,8 @@ export class PostsService {
     this.postSubjects = {
       [env.experienceKey]: this.jobs,
       [env.projectsKey]: this.projects,
-      [env.articlesKey]: this.articles
+      [env.articlesKey]: this.articles,
+      [env.certsKey]: this.certs
     };
   }
 

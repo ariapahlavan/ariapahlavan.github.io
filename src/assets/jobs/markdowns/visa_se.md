@@ -21,3 +21,14 @@
       and load testing of migration script, saving the company
       over $400K/year</li>
 </ul>
+
+### Tech stack
+<ul style="list-style-type: '🔥  ';">
+  <li>Docker</li>
+  <li>NGINX Plus</li>
+  <li>Jenkins</li>
+  <li>Spring Boot (Java)</li>
+  <li>Angular</li>
+  <li>MySQL</li>
+  <li>Elasticsearch</li>
+</ul>

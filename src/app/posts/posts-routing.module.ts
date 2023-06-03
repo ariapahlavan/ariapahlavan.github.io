@@ -10,6 +10,12 @@ const routes: Routes = [
     pathMatch: 'prefix'
   },
   {
+    path: 'certs',
+    component: PostsComponent,
+    data: {path: environment.certsPath, key: environment.certsKey},
+    pathMatch: 'prefix'
+  },
+  {
     path: 'jobs',
     component: PostsComponent,
     data: {path: environment.experiencePath, key: environment.experienceKey},

@@ -18,10 +18,14 @@
   <mat-card-actions *ngIf="hasLink(content.actions)">
     <ng-container *ngFor="let cta of content.actions; let first = first">
       <button *ngIf="first" mat-flat-button color="accent" (click)="clickHandler(cta)">
-        {{textOf(cta)}}
+        <div class="btnContent">
+          {{textOf(cta)}} <mat-icon *ngIf="cta.type === 'EXTERNAL'" aria-hidden="false" aria-label="external url" fontIcon="open_in_new" inline/>
+        </div>
       </button>
       <button *ngIf="!first" mat-stroked-button color="accent" (click)="clickHandler(cta)">
-        {{textOf(cta)}}
+        <div class="btnContent">
+          {{textOf(cta)}} <mat-icon *ngIf="cta.type === 'EXTERNAL'" aria-hidden="false" aria-label="external url" fontIcon="open_in_new" inline/>
+        </div>
       </button>
     </ng-container>
   </mat-card-actions>

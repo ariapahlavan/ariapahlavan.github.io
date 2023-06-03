@@ -1,11 +1,8 @@
 .cards-grid {
   display: grid;
+  grid-gap: 20px;
 }
 
 .card {
   grid-column: span 1;
-}
-
-.my-card {
-
 }

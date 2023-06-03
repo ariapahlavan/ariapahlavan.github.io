@@ -1,17 +1,17 @@
 <ul style="list-style-type: '✅  ';">
-  <li>Leading performance improvement and scalability efforts for our
+  <li>Lead performance improvement and scalability efforts for our
       systems to be able to enroll 25M+ users in our platform</li>
 
-  <li>Leading major LTA developments and releases by designing 
+  <li>Lead major LTA developments and releases by designing 
     architectural diagrams, collaborating with external teams, and 
     completing implementation and security analysis
     for various features</li>
 
-  <li>Leading a new organization level program that is a mechanism for 
+  <li>Lead a new organizational level program that is a mechanism for 
       exploring and incubating new ideas and ventures to increase
       collaboration and innovation within teams</li>
 
-  <li>Creating numerous reusable/shared Angular and Spring Boot 
+  <li>Created numerous reusable/shared Angular and Spring Boot 
       modules to help with validation, analytics and performance
       optimization, which reduced duplicate effort by our teams significantly</li>
 
@@ -27,4 +27,15 @@
   <li>Participated in university recruiting and interview 
       preparedness events to help new college grads better 
       prepare for their technical interviews</li>
+</ul>
+
+### Tech stack
+<ul style="list-style-type: '🔥  ';">
+  <li>Docker</li>
+  <li>NGINX Plus</li>
+  <li>Jenkins</li>
+  <li>Spring Boot (Java)</li>
+  <li>Angular</li>
+  <li>MySQL</li>
+  <li>Elasticsearch</li>
 </ul>

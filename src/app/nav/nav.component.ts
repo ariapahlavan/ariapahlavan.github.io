@@ -12,6 +12,7 @@ import { ThemeService } from '../shared/services/theme.service';
 export class NavComponent implements OnInit {
   menuContent = [
     {text: 'Home', link: '/home'},
+    {text: 'Certificates', link: '/posts/certs'},
     {text: 'Experiences', link: '/posts/jobs'},
     {text: 'Articles', link: '/posts/articles'},
     {text: 'Projects', link: '/posts/projects'},

@@ -20,7 +20,7 @@
 </ng-template>
 
 <ng-template #markdown let-content>
-  <div markdown lineNumbers emoji
+  <div markdown lineNumbers
        [src]="markdownUrl(content)"
        (load)="onload($event)"
        [ngClass]="{'full-row': isFull(content), 'left-half': isLeft(content), 'right-half': isRight(content)}"

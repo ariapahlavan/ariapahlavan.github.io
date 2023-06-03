@@ -4,7 +4,9 @@ export const environment = {
   experiencePath: '/experience.json',
   articlesPath: '/articles.json',
   projectsPath: '/projects.json',
+  certsPath: '/certificates.json',
   experienceKey: 'experience',
   articlesKey: 'articles',
-  projectsKey: 'projects'
+  projectsKey: 'projects',
+  certsKey: 'certificates'
 };

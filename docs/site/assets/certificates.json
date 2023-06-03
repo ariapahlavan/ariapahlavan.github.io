@@ -1,0 +1,71 @@
+[
+  {
+    "id": 3,
+    "type": "card",
+    "title": "Cloud Developer",
+    "subTitle": "Udacity • Issued Apr 2023",
+    "description": "Building and deploying production-ready full stack microservices or serverless apps at scale on AWS.",
+    "actions": [
+      {
+        "text": "SHOW CREDENTIAL",
+        "url": "https://graduation.udacity.com/confirm/e/dc07ee4a-8627-11ed-94d9-af3fe601d98a",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+    ],
+    "thumbnails": [
+      {
+        "text": "Udacity",
+        "url": "https://media.licdn.com/dms/image/C560BAQHiNYfm0YHKrg/company-logo_200_200/0/1656621848272?e=1691020800&v=beta&t=jQNOqxiarhudHtoPkxSI3Y4unqKST4-Tzae9xbrqOzY",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "card",
+    "title": "Graph Developer - Professional",
+    "subTitle": "Apollo GraphQL • Issued Jan 2023",
+    "description": "Building federated supergraphs or moving existing monolithic graphs to Apollo federation.",
+    "actions": [
+      {
+        "text": "SHOW CREDENTIAL",
+        "url": "https://www.apollographql.com/tutorials/certifications/81b1f1bd-ad24-4de0-b553-2b5328ea5df6",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+    ],
+    "thumbnails": [
+      {
+        "text": "Apollo",
+        "url": "https://media.licdn.com/dms/image/C560BAQFQY9ETMnWBGQ/company-logo_200_200/0/1646068661294?e=1691020800&v=beta&t=FB_MAnoyTG5rGma7C3BCItTPiv4H6M2kHw5S-EIEqDg",
+        "type": "EXTERNAL"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "card",
+    "title": "Graph Developer - Associate",
+    "subTitle": "Apollo GraphQL • Issued May 2022",
+    "description": "Designing GraphQL schemas, running Apollo Server, and performing queries with Apollo Client on the frontend.",
+    "actions": [
+      {
+        "text": "SHOW CREDENTIAL",
+        "url": "https://www.apollographql.com/tutorials/certifications/7c334e7a-0d93-457a-bd0c-5d3c15c39d70",
+        "type": "EXTERNAL"
+      }
+    ],
+    "images": [
+    ],
+    "thumbnails": [
+      {
+        "text": "Apollo",
+        "url": "https://media.licdn.com/dms/image/C560BAQFQY9ETMnWBGQ/company-logo_200_200/0/1646068661294?e=1691020800&v=beta&t=FB_MAnoyTG5rGma7C3BCItTPiv4H6M2kHw5S-EIEqDg",
+        "type": "EXTERNAL"
+      }
+    ]
+  }
+]

@@ -5,7 +5,8 @@ import { Content, ContentType, Link, MarkdownContent, Position, Positionable } f
 import { Observable } from 'rxjs';
 import { SMOOTH_ENTRANCE_2 } from '../shared/constants/animations-triggers';
 import { hasLink, isReady, publishedOnly, textOf, urlOf } from '../shared/helpers/content.helper';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
+import { logger } from 'codelyzer/util/logger';
 
 @Component({
   selector: 'app-details',

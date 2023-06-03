@@ -1,6 +1,5 @@
 .card {
   max-width: 400px;
-  margin: 10px;
   overflow: hidden;
 }
 
@@ -26,4 +25,10 @@
 
 .svg {
   object-fit: contain;
+}
+
+.btnContent {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
 }
