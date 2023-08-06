@@ -17,8 +17,7 @@
     "thumbnails": [
       {
         "text": "Udacity",
-        "url": "https://media.licdn.com/dms/image/C560BAQHiNYfm0YHKrg/company-logo_200_200/0/1656621848272?e=1691020800&v=beta&t=jQNOqxiarhudHtoPkxSI3Y4unqKST4-Tzae9xbrqOzY",
-        "type": "EXTERNAL"
+        "url": "/certificates/images/udemy.jpeg"
       }
     ]
   },
@@ -40,8 +39,7 @@
     "thumbnails": [
       {
         "text": "Apollo",
-        "url": "https://media.licdn.com/dms/image/C560BAQFQY9ETMnWBGQ/company-logo_200_200/0/1646068661294?e=1691020800&v=beta&t=FB_MAnoyTG5rGma7C3BCItTPiv4H6M2kHw5S-EIEqDg",
-        "type": "EXTERNAL"
+        "url": "/certificates/images/apollo.jpeg"
       }
     ]
   },
@@ -63,8 +61,7 @@
     "thumbnails": [
       {
         "text": "Apollo",
-        "url": "https://media.licdn.com/dms/image/C560BAQFQY9ETMnWBGQ/company-logo_200_200/0/1646068661294?e=1691020800&v=beta&t=FB_MAnoyTG5rGma7C3BCItTPiv4H6M2kHw5S-EIEqDg",
-        "type": "EXTERNAL"
+        "url": "/certificates/images/apollo.jpeg"
       }
     ]
   }

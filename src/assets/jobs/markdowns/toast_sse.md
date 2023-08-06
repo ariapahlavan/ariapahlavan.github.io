@@ -1,11 +1,9 @@
 <ul style="list-style-type: '✅  ';">
-  <li>Collaborating closely with several internal teams and external partners to integrate numerous features into the online ordering web app</li>
-  <ul style="list-style-type: '🚀  ';">
-    <li>upsells</li>
-    <li>3rd party loyalty</li>
-    <li>auth and account management</li>
-  </ul>
-  <li>Integrated Apple Pay in 1300+ branded restaurant domains (32% of transactions), registered by a cron job</li>
+  <li>Creating Pulsar topic & producer for site events reporting (~100+/hr)</li>
+  <li>Integrated Apple Pay in 1400+ branded restaurant domains (32% of
+transactions = 1.3M) by creating a batch-registration cron job</li>
+  <li>Collaborated closely with several internal teams and external partners to
+integrate upsells, loyalty and auth features into the online ordering web app</li>
 </ul>
 
 

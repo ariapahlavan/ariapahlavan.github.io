@@ -15,8 +15,7 @@
     "thumbnails": [
       {
         "text": "Toast logo",
-        "url": "https://media.licdn.com/dms/image/C4E0BAQEBzLvIVpPIdA/company-logo_200_200/0/1519895762137?e=1691020800&v=beta&t=JVW6N03iwXm9WdVSt3qrgw783Kuu3em6fRkLZISl4zc",
-        "type": "EXTERNAL"
+        "url": "/jobs/images/toast.jpeg"
       }
     ]
   },
@@ -36,8 +35,7 @@
     "thumbnails": [
       {
         "text": "visa logo",
-        "url": "https://media.licdn.com/dms/image/C560BAQEP8_eM4zW8bw/company-logo_200_200/0/1626865473807?e=1691020800&v=beta&t=crG2uh-4fAW-ajXO3cfVJmBsbAa5h2nQp_ne5Sdgh-k",
-        "type": "EXTERNAL"
+        "url": "/jobs/images/visa.jpeg"
       }
     ]
   },
@@ -56,8 +54,7 @@
     "thumbnails": [
       {
         "text": "visa logo",
-        "url": "https://media.licdn.com/dms/image/C560BAQEP8_eM4zW8bw/company-logo_200_200/0/1626865473807?e=1691020800&v=beta&t=crG2uh-4fAW-ajXO3cfVJmBsbAa5h2nQp_ne5Sdgh-k",
-        "type": "EXTERNAL"
+        "url": "/jobs/images/visa.jpeg"
       }
     ]
   },
@@ -76,8 +73,7 @@
     "thumbnails": [
       {
         "text": "intel logo",
-        "url": "https://media.licdn.com/dms/image/C560BAQGpvWtEtj9oTQ/company-logo_200_200/0/1625151708870?e=1691020800&v=beta&t=-Nk7bhuv8EsFX8vjDM_wA68r8GiOXf89p8zKB5A_X-0",
-        "type": "EXTERNAL"
+        "url": "/jobs/images/intel.jpeg"
       }
     ]
   },
@@ -96,8 +92,7 @@
     "thumbnails": [
       {
         "text": "luminant logo",
-        "url": "https://media.licdn.com/dms/image/C560BAQHVVtcDYYIaDw/company-logo_200_200/0/1519855856903?e=1691020800&v=beta&t=sJGYDnpthi9xq9ykawwkHPMf6T93jHXC7Rvb46vxkn8",
-        "type": "EXTERNAL"
+        "url": "/jobs/images/luminant.jpeg"
       }
     ]
   },
@@ -115,8 +110,7 @@
     ],
     "thumbnails": [{
       "text": "texas petawatt logo",
-      "url": "https://media.licdn.com/dms/image/C560BAQEREeDg1PACXA/company-logo_200_200/0/1617385772288?e=1691020800&v=beta&t=8-rIFXlRsKUtzFzCYj7s_ZNcSEHPu5r6d0bTX_EtAqk",
-      "type": "EXTERNAL"
+      "url": "/jobs/images/ut.jpeg"
     }]
   }
 ]
