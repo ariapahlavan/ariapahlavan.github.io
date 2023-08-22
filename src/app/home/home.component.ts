@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     avatarUrl: `${env.assetsPath}/me-filtered.png`,
     avatarAlt: 'Aria Pahlavan',
     name: 'Aria Pahlavan',
-    summary: 'Sr. Full-Stack SW Engineer',
+    summary: 'Senior Software Engineer',
     description: `I'm known for
           aesthetically pleasing apps 🤩,
           blazingly fast apis 🔥,
